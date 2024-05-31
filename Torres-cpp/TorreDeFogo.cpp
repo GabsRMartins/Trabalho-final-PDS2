@@ -23,7 +23,4 @@ void TorreDeFogo::addPower(const std::string& power) {
     this->power = power; // Armazene o poder recebido
 }
 
-// Variáveis específicas da TorreDeFogo
-int additionalFuel; // Quantidade adicional de combustível
-double flameTemperature; // Temperatura das chamas (em graus Celsius)
 

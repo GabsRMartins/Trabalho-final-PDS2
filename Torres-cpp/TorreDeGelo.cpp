@@ -23,6 +23,4 @@ void TorreDeGelo::addPower(const std::string& power) {
     this->power = power; // Armazene o poder recebido
 }
 
-// Variáveis específicas da TorreDeGelo
-int additionalIce; // Quantidade adicional de gelo
-double freezingTemperature; // Temperatura de congelamento (em graus Celsius)
+
