@@ -7,6 +7,8 @@ class TorreDeExplosivos : public Torre { // Classe "TorreDeExplosivos" herda da 
 private:
     int ataque; // Variável para armazenar o valor do ataque
     int range; // Variável para armazenar o valor do alcance
+    int additionalExplosives; // Quantidade adicional de explosivos
+    double explosionPower; // Potência da explosão (em unidades destrutivas)
     std::string noise; // Variável para armazenar o ruído
     std::string power; // Variável para armazenar o poder
 
