@@ -11,8 +11,8 @@ public:
     TorreDeLaser(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int additionalPower, double laserIntensity); // Construtor
     void addAtack(int ataque) override;
     void addRange(int range) override;
-    void addNoise(const std::string& noise) override;
-    void addPower(const std::string& power) override;
+    void addNoise(std::string noise) override;
+    void addPower(std::string power) override;
 };
 
 #endif

@@ -8,19 +8,19 @@ TorreDeGelo::TorreDeGelo (int quantidade, int posicao, std::string noise, std::s
 
 // Implementação das funções virtuais puras da classe base
 void TorreDeGelo::addAtack(int ataque) {
-    this->ataque = ataque;
+    ataque = ataque;
 }
 
 void TorreDeGelo::addRange(int range) {
-    this->range = range;
+    range = range;
 }
 
-void TorreDeGelo::addNoise(const std::string& noise) {
-    this->noise = noise; // Armazene o ruído recebido
+void TorreDeGelo::addNoise(std::string noise) {
+    noise = noise; // Armazene o ruído recebido
 }
 
-void TorreDeGelo::addPower(const std::string& power) {
-    this->power = power; // Armazene o poder recebido
+void TorreDeGelo::addPower(std::string power) {
+    power = power; // Armazene o poder recebido
 }
 
 

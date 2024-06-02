@@ -8,18 +8,18 @@ TorreDeFlechas::TorreDeFlechas(int quantidade, int posicao, std::string noise, s
 
 // Implementação das funções virtuais puras da classe base
 void TorreDeFlechas::addAtack(int ataque) {
-    this->ataque = ataque;
+    ataque = ataque;
 }
 
 void TorreDeFlechas::addRange(int range) {
-    this->range = range;
+    range = range;
 }
 
-void TorreDeFlechas::addNoise(const std::string& noise) {
-    this->noise = noise; // Armazene o ruído recebido
+void TorreDeFlechas::addNoise(std::string noise) {
+    noise = noise; // Armazene o ruído recebido
 }
 
-void TorreDeFlechas::addPower(const std::string& power) {
-    this->power = power; // Armazene o poder recebido
+void TorreDeFlechas::addPower(std::string power) {
+    power = power; // Armazene o poder recebido
 }
 

@@ -8,17 +8,17 @@ TorreDeEletricidade::TorreDeEletricidade(int quantidade, int posicao, std::strin
 
 // Implementação das funções virtuais puras da classe base
 void TorreDeEletricidade::addAtack(int ataque) {
-    this->ataque = ataque;
+    ataque = ataque;
 }
 
 void TorreDeEletricidade::addRange(int range) {
-    this->range = range;
+    range = range;
 }
 
-void TorreDeEletricidade::addNoise(const std::string& noise) {
-    this->noise = noise; // Armazene o ruído recebido
+void TorreDeEletricidade::addNoise(std::string noise) {
+    noise = noise; // Armazene o ruído recebido
 }
 
-void TorreDeEletricidade::addPower(const std::string& power) {
-    this->power = power; // Armazene o poder recebido
+void TorreDeEletricidade::addPower( std::string power) {
+    power = power; // Armazene o poder recebido
 }

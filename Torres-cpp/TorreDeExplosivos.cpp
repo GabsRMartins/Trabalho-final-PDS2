@@ -8,17 +8,17 @@ TorreDeExplosivos::TorreDeExplosivos(int quantidade, int posicao, std::string no
 
 // Implementação das funções virtuais puras da classe base
 void TorreDeExplosivos::addAtack(int ataque) {
-    this->ataque = ataque;
+    ataque = ataque;
 }
 
 void TorreDeExplosivos::addRange(int range) {
-    this->range = range;
+    range = range;
 }
 
-void TorreDeExplosivos::addNoise(const std::string& noise) {
-    this->noise = noise; // Armazene o ruído recebido
+void TorreDeExplosivos::addNoise(std::string noise) {
+    noise = noise; // Armazene o ruído recebido
 }
 
-void TorreDeExplosivos::addPower(const std::string& power) {
-    this->power = power; // Armazene o poder recebido
+void TorreDeExplosivos::addPower(std::string power) {
+    power = power; // Armazene o poder recebido
 }

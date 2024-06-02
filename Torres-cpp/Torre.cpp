@@ -1,10 +1,9 @@
 
 #include "../Torres-hpp/Torre.hpp"
 
-/// @param quantidade 
-/// @param posicao 
-Torre::Torre(int quantidade, int posicao) 
-:Quantidade(quantidade), posicao(posicao) {
+
+Torre::Torre(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range)
+:quantidade(quantidade), posicao(posicao), noise(noise), power(power), ataque(ataque), range(range) {
     // Implementação do construtor
 }
 

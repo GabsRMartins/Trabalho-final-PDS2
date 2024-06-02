@@ -8,17 +8,17 @@ TorreDeFantasmas::TorreDeFantasmas(int quantidade, int posicao, std::string nois
 
 // Implementação das funções virtuais puras da classe base
 void TorreDeFantasmas::addAtack(int ataque) {
-    this->ataque = ataque;
+    ataque = ataque;
 }
 
 void TorreDeFantasmas::addRange(int range) {
-    this->range = range;
+    range = range;
 }
 
-void TorreDeFantasmas::addNoise(const std::string& noise) {
-    this->noise = noise; // Armazene o ruído recebido
+void TorreDeFantasmas::addNoise(std::string noise) {
+    noise = noise; // Armazene o ruído recebido
 }
 
-void TorreDeFantasmas::addPower(const std::string& power) {
-    this->power = power; // Armazene o poder recebido
+void TorreDeFantasmas::addPower(std::string power) {
+    power = power; // Armazene o poder recebido
 }
