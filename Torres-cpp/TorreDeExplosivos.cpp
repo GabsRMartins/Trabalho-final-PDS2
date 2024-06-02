@@ -1,8 +1,8 @@
 #include "../Torres-hpp/TorreDeExplosivos.hpp"
 
 // Construtor da classe TorreDeExplosivos
-TorreDeExplosivos::TorreDeExplosivos(int quantidade, int posicao)
-    : Torre(quantidade, posicao), ataque(0), range(0), additionalExplosives(0), explosionPower(0.0) {
+TorreDeExplosivos::TorreDeExplosivos(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int additionalExplosives, double explosionPower )
+:Torre(quantidade, posicao, power, noise, ataque,  range){
     
 }
 

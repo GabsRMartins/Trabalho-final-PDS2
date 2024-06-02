@@ -1,8 +1,8 @@
 #include "../Torres-hpp/TorreDeCanhao.hpp"
 
 // Construtor da classe TorreDeCanhao
-TorreDeCanhao::TorreDeCanhao(int quantidade, int posicao)
-    : Torre(quantidade, posicao), ataque(0), range(0), additionalAmmo(0), cannonPower(0.0) {
+TorreDeCanhao::TorreDeCanhao(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int additionalAmmo, double cannonPower)
+:Torre(quantidade, posicao, power, noise, ataque,  range) {
     
 }
 

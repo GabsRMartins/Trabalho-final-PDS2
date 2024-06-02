@@ -5,14 +5,10 @@
 
 class TorreDeEletricidade : public Torre { // Classe "TorreDeEletricidade" herda da classe base "Torre"
 private:
-    int ataque; // Variável para armazenar o valor do ataque
-    int range; // Variável para armazenar o valor do alcance
     int voltage; // Tensão elétrica da torre
-    double efficiency; // Eficiência da conversão de energia
-    std::string noise; // Variável para armazenar o ruído
-    std::string power; // Variável para armazenar o poder
+    double efficiency; // Eficiência da conversão de energi
 public:
-    TorreDeEletricidade(int quantidade, int posicao); // Construtor
+    TorreDeEletricidade(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int voltage, double efficiency); // Construtor
     void addAtack(int ataque) override; // Implementação da função para adicionar ataque
     void addRange(int range) override; // Implementação da função para adicionar alcance
     void addNoise(const std::string& noise) override; // Implementação da função para adicionar ruído

@@ -1,8 +1,8 @@
 #include "../Torres-hpp/TorreDeFlechas.hpp"
 
 // Construtor da classe TorreDeFlechas
-TorreDeFlechas::TorreDeFlechas(int quantidade, int posicao)
-    : Torre(quantidade, posicao), ataque(0), range(0), additionalArrows(0), arrowVelocity(0.0) {
+TorreDeFlechas::TorreDeFlechas(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int additionalArrows,double arrowVelocity )
+:Torre(quantidade, posicao, power, noise, ataque,  range){
     
 }
 

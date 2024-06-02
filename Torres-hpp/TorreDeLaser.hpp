@@ -5,14 +5,10 @@
 
 class TorreDeLaser : public Torre {
 private:
-    int ataque;
-    int range;
     int additionalPower; // Quantidade adicional de energia
     double laserIntensity; // Intensidade do laser (em watts)
-    std::string noise; // Variável para armazenar o ruído
-    std::string power; // Variável para armazenar o poder
 public:
-    TorreDeLaser(int quantidade, int posicao); // Construtor
+    TorreDeLaser(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int additionalPower, double laserIntensity); // Construtor
     void addAtack(int ataque) override;
     void addRange(int range) override;
     void addNoise(const std::string& noise) override;

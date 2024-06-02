@@ -1,8 +1,8 @@
 #include "../Torres-hpp/TorreDeLaser.hpp"
 
 // Construtor da classe TorreDeLaser
-TorreDeLaser::TorreDeLaser(int quantidade, int posicao)
-    : Torre(quantidade, posicao), ataque(0), range(0), additionalPower(0), laserIntensity(0.0) {
+TorreDeLaser::TorreDeLaser(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int additionalPower, double laserIntensity)
+:Torre(quantidade, posicao, power, noise, ataque,  range){
     
 }
 

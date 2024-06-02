@@ -1,8 +1,8 @@
 #include "../Torres-hpp/TorreDeGelo.hpp"
 
 // Construtor da classe TorreDeGelo
-TorreDeGelo::TorreDeGelo(int quantidade, int posicao)
-    : Torre(quantidade, posicao), ataque(0), range(0), additionalIce(0), freezingTemperature(0.0) {
+TorreDeGelo::TorreDeGelo (int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int additionalIce, double freezingTemperature)
+:Torre(quantidade, posicao, power, noise, ataque,  range){
  
 }
 

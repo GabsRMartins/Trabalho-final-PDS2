@@ -9,4 +9,4 @@ Torre::Torre(int quantidade, int posicao)
 }
 
 // As funções virtuais puras não precisam ser implementadas aqui, 
-// pois são implementadas nas classes derivadas.
+// pois são implementadas nas classes filhas.

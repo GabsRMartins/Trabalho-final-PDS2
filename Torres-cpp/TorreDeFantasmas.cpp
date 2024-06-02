@@ -1,8 +1,8 @@
 #include "../Torres-hpp/TorreDeFantasmas.hpp"
 
 // Construtor da classe TorreDeFantasmas
-TorreDeFantasmas::TorreDeFantasmas(int quantidade, int posicao)
-    : Torre(quantidade, posicao), ataque(0), range(0), additionalSpecters(0), ghostPower(0.0) {
+TorreDeFantasmas::TorreDeFantasmas(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int additionalSpecters, double ghostPower)
+:Torre(quantidade, posicao, power, noise, ataque,  range){
  
 }
 

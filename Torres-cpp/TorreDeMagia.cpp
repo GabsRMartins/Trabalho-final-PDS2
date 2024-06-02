@@ -1,8 +1,8 @@
 #include "../Torres-hpp/TorreDeMagia.hpp"
 
 // Construtor da classe TorreDeMagia
-TorreDeMagia::TorreDeMagia(int quantidade, int posicao)
-    : Torre(quantidade, posicao), ataque(0), range(0), additionalMana(0), spellPower(0.0) {
+TorreDeMagia::TorreDeMagia(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int additionalMana, double spellPower)
+:Torre(quantidade, posicao, power, noise, ataque,  range){
    
 }
 

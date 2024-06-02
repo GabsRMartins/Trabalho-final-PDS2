@@ -1,8 +1,8 @@
 #include "../Torres-hpp/TorreDeEletricidade.hpp"
 
 // Construtor da classe TorreDeEletricidade
-TorreDeEletricidade::TorreDeEletricidade(int quantidade, int posicao)
-    : Torre(quantidade, posicao), ataque(0), range(0), voltage(0), efficiency(0.0) {
+TorreDeEletricidade::TorreDeEletricidade(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int voltage, double efficiency)
+:Torre(quantidade, posicao, power, noise, ataque,  range){
     
 }
 

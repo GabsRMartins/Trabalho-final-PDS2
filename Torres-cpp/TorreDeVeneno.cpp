@@ -1,8 +1,8 @@
 #include "../Torres-hpp/TorreDeVeneno.hpp"
 
 // Construtor da classe TorreDeVeneno
-TorreDeVeneno::TorreDeVeneno(int quantidade, int posicao)
-    : Torre(quantidade, posicao), ataque(0), range(0), additionalToxins(0), poisonIntensity(0.0) {
+TorreDeVeneno::TorreDeVeneno(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int additionalToxins, double poisonIntensity)
+:Torre(quantidade, posicao, power, noise, ataque,  range){
     
 }
 

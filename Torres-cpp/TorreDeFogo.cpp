@@ -1,8 +1,8 @@
 #include "../Torres-hpp/TorreDeFogo.hpp"
 
 // Construtor da classe TorreDeFogo
-TorreDeFogo::TorreDeFogo(int quantidade, int posicao)
-    : Torre(quantidade, posicao), ataque(0), range(0), additionalFuel(0), flameTemperature(0.0) {
+TorreDeFogo::TorreDeFogo(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int additionalFuel, double flameTemperature)
+:Torre(quantidade, posicao, power, noise, ataque,  range){
    
 }
 
