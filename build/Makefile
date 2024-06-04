@@ -117,24 +117,96 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named my_program
+# Target rules for targets named test
 
 # Build rule for target.
-my_program: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_program
-.PHONY : my_program
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
 
 # fast build rule for target.
-my_program/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/build
-.PHONY : my_program/fast
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+src/inimigo-cpp/Esqueleto.o: src/inimigo-cpp/Esqueleto.cpp.o
+.PHONY : src/inimigo-cpp/Esqueleto.o
+
+# target to build an object file
+src/inimigo-cpp/Esqueleto.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Esqueleto.cpp.o
+.PHONY : src/inimigo-cpp/Esqueleto.cpp.o
+
+src/inimigo-cpp/Esqueleto.i: src/inimigo-cpp/Esqueleto.cpp.i
+.PHONY : src/inimigo-cpp/Esqueleto.i
+
+# target to preprocess a source file
+src/inimigo-cpp/Esqueleto.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Esqueleto.cpp.i
+.PHONY : src/inimigo-cpp/Esqueleto.cpp.i
+
+src/inimigo-cpp/Esqueleto.s: src/inimigo-cpp/Esqueleto.cpp.s
+.PHONY : src/inimigo-cpp/Esqueleto.s
+
+# target to generate assembly for a file
+src/inimigo-cpp/Esqueleto.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Esqueleto.cpp.s
+.PHONY : src/inimigo-cpp/Esqueleto.cpp.s
+
+src/inimigo-cpp/Inimigo.o: src/inimigo-cpp/Inimigo.cpp.o
+.PHONY : src/inimigo-cpp/Inimigo.o
+
+# target to build an object file
+src/inimigo-cpp/Inimigo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Inimigo.cpp.o
+.PHONY : src/inimigo-cpp/Inimigo.cpp.o
+
+src/inimigo-cpp/Inimigo.i: src/inimigo-cpp/Inimigo.cpp.i
+.PHONY : src/inimigo-cpp/Inimigo.i
+
+# target to preprocess a source file
+src/inimigo-cpp/Inimigo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Inimigo.cpp.i
+.PHONY : src/inimigo-cpp/Inimigo.cpp.i
+
+src/inimigo-cpp/Inimigo.s: src/inimigo-cpp/Inimigo.cpp.s
+.PHONY : src/inimigo-cpp/Inimigo.s
+
+# target to generate assembly for a file
+src/inimigo-cpp/Inimigo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Inimigo.cpp.s
+.PHONY : src/inimigo-cpp/Inimigo.cpp.s
+
+src/mapa-cpp/Mapa.o: src/mapa-cpp/Mapa.cpp.o
+.PHONY : src/mapa-cpp/Mapa.o
+
+# target to build an object file
+src/mapa-cpp/Mapa.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/Mapa.cpp.o
+.PHONY : src/mapa-cpp/Mapa.cpp.o
+
+src/mapa-cpp/Mapa.i: src/mapa-cpp/Mapa.cpp.i
+.PHONY : src/mapa-cpp/Mapa.i
+
+# target to preprocess a source file
+src/mapa-cpp/Mapa.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/Mapa.cpp.i
+.PHONY : src/mapa-cpp/Mapa.cpp.i
+
+src/mapa-cpp/Mapa.s: src/mapa-cpp/Mapa.cpp.s
+.PHONY : src/mapa-cpp/Mapa.s
+
+# target to generate assembly for a file
+src/mapa-cpp/Mapa.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/Mapa.cpp.s
+.PHONY : src/mapa-cpp/Mapa.cpp.s
 
 src/principal/main.o: src/principal/main.cpp.o
 .PHONY : src/principal/main.o
 
 # target to build an object file
 src/principal/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/principal/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/principal/main.cpp.o
 .PHONY : src/principal/main.cpp.o
 
 src/principal/main.i: src/principal/main.cpp.i
@@ -142,7 +214,7 @@ src/principal/main.i: src/principal/main.cpp.i
 
 # target to preprocess a source file
 src/principal/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/principal/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/principal/main.cpp.i
 .PHONY : src/principal/main.cpp.i
 
 src/principal/main.s: src/principal/main.cpp.s
@@ -150,8 +222,56 @@ src/principal/main.s: src/principal/main.cpp.s
 
 # target to generate assembly for a file
 src/principal/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_program.dir/build.make CMakeFiles/my_program.dir/src/principal/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/principal/main.cpp.s
 .PHONY : src/principal/main.cpp.s
+
+src/torre-cpp/Torre.o: src/torre-cpp/Torre.cpp.o
+.PHONY : src/torre-cpp/Torre.o
+
+# target to build an object file
+src/torre-cpp/Torre.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/torre-cpp/Torre.cpp.o
+.PHONY : src/torre-cpp/Torre.cpp.o
+
+src/torre-cpp/Torre.i: src/torre-cpp/Torre.cpp.i
+.PHONY : src/torre-cpp/Torre.i
+
+# target to preprocess a source file
+src/torre-cpp/Torre.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/torre-cpp/Torre.cpp.i
+.PHONY : src/torre-cpp/Torre.cpp.i
+
+src/torre-cpp/Torre.s: src/torre-cpp/Torre.cpp.s
+.PHONY : src/torre-cpp/Torre.s
+
+# target to generate assembly for a file
+src/torre-cpp/Torre.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/torre-cpp/Torre.cpp.s
+.PHONY : src/torre-cpp/Torre.cpp.s
+
+src/torre-cpp/TorreDeFogo.o: src/torre-cpp/TorreDeFogo.cpp.o
+.PHONY : src/torre-cpp/TorreDeFogo.o
+
+# target to build an object file
+src/torre-cpp/TorreDeFogo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/torre-cpp/TorreDeFogo.cpp.o
+.PHONY : src/torre-cpp/TorreDeFogo.cpp.o
+
+src/torre-cpp/TorreDeFogo.i: src/torre-cpp/TorreDeFogo.cpp.i
+.PHONY : src/torre-cpp/TorreDeFogo.i
+
+# target to preprocess a source file
+src/torre-cpp/TorreDeFogo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/torre-cpp/TorreDeFogo.cpp.i
+.PHONY : src/torre-cpp/TorreDeFogo.cpp.i
+
+src/torre-cpp/TorreDeFogo.s: src/torre-cpp/TorreDeFogo.cpp.s
+.PHONY : src/torre-cpp/TorreDeFogo.s
+
+# target to generate assembly for a file
+src/torre-cpp/TorreDeFogo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/torre-cpp/TorreDeFogo.cpp.s
+.PHONY : src/torre-cpp/TorreDeFogo.cpp.s
 
 # Help Target
 help:
@@ -161,10 +281,25 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... my_program"
+	@echo "... test"
+	@echo "... src/inimigo-cpp/Esqueleto.o"
+	@echo "... src/inimigo-cpp/Esqueleto.i"
+	@echo "... src/inimigo-cpp/Esqueleto.s"
+	@echo "... src/inimigo-cpp/Inimigo.o"
+	@echo "... src/inimigo-cpp/Inimigo.i"
+	@echo "... src/inimigo-cpp/Inimigo.s"
+	@echo "... src/mapa-cpp/Mapa.o"
+	@echo "... src/mapa-cpp/Mapa.i"
+	@echo "... src/mapa-cpp/Mapa.s"
 	@echo "... src/principal/main.o"
 	@echo "... src/principal/main.i"
 	@echo "... src/principal/main.s"
+	@echo "... src/torre-cpp/Torre.o"
+	@echo "... src/torre-cpp/Torre.i"
+	@echo "... src/torre-cpp/Torre.s"
+	@echo "... src/torre-cpp/TorreDeFogo.o"
+	@echo "... src/torre-cpp/TorreDeFogo.i"
+	@echo "... src/torre-cpp/TorreDeFogo.s"
 .PHONY : help
 
 

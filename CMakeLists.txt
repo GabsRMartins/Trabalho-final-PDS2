@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.10)
 project(MyProject)
 
 # Collect all source files from different directories
-file(GLOB MAPA_SOURCES "mapa-cpp/*.cpp")
-file(GLOB TORRE_SOURCES "torre-cpp/*.cpp")
-file(GLOB INIMIGO_SOURCES "inimigo-cpp/*.cpp")
+file(GLOB MAPA_SOURCES "src/mapa-cpp/*.cpp")
+file(GLOB TORRE_SOURCES "src/torre-cpp/*.cpp")
+file(GLOB INIMIGO_SOURCES "src/inimigo-cpp/*.cpp")
 
 # Combine all source files into a single list
 set(SOURCES
@@ -15,7 +15,7 @@ set(SOURCES
 )
 
 # Include header files
-include_directories(torre-hpp inimigo-hpp mapa-hpp)
+include_directories(Torre-hpp Inimigo-hpp Mapa-hpp)
 
 # Create an executable
-add_executable(my_program ${SOURCES})
+add_executable(test ${SOURCES})

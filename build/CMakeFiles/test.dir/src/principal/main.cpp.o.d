@@ -1,4 +1,4 @@
-CMakeFiles/my_program.dir/src/principal/main.cpp.o: \
+CMakeFiles/test.dir/src/principal/main.cpp.o: \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/principal/main.cpp \
  /usr/include/stdc-predef.h \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/principal/../../include/mapa-hpp/Mapa.hpp \

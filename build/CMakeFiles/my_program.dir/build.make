@@ -69,10 +69,80 @@ include CMakeFiles/my_program.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/my_program.dir/flags.make
 
+CMakeFiles/my_program.dir/src/mapa-cpp/Mapa.cpp.o: CMakeFiles/my_program.dir/flags.make
+CMakeFiles/my_program.dir/src/mapa-cpp/Mapa.cpp.o: /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/Mapa.cpp
+CMakeFiles/my_program.dir/src/mapa-cpp/Mapa.cpp.o: CMakeFiles/my_program.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_program.dir/src/mapa-cpp/Mapa.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/mapa-cpp/Mapa.cpp.o -MF CMakeFiles/my_program.dir/src/mapa-cpp/Mapa.cpp.o.d -o CMakeFiles/my_program.dir/src/mapa-cpp/Mapa.cpp.o -c "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/src/mapa-cpp/Mapa.cpp"
+
+CMakeFiles/my_program.dir/src/mapa-cpp/Mapa.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_program.dir/src/mapa-cpp/Mapa.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/src/mapa-cpp/Mapa.cpp" > CMakeFiles/my_program.dir/src/mapa-cpp/Mapa.cpp.i
+
+CMakeFiles/my_program.dir/src/mapa-cpp/Mapa.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_program.dir/src/mapa-cpp/Mapa.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/src/mapa-cpp/Mapa.cpp" -o CMakeFiles/my_program.dir/src/mapa-cpp/Mapa.cpp.s
+
+CMakeFiles/my_program.dir/src/torre-cpp/Torre.cpp.o: CMakeFiles/my_program.dir/flags.make
+CMakeFiles/my_program.dir/src/torre-cpp/Torre.cpp.o: /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/torre-cpp/Torre.cpp
+CMakeFiles/my_program.dir/src/torre-cpp/Torre.cpp.o: CMakeFiles/my_program.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/my_program.dir/src/torre-cpp/Torre.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/torre-cpp/Torre.cpp.o -MF CMakeFiles/my_program.dir/src/torre-cpp/Torre.cpp.o.d -o CMakeFiles/my_program.dir/src/torre-cpp/Torre.cpp.o -c "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/src/torre-cpp/Torre.cpp"
+
+CMakeFiles/my_program.dir/src/torre-cpp/Torre.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_program.dir/src/torre-cpp/Torre.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/src/torre-cpp/Torre.cpp" > CMakeFiles/my_program.dir/src/torre-cpp/Torre.cpp.i
+
+CMakeFiles/my_program.dir/src/torre-cpp/Torre.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_program.dir/src/torre-cpp/Torre.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/src/torre-cpp/Torre.cpp" -o CMakeFiles/my_program.dir/src/torre-cpp/Torre.cpp.s
+
+CMakeFiles/my_program.dir/src/torre-cpp/TorreDeFogo.cpp.o: CMakeFiles/my_program.dir/flags.make
+CMakeFiles/my_program.dir/src/torre-cpp/TorreDeFogo.cpp.o: /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/torre-cpp/TorreDeFogo.cpp
+CMakeFiles/my_program.dir/src/torre-cpp/TorreDeFogo.cpp.o: CMakeFiles/my_program.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/my_program.dir/src/torre-cpp/TorreDeFogo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/torre-cpp/TorreDeFogo.cpp.o -MF CMakeFiles/my_program.dir/src/torre-cpp/TorreDeFogo.cpp.o.d -o CMakeFiles/my_program.dir/src/torre-cpp/TorreDeFogo.cpp.o -c "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/src/torre-cpp/TorreDeFogo.cpp"
+
+CMakeFiles/my_program.dir/src/torre-cpp/TorreDeFogo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_program.dir/src/torre-cpp/TorreDeFogo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/src/torre-cpp/TorreDeFogo.cpp" > CMakeFiles/my_program.dir/src/torre-cpp/TorreDeFogo.cpp.i
+
+CMakeFiles/my_program.dir/src/torre-cpp/TorreDeFogo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_program.dir/src/torre-cpp/TorreDeFogo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/src/torre-cpp/TorreDeFogo.cpp" -o CMakeFiles/my_program.dir/src/torre-cpp/TorreDeFogo.cpp.s
+
+CMakeFiles/my_program.dir/src/inimigo-cpp/Esqueleto.cpp.o: CMakeFiles/my_program.dir/flags.make
+CMakeFiles/my_program.dir/src/inimigo-cpp/Esqueleto.cpp.o: /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/inimigo-cpp/Esqueleto.cpp
+CMakeFiles/my_program.dir/src/inimigo-cpp/Esqueleto.cpp.o: CMakeFiles/my_program.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/my_program.dir/src/inimigo-cpp/Esqueleto.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/inimigo-cpp/Esqueleto.cpp.o -MF CMakeFiles/my_program.dir/src/inimigo-cpp/Esqueleto.cpp.o.d -o CMakeFiles/my_program.dir/src/inimigo-cpp/Esqueleto.cpp.o -c "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/src/inimigo-cpp/Esqueleto.cpp"
+
+CMakeFiles/my_program.dir/src/inimigo-cpp/Esqueleto.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_program.dir/src/inimigo-cpp/Esqueleto.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/src/inimigo-cpp/Esqueleto.cpp" > CMakeFiles/my_program.dir/src/inimigo-cpp/Esqueleto.cpp.i
+
+CMakeFiles/my_program.dir/src/inimigo-cpp/Esqueleto.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_program.dir/src/inimigo-cpp/Esqueleto.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/src/inimigo-cpp/Esqueleto.cpp" -o CMakeFiles/my_program.dir/src/inimigo-cpp/Esqueleto.cpp.s
+
+CMakeFiles/my_program.dir/src/inimigo-cpp/Inimigo.cpp.o: CMakeFiles/my_program.dir/flags.make
+CMakeFiles/my_program.dir/src/inimigo-cpp/Inimigo.cpp.o: /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/inimigo-cpp/Inimigo.cpp
+CMakeFiles/my_program.dir/src/inimigo-cpp/Inimigo.cpp.o: CMakeFiles/my_program.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/my_program.dir/src/inimigo-cpp/Inimigo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/inimigo-cpp/Inimigo.cpp.o -MF CMakeFiles/my_program.dir/src/inimigo-cpp/Inimigo.cpp.o.d -o CMakeFiles/my_program.dir/src/inimigo-cpp/Inimigo.cpp.o -c "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/src/inimigo-cpp/Inimigo.cpp"
+
+CMakeFiles/my_program.dir/src/inimigo-cpp/Inimigo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_program.dir/src/inimigo-cpp/Inimigo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/src/inimigo-cpp/Inimigo.cpp" > CMakeFiles/my_program.dir/src/inimigo-cpp/Inimigo.cpp.i
+
+CMakeFiles/my_program.dir/src/inimigo-cpp/Inimigo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_program.dir/src/inimigo-cpp/Inimigo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/src/inimigo-cpp/Inimigo.cpp" -o CMakeFiles/my_program.dir/src/inimigo-cpp/Inimigo.cpp.s
+
 CMakeFiles/my_program.dir/src/principal/main.cpp.o: CMakeFiles/my_program.dir/flags.make
 CMakeFiles/my_program.dir/src/principal/main.cpp.o: /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/principal/main.cpp
 CMakeFiles/my_program.dir/src/principal/main.cpp.o: CMakeFiles/my_program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_program.dir/src/principal/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/my_program.dir/src/principal/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_program.dir/src/principal/main.cpp.o -MF CMakeFiles/my_program.dir/src/principal/main.cpp.o.d -o CMakeFiles/my_program.dir/src/principal/main.cpp.o -c "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/src/principal/main.cpp"
 
 CMakeFiles/my_program.dir/src/principal/main.cpp.i: cmake_force
@@ -85,15 +155,25 @@ CMakeFiles/my_program.dir/src/principal/main.cpp.s: cmake_force
 
 # Object files for target my_program
 my_program_OBJECTS = \
+"CMakeFiles/my_program.dir/src/mapa-cpp/Mapa.cpp.o" \
+"CMakeFiles/my_program.dir/src/torre-cpp/Torre.cpp.o" \
+"CMakeFiles/my_program.dir/src/torre-cpp/TorreDeFogo.cpp.o" \
+"CMakeFiles/my_program.dir/src/inimigo-cpp/Esqueleto.cpp.o" \
+"CMakeFiles/my_program.dir/src/inimigo-cpp/Inimigo.cpp.o" \
 "CMakeFiles/my_program.dir/src/principal/main.cpp.o"
 
 # External object files for target my_program
 my_program_EXTERNAL_OBJECTS =
 
+my_program: CMakeFiles/my_program.dir/src/mapa-cpp/Mapa.cpp.o
+my_program: CMakeFiles/my_program.dir/src/torre-cpp/Torre.cpp.o
+my_program: CMakeFiles/my_program.dir/src/torre-cpp/TorreDeFogo.cpp.o
+my_program: CMakeFiles/my_program.dir/src/inimigo-cpp/Esqueleto.cpp.o
+my_program: CMakeFiles/my_program.dir/src/inimigo-cpp/Inimigo.cpp.o
 my_program: CMakeFiles/my_program.dir/src/principal/main.cpp.o
 my_program: CMakeFiles/my_program.dir/build.make
 my_program: CMakeFiles/my_program.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable my_program"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable my_program"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_program.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

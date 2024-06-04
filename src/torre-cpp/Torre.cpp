@@ -1,4 +1,4 @@
-#include "Torre.hpp"
+#include "../../include/torre-hpp/Torre.hpp"
 
 // Construtor da classe Torre
 Torre::Torre(const std::string& nome, int posicao, int alcance, int ataque)

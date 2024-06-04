@@ -1,8 +1,13 @@
-#include "Inimigo.hpp"
+#include "../../include/inimigo-hpp/Inimigo.hpp"
 #include <iostream>
 
+using std::cout;
+using std::string;
+
+
+
 // Construtor da classe Inimigo
-Inimigo::Inimigo(const std::string& nome, int posicao, int vida)
+Inimigo::Inimigo(const string& nome, int posicao, int vida)
     : nome(nome), posicao(posicao), vida(vida) {}
 
 // Método para mover o inimigo
@@ -14,7 +19,7 @@ void Inimigo::mover() {
 void Inimigo::receberDano(int dano) {
     vida -= dano;
     if (vida < 0) vida = 0;
-    std::cout << nome << " recebeu " << dano << " de dano. Vida restante: " << vida << "\n";
+    cout << nome << " recebeu " << dano << " de dano. Vida restante: " << vida << "\n";
 }
 
 // Método para obter a posição do inimigo
