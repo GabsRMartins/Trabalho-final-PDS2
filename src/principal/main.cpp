@@ -17,6 +17,8 @@ int main() {
     mapa.adicionarTorre(std::make_unique<TorreDeFogo>(15));
     // Adiciona inimigos no mapa
     mapa.adicionarInimigo(std::make_unique<Esqueleto>(0));
+    mapa.adicionarInimigo(std::make_unique<Esqueleto>(2));
+    mapa.adicionarInimigo(std::make_unique<Esqueleto>(4));
 
     // Inicia a simulação
     mapa.simular();

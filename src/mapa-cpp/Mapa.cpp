@@ -26,6 +26,10 @@ void Mapa::adicionarInimigo(unique_ptr<Inimigo> inimigo) {
 void Mapa::simular() {
     int endMap = tamanho;
     bool endGame = false;
+    bool victory = false;
+    bool defeat = false;
+
+    
     while (true) {
         // Movimenta os inimigos e verifica se estão dentro do alcance das torres
         for (const auto& inimigo : inimigos) {
@@ -33,7 +37,7 @@ void Mapa::simular() {
                 inimigo->mover();
                 std::cout << "Inimigo na posição " << inimigo->getPosicao() << " ";
                 for (const auto& torre : torres) {
-                    if (std::abs(torre->getPosicao() - inimigo->getPosicao()) <= torre->getAlcance()) {
+                    if (std::abs(torre->getPosicao() - inimigo->getPosicao())<= torre->getAlcance()) {
                         torre->atacar();
                         inimigo->receberDano(torre->getAtaque());
                     }
@@ -47,9 +51,9 @@ void Mapa::simular() {
         for (const auto& inimigo : inimigos) {
            cout << "Posicao: " << inimigo->getPosicao() << " - Vida: " << inimigo->getVida() << "\n";
              if(inimigo->getPosicao() == endMap){
-                    cout << "Inimigos chegaram até o final!!!" << "\n";
-                    cout << "You Lose" << "\n";
+
                     endGame = true;
+                    defeat=true;
                     break;
         }
         }
@@ -61,14 +65,23 @@ void Mapa::simular() {
         for (const auto& inimigo : inimigos) {
             if (inimigo->getVida() > 0) {
                 break;
-
             }
             endGame = true;
+            victory=true;
+            
+        }
+        if (endGame && defeat) 
+        {
+        cout << "Inimigos chegaram até o final!!!" << "\n";
+                    cout << "You Lose" << "\n";
+            break;
+        }
+        else if (endGame && victory)
+        {
             cout << "Inimigos Derrotados! Bom trabalho!" << "\n";
                     cout << "You Win" << "\n";
+                    break;
         }
-        if (endGame) 
-            break;
 
         // Adiciona um pequeno delay para simulação (1 segundo)
         std::this_thread::sleep_for(std::chrono::seconds(1));

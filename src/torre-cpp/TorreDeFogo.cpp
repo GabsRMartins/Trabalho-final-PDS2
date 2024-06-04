@@ -8,5 +8,6 @@ TorreDeFogo::TorreDeFogo(int posicao)
 
 // Implementação do método de ataque específico para a Torre de Fogo
 void TorreDeFogo::atacar() const {
-   cout << nome << " ataca com fogo!\n";
+   cout <<  nome << " na posição: " << posicao << " ataca com fogo!\n";
+
 }
