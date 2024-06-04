@@ -61,8 +61,11 @@ void Mapa::simular() {
         for (const auto& inimigo : inimigos) {
             if (inimigo->getVida() > 0) {
                 break;
+
             }
             endGame = true;
+            cout << "Inimigos Derrotados! Bom trabalho!" << "\n";
+                    cout << "You Win" << "\n";
         }
         if (endGame) 
             break;
