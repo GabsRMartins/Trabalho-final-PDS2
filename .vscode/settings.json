@@ -7,8 +7,11 @@
         "cctype": "cpp",
         "clocale": "cpp",
         "cmath": "cpp",
+<<<<<<< HEAD
         "compare": "cpp",
         "concepts": "cpp",
+=======
+>>>>>>> Elaine-Conceicao
         "cstdarg": "cpp",
         "cstddef": "cpp",
         "cstdint": "cpp",
@@ -17,7 +20,10 @@
         "cwchar": "cpp",
         "cwctype": "cpp",
         "deque": "cpp",
+<<<<<<< HEAD
         "string": "cpp",
+=======
+>>>>>>> Elaine-Conceicao
         "unordered_map": "cpp",
         "vector": "cpp",
         "exception": "cpp",
@@ -29,11 +35,16 @@
         "numeric": "cpp",
         "optional": "cpp",
         "random": "cpp",
+<<<<<<< HEAD
+=======
+        "string": "cpp",
+>>>>>>> Elaine-Conceicao
         "string_view": "cpp",
         "system_error": "cpp",
         "tuple": "cpp",
         "type_traits": "cpp",
         "utility": "cpp",
+<<<<<<< HEAD
         "initializer_list": "cpp",
         "iosfwd": "cpp",
         "iostream": "cpp",
@@ -57,5 +68,23 @@
         "stop_token": "cpp",
         "thread": "cpp",
         "variant": "cpp"
+=======
+        "fstream": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "new": "cpp",
+        "ostream": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "typeinfo": "cpp",
+        "chrono": "cpp",
+        "ctime": "cpp",
+        "ratio": "cpp",
+        "iostream": "cpp",
+        "thread": "cpp"
+>>>>>>> Elaine-Conceicao
     }
 }
