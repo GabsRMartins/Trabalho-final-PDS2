@@ -1,24 +1,24 @@
 #include "../Torres-hpp/TorreDeEletricidade.hpp"
 
 // Construtor da classe TorreDeEletricidade
-TorreDeEletricidade::TorreDeEletricidade(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int voltage, double efficiency)
-:Torre(quantidade, posicao, power, noise, ataque,  range){
+TorreDeEletricidade::TorreDeEletricidade(int quantidade, int posicao, const std::string& ruido, const std::string& poder, int ataque, int alcance, int voltagem, double eficiencia)
+:Torre(quantidade, posicao, poder, ruido, ataque,  alcance){
     
 }
 
 // Implementação das funções virtuais puras da classe base
-void TorreDeEletricidade::addAtack(int ataque) {
+void TorreDeEletricidade::addAtaque(int ataque) {
     ataque = ataque;
 }
 
-void TorreDeEletricidade::addRange(int range) {
-    range = range;
+void TorreDeEletricidade::addAlcance(int alcance) {
+    alcance = alcance;
 }
 
-void TorreDeEletricidade::addNoise(const std::string& noise) {
-    this->noise = noise; // Armazene o ruído recebido
+void TorreDeEletricidade::addRuido(const std::string& ruido) {
+    this->ruido = ruido; // Armazene o ruído recebido
 }
 
-void TorreDeEletricidade::addPower( const std::string& power) {
-    this->power = power; // Armazene o poder recebido
+void TorreDeEletricidade::addPoder( const std::string& poder) {
+    this->poder = poder; // Armazene o poder recebido
 }

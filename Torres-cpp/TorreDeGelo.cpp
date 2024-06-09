@@ -1,26 +1,26 @@
 #include "../Torres-hpp/TorreDeGelo.hpp"
 
 // Construtor da classe TorreDeGelo
-TorreDeGelo::TorreDeGelo (int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int additionalIce, double freezingTemperature)
-:Torre(quantidade, posicao, power, noise, ataque,  range){
+TorreDeGelo::TorreDeGelo (int quantidade, int posicao, const std::string& ruido, const std::string& poder, int ataque, int alcance, int addGelo, double temperaturaCongelamento)
+:Torre(quantidade, posicao, poder, ruido, ataque,  alcance){
  
 }
 
 // Implementação das funções virtuais puras da classe base
-void TorreDeGelo::addAtack(int ataque) {
+void TorreDeGelo::addAtaque(int ataque) {
     ataque = ataque;
 }
 
-void TorreDeGelo::addRange(int range) {
-    range = range;
+void TorreDeGelo::addAlcance(int range) {
+    alcance = alcance;
 }
 
-void TorreDeGelo::addNoise(const std::string& noise) {
-    this->noise = noise; // Armazene o ruído recebido
+void TorreDeGelo::addRuido(const std::string& noise) {
+    this->ruido = ruido; // Armazene o ruído recebido
 }
 
-void TorreDeGelo::addPower(const std::string& power) {
-    this->power = power; // Armazene o poder recebido
+void TorreDeGelo::addPoder(const std::string& power) {
+    this->poder = poder; // Armazene o poder recebido
 }
 
 

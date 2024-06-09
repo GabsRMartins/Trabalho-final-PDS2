@@ -5,14 +5,14 @@
 
 class TorreDeFlechas : public Torre { // Classe "TorreDeFlechas" herda da classe base "Torre"
 private:
-    int additionalArrows; // Quantidade adicional de flechas
-    double arrowVelocity; // Velocidade das flechas (em metros por segundo)
+    int addFlexas; // Quantidade adicional de flechas
+    double velocidadeFlexas; // Velocidade das flechas (em metros por segundo)
 public:
-    TorreDeFlechas(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int additionalArrows,double arrowVelocity ); // Construtor
-    void addAtack(int ataque) override; // Implementação da função para adicionar ataque
-    void addRange(int range) override; // Implementação da função para adicionar alcance
-    void addNoise(const std::string&  noise) override; // Implementação da função para adicionar ruído
-    void addPower(const std::string&  power) override; // Implementação da função para adicionar poder
+    TorreDeFlechas(int quantidade, int posicao, const std::string& ruido, const std::string& poder, int ataque, int alcance, int addFlexas,double velocidadeFlexas ); // Construtor
+    void addAtaque(int ataque) override; // Implementação da função para adicionar ataque
+    void addAlcance(int alcance) override; // Implementação da função para adicionar alcance
+    void addRuido(const std::string&  ruido) override; // Implementação da função para adicionar ruído
+    void addPoder(const std::string&  poder) override; // Implementação da função para adicionar poder
 };
 
 #endif

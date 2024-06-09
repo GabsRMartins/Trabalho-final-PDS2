@@ -5,14 +5,14 @@
 
 class TorreDeFogo : public Torre { // Classe "TorreDeFogo" herda da classe base "Torre"
     private:
-        int additionalFuel; // Quantidade adicional de combustível
-        double flameTemperature; // Temperatura das chamas (em graus Celsius)
+        int addCombustivel; // Quantidade adicional de combustível
+        double temperaturaChamas; // Temperatura das chamas (em graus Celsius)
     public:
-        TorreDeFogo(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int additionalFuel, double flameTemperature); // Construtor
-        void addAtack(int ataque) override; // Implementação da função para adicionar ataque
-        void addRange(int range) override; // Implementação da função para adicionar alcance
-        void addNoise(const std::string&  noise) override; // Implementação da função para adicionar ruído
-        void addPower(const std::string&  power) override; // Implementação da função para adicionar poder
+        TorreDeFogo(int quantidade, int posicao, const std::string& noise, const std::string& poder, int ataque, int alcance, int addCombustivel, double temperaturaChamas); // Construtor
+        void addAtaque(int ataque) override; // Implementação da função para adicionar ataque
+        void addAlcance(int alcance) override; // Implementação da função para adicionar alcance
+        void addRuido(const std::string&  ruido) override; // Implementação da função para adicionar ruído
+        void addPoder(const std::string&  poder) override; // Implementação da função para adicionar poder
 };
 
 #endif

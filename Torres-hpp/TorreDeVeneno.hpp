@@ -5,13 +5,13 @@
 
 class TorreDeVeneno : public Torre { // Classe "TorreDeVeneno" herda da classe base "Torre"
     private:
-        int additionalToxins; // Quantidade adicional de toxinas
-        double poisonIntensity; // Intensidade do veneno (em unidades tóxicas)
+        int addToxinas; // Quantidade adicional de toxinas
+        double poderVeneno; // Intensidade do veneno (em unidades tóxicas)
     public:
-        TorreDeVeneno(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int additionalToxins, double poisonIntensity); // Construtor
-        void addAtack(int ataque) override; // Implementação da função para adicionar ataque
-        void addRange(int range) override; // Implementação da função para adicionar alcance
-        void addNoise(const std::string&  noise) override; // Implementação da função para adicionar ruído
-        void addPower(const std::string&  power) override; // Implementação da função para adicionar poder
+        TorreDeVeneno(int quantidade, int posicao, const std::string& ruido, const std::string& poder, int ataque, int alcance, int addToxinas, double poderVeneno); // Construtor
+        void addAtaque(int ataque) override; // Implementação da função para adicionar ataque
+        void addAlcance(int alcance) override; // Implementação da função para adicionar alcance
+        void addRuido(const std::string&  ruido) override; // Implementação da função para adicionar ruído
+        void addPoder(const std::string&  poder) override; // Implementação da função para adicionar poder
 };
 #endif

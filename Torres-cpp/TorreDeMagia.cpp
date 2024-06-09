@@ -1,24 +1,25 @@
 #include "../Torres-hpp/TorreDeMagia.hpp"
 
 // Construtor da classe TorreDeMagia
-TorreDeMagia::TorreDeMagia(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int additionalMana, double spellPower)
-:Torre(quantidade, posicao, power, noise, ataque,  range){
+TorreDeMagia::TorreDeMagia(int quantidade, int posicao, const std::string& noise, const std::string& power, int ataque, int alcance, int addMagia, double poderFeitico)
+:Torre(quantidade, posicao, poder, ruido, ataque,  alcance){
    
 }
 
 // Implementação das funções virtuais puras da classe base
-void TorreDeMagia::addAtack(int ataque) {
+void TorreDeMagia::addAtaque(int ataque) {
     this->ataque = ataque;
 }
 
-void TorreDeMagia::addRange(int range) {
-    this->range = range;
+void TorreDeMagia::addAlcance(int range) {
+    this->alcance = alcance;
 }
 
-void TorreDeMagia::addNoise(const std::string& noise) {
-    this->noise = noise; // Armazene o ruído recebido
+void TorreDeMagia::addRuido(const std::string& noise) {
+    this->ruido = ruido; // Armazene o ruído recebido
 }
 
-void TorreDeMagia::addPower(const std::string& power) {
-    this->power = power; // Armazene o poder recebido
+void TorreDeMagia::addPoder(const std::string& power) {
+    this->poder = poder; // Armazene o poder recebido
 }
+  

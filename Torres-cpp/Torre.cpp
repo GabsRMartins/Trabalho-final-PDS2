@@ -2,8 +2,8 @@
 #include "../Torres-hpp/Torre.hpp"
 
 
-Torre::Torre(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range)
-:quantidade(quantidade), posicao(posicao), noise(noise), power(power), ataque(ataque), range(range) {
+Torre::Torre(int quantidade, int posicao, const std::string& ruido, const std::string& poder, int ataque, int alcance)
+:quantidade(quantidade), posicao(posicao), ruido(ruido), poder(poder), ataque(ataque), alcance(alcance) {
     // Implementação do construtor
 }
 

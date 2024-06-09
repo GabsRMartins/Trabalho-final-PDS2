@@ -1,24 +1,24 @@
 #include "../Torres-hpp/TorreDeFantasmas.hpp"
 
 // Construtor da classe TorreDeFantasmas
-TorreDeFantasmas::TorreDeFantasmas(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int additionalSpecters, double ghostPower)
-:Torre(quantidade, posicao, power, noise, ataque,  range){
+TorreDeFantasmas::TorreDeFantasmas(int quantidade, int posicao, const std::string& ruido, const std::string& poder, int ataque, int alcance, int addFantasmas, double poderFantasma)
+:Torre(quantidade, posicao, poder,  ruido, ataque,  alcance){
  
 }
 
 // Implementação das funções virtuais puras da classe base
-void TorreDeFantasmas::addAtack(int ataque) {
+void TorreDeFantasmas::addAtaque(int ataque) {
     ataque = ataque;
 }
 
-void TorreDeFantasmas::addRange(int range) {
-    range = range;
+void TorreDeFantasmas::addAlcance(int range) {
+    alcance = alcance;
 }
 
-void TorreDeFantasmas::addNoise(const std::string& noise) {
-    this->noise = noise; // Armazene o ruído recebido
+void TorreDeFantasmas::addRuido(const std::string& noise) {
+    this->ruido = ruido; // Armazene o ruído recebido
 }
 
-void TorreDeFantasmas::addPower(const std::string& power) {
-    this->power = power; // Armazene o poder recebido
+void TorreDeFantasmas::addPoder(const std::string& power) {
+    this->poder = poder; // Armazene o poder recebido
 }

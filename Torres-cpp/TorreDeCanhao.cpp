@@ -1,24 +1,24 @@
 #include "../Torres-hpp/TorreDeCanhao.hpp"
 
 // Construtor da classe TorreDeCanhao
-TorreDeCanhao::TorreDeCanhao(int quantidade, int posicao, std::string noise, std::string power, int ataque, int range, int additionalAmmo, double cannonPower)
-:Torre(quantidade, posicao, power, noise, ataque,  range) {
+TorreDeCanhao::TorreDeCanhao(int quantidade, int posicao, const std::string& ruido, const std::string& poder, int ataque, int alcance, int additionalAmmo, double cannonPower)
+:Torre(quantidade, posicao, poder, ruido, ataque,  alcance) {
     
 }
 
 // Implementação das funções virtuais puras da classe base
-void TorreDeCanhao::addAtack(int ataque) {
+void TorreDeCanhao::addAtaque(int ataque) {
     ataque = ataque;
 }
 
-void TorreDeCanhao::addRange(int range) {
-    range = range;
+void TorreDeCanhao::addAlcance(int alcance) {
+    alcance = alcance;
 }
 
-void TorreDeCanhao::addNoise(const std::string&  noise) {
-    this->noise = noise; // Armazene o ruído recebido
+void TorreDeCanhao::addRuido(const std::string&  ruido) {
+    this->ruido = ruido; // Armazene o ruído recebido
 }
 
-void TorreDeCanhao::addPower(const std::string&  power) {
-    this->power= power; // Armazene o poder recebido
+void TorreDeCanhao::addPoder(const std::string&  poder) {
+    this->poder= poder; // Armazene o poder recebido
 }
