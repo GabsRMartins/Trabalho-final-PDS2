@@ -15,10 +15,10 @@ void TorreDeCanhao::addRange(int range) {
     range = range;
 }
 
-void TorreDeCanhao::addNoise(std::string noise) {
-    noise = noise; // Armazene o ruído recebido
+void TorreDeCanhao::addNoise(const std::string&  noise) {
+    this->noise = noise; // Armazene o ruído recebido
 }
 
-void TorreDeCanhao::addPower(std::string power) {
-    power = power; // Armazene o poder recebido
+void TorreDeCanhao::addPower(const std::string&  power) {
+    this->power= power; // Armazene o poder recebido
 }

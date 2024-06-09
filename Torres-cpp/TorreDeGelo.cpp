@@ -15,12 +15,12 @@ void TorreDeGelo::addRange(int range) {
     range = range;
 }
 
-void TorreDeGelo::addNoise(std::string noise) {
-    noise = noise; // Armazene o ruído recebido
+void TorreDeGelo::addNoise(const std::string& noise) {
+    this->noise = noise; // Armazene o ruído recebido
 }
 
-void TorreDeGelo::addPower(std::string power) {
-    power = power; // Armazene o poder recebido
+void TorreDeGelo::addPower(const std::string& power) {
+    this->power = power; // Armazene o poder recebido
 }
 
 

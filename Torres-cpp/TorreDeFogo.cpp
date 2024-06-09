@@ -15,12 +15,12 @@ void TorreDeFogo::addRange(int range) {
     range = range;
 }
 
-void TorreDeFogo::addNoise(std::string noise) {
-    noise = noise; // Armazene o ruído recebido
+void TorreDeFogo::addNoise(const std::string& noise) {
+    this->noise = noise; // Armazene o ruído recebido
 }
 
-void TorreDeFogo::addPower(std::string power) {
-    power = power; // Armazene o poder recebido
+void TorreDeFogo::addPower(const std::string& power) {
+    this->power = power; // Armazene o poder recebido
 }
 
 

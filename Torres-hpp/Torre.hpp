@@ -13,8 +13,8 @@ class Torre {
     public:
         virtual void addAtack(int ataque) = 0; // Função virtual pura para adicionar ataque
         virtual void addRange(int range) = 0; // Função virtual pura para adicionar alcance
-        virtual void addNoise(std::string noise) = 0; // Função virtual pura para adicionar ruído
-        virtual void addPower(std::string power) = 0; // Função virtual pura para adicionar poder
+        virtual void addNoise(const std::string& noise) = 0; // Função virtual pura para adicionar ruído
+        virtual void addPower(const std::string& power) = 0; // Função virtual pura para adicionar poder
 };
 
 #endif

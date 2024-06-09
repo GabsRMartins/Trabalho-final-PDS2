@@ -15,10 +15,10 @@ void TorreDeExplosivos::addRange(int range) {
     range = range;
 }
 
-void TorreDeExplosivos::addNoise(std::string noise) {
-    noise = noise; // Armazene o ruído recebido
+void TorreDeExplosivos::addNoise(const std::string& noise) {
+    this->noise = noise; // Armazene o ruído recebido
 }
 
-void TorreDeExplosivos::addPower(std::string power) {
-    power = power; // Armazene o poder recebido
+void TorreDeExplosivos::addPower(const std::string& power) {
+    this->power = power; // Armazene o poder recebido
 }

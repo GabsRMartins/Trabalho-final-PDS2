@@ -15,11 +15,11 @@ void TorreDeFlechas::addRange(int range) {
     range = range;
 }
 
-void TorreDeFlechas::addNoise(std::string noise) {
-    noise = noise; // Armazene o ruído recebido
+void TorreDeFlechas::addNoise(const std::string& noise) {
+    this->noise = noise; // Armazene o ruído recebido
 }
 
-void TorreDeFlechas::addPower(std::string power) {
-    power = power; // Armazene o poder recebido
+void TorreDeFlechas::addPower(const std::string& power) {
+    this->power = power; // Armazene o poder recebido
 }
 
