@@ -3,6 +3,7 @@ CMakeFiles/test.dir/src/torre-cpp/TorreDeFogo.cpp.o: \
  /usr/include/stdc-predef.h \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/torre-cpp/../../include/torre-hpp/TorreDeFogo.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/torre-cpp/../../include/torre-hpp/Torre.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/torre-cpp/../../include/torre-hpp/../entidade-hpp/Entidade.hpp \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

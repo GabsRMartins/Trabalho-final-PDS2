@@ -6,7 +6,8 @@
 class Esqueleto : public Inimigo {
 public:
     // Construtor da classe Esqueleto
-    Esqueleto(int posicao);
+    Esqueleto(int x, int y);
+    void print() override;
 };
 
 #endif

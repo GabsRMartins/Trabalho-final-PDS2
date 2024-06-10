@@ -16,16 +16,19 @@ using std::unique_ptr;
 // - <iostream>: Usada para exibir mensagens no console (por exemplo, std::cout).
 class Mapa {
 private:
-    vector<unique_ptr<Torre>> torres; // Vetor de torres no mapa
-    vector<unique_ptr<Inimigo>> inimigos; // Vetor de inimigos no mapa
-    int tamanho; // Tamanho do mapa
-
+    vector<Torre*> torres;  // Vetor de torres no mapa
+    vector<Inimigo*> inimigos; // Vetor de inimigos no mapa
+    vector<vector<unique_ptr<Entidade>>> matrizMapa; 
+    int m_altura;
+    int m_largura;
+    
 public:
     //Tamanho do mapa
-    Mapa(int tamanho);
+    Mapa(int altura, int largura);
     // Adiciona uma torre ao mapa
     void adicionarTorre(unique_ptr<Torre> torre);
-
+    /* void colocarMatriz(unique_ptr<Entidade> entidade, int x, int y); */
+    void printaMapa();
     // Adiciona um inimigo ao mapa
     void adicionarInimigo(unique_ptr<Inimigo> inimigo);
 

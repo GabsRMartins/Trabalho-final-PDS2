@@ -15,7 +15,7 @@ set(SOURCES
 )
 
 # Include header files
-include_directories(Torre-hpp Inimigo-hpp Mapa-hpp)
+include_directories(Entidade-hpp Torre-hpp Inimigo-hpp Mapa-hpp)
 
 # Create an executable
 add_executable(test ${SOURCES})
