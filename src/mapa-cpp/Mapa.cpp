@@ -25,10 +25,10 @@ Mapa::Mapa(int altura, int largura) : m_altura(altura), m_largura(largura) {
     }
 }
 void Mapa::adicionarTorre(unique_ptr<Torre> torre) {
-    int posX = torre->getPosicaoX();
-    int posY = torre->getPosicaoY();
 
     torres.push_back(torre.get()); // Adiciona o ponteiro cru ao vetor torres
+    int posX = torre->getPosicaoX();
+    int posY = torre->getPosicaoY();
 
     if (posX >= 0 && posX < m_altura && posY >= 0 && posY < m_largura) {
         // Adiciona um ponteiro para a torre à matriz
@@ -38,17 +38,57 @@ void Mapa::adicionarTorre(unique_ptr<Torre> torre) {
 
 
 
-
-
 void Mapa::adicionarInimigo(unique_ptr<Inimigo> inimigo) {
-    int posX = inimigo->getPosicaoX();
-    int posY = inimigo->getPosicaoY();
 
    inimigos.push_back(inimigo.get());
 
+    int posX = inimigo->getPosicaoX();
+    int posY = inimigo->getPosicaoY();
       if (posX>= 0 && posX < m_altura &&   posY >= 0 && posY < m_largura) {
         // Adiciona um ponteiro para a inimigo à matriz
         matrizMapa[posX][posY] = move(inimigo);
+    }
+}
+
+void Mapa::atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnteriorY) {
+    // Verificar se a entidade é válida
+    if (!entidade) {
+        std::cerr << "Entidade inválida.\n";
+        return;
+    }
+
+    // Obter a posição da entidade
+    int posX = entidade->getPosicaoX();
+    int posY = entidade->getPosicaoY();
+
+    std::cout << "Atualizando matriz para entidade na posição (" << posX << ", " << posY << ")"
+              << " movida da posição (" << posAnteriorX << ", " << posAnteriorY << ").\n";
+
+    // Verificar se a nova posição está dentro dos limites da matriz
+    if (posX >= 0 && posX < m_altura && posY >= 0 && posY < m_largura) {
+        // Verificar se a posição anterior está dentro dos limites da matriz
+        if (posAnteriorX >= 0 && posAnteriorX < m_altura && posAnteriorY >= 0 && posAnteriorY < m_largura) {
+            std::cout << "Removendo entidade da posição anterior (" << posAnteriorX << ", " << posAnteriorY << ").\n";
+            // Liberar o ponteiro da posição anterior
+            matrizMapa[posAnteriorX][posAnteriorY].release();
+            // Definir a posição anterior como nullptr
+            matrizMapa[posAnteriorX][posAnteriorY] = nullptr;
+        } else {
+            std::cout << "Posição anterior (" << posAnteriorX << ", " << posAnteriorY << ") fora dos limites.\n";
+        }
+
+        // Atualizar a matriz com a nova posição da entidade
+        std::cout << "Atualizando matriz na nova posição (" << posX << ", " << posY << ").\n";
+        matrizMapa[posX][posY].reset(entidade);
+    } else {
+        std::cerr << "Nova posição (" << posX << ", " << posY << ") fora dos limites.\n";
+    }
+}
+
+void Mapa::tornarEspacoNulo(int posX, int posY) {
+    // Verificar se as coordenadas estão dentro dos limites da matriz
+    if (posX >= 0 && posX < m_altura && posY >= 0 && posY < m_largura) {
+        matrizMapa[posX][posY] = nullptr;
     }
 }
 
@@ -66,7 +106,7 @@ void Mapa::printaMapa() {
     }
 }
 
-void Mapa::simular() {
+bool Mapa::simular() {
      
     int endMap = m_altura;
     bool endGame = false;
@@ -77,9 +117,19 @@ void Mapa::simular() {
         for (const auto& ptr_inimigo : inimigos) {
             auto& inimigo = *ptr_inimigo; // Desreferenciar o ponteiro para obter o objeto real
             if (inimigo.getVida() > 0) {
-             
+                 cout << "Posicao: " << inimigo.getPosicaoX() << " - Vida: " << inimigo.getVida() << "\n";
+                    if(inimigo.getPosicaoX() == endMap){
+
+                    endGame = true;
+                    defeat  = true;
+          }
+          else{
+                int posAnteriorX = inimigo.getPosicaoX();
+                int posAnteriorY = inimigo.getPosicaoY();;
                 inimigo.mover();
-                std::cout << "Inimigo na posição " << inimigo.getPosicaoX() << " ";
+                atualizaMatriz(&inimigo, posAnteriorX, posAnteriorY);
+                std::cout << "Inimigo na posição " << inimigo.getPosicaoX() << " " << std::endl;
+                }
                 for (const auto& ptr_torre : torres) {
                     auto& torre = *ptr_torre; // Desreferenciar o ponteiro para obter o objeto real
                     if (std::abs(torre.getPosicaoX() - inimigo.getPosicaoX()) <= torre.getAlcance()) {
@@ -88,42 +138,27 @@ void Mapa::simular() {
                     }
                 }
                 printaMapa();
-            }
-        }
-
-        cout << "\nEstado dos inimigos:\n";
-        for (const auto& ptr_inimigo : inimigos) {
-            auto& inimigo = *ptr_inimigo; // Desreferenciar o ponteiro para obter o objeto real
-            cout << "Posicao: " << inimigo.getPosicaoX() << " - Vida: " << inimigo.getVida() << "\n";
-                    if(inimigo.getPosicaoX() == endMap){
-
-                    endGame = true;
-                    defeat  = true;
-                    break;
-        }
-        }
-
-        for (const auto& ptr_inimigo : inimigos) {
-            auto& inimigo = *ptr_inimigo; // Desreferenciar o ponteiro para obter o objeto real
-            if (inimigo.getVida() > 0) {
-                endGame = false;
-                break;
-            }
+            } else {
+            
             endGame = true;
             victory = true;
-        }
+
+            }
 
         if (endGame && defeat) {
             cout << "Inimigos chegaram até o final!!!" << "\n";
             cout << "You Lose" << "\n";
-            break;
+            return 0;
         } else if (endGame && victory) {
             cout << "Inimigos Derrotados! Bom trabalho!" << "\n";
             cout << "You Win" << "\n";
-            break;
+            return 1;
+            
         }
 
-        std::this_thread::sleep_for(std::chrono::seconds(1));
+
+        std::this_thread::sleep_for(std::chrono::seconds(2));
     }
 }
 
+}

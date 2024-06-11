@@ -23,11 +23,11 @@ void Inimigo::receberDano(int dano) {
 }
 
 // Método para obter a posição do inimigo
-int Inimigo::getPosicaoX() const {
+int Inimigo::getPosicaoX() {
     return m_positionX;
 }
 
-int Inimigo::getPosicaoY() const {
+int Inimigo::getPosicaoY() {
     return m_positionY;
 }
 // Método para obter a vida do inimigo

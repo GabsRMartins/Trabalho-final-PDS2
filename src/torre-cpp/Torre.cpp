@@ -9,13 +9,13 @@ Torre::Torre(const std::string& nome, int x, int y, int alcance, int ataque)
     : nome(nome), m_positionX(x) , m_positionY(y), alcance(alcance), ataque(ataque) {}
 
 // Método para obter a posição da torre
-int Torre::getPosicaoX() const {
+int Torre::getPosicaoX() {
  
     return m_positionX;
 }
 
 
-int Torre::getPosicaoY() const {
+int Torre::getPosicaoY()  {
  
     return m_positionY;
 }

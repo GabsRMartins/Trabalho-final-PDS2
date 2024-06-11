@@ -23,8 +23,8 @@ public:
     virtual void atacar() const = 0;
 
     // Método para obter a posição da torre
-    int getPosicaoX() const;
-    int getPosicaoY() const;
+    int getPosicaoX()  override;
+    int getPosicaoY()   override;
 
 
     // Método para obter o alcance de ataque da torre

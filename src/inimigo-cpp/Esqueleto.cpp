@@ -6,5 +6,5 @@ Esqueleto::Esqueleto(int x, int y)
 
  void Esqueleto::print(){
 
-    std::cout << "Esqueleto";
+    std::cout << "💀";
  }

@@ -28,8 +28,8 @@ public:
     void receberDano(int dano);
 
     // Método para obter a posição do inimigo
-    int getPosicaoX() const;
-    int getPosicaoY() const;
+    int getPosicaoX() override;
+    int getPosicaoY() override;
 
 
     // Método para obter a vida do inimigo

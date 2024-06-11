@@ -27,13 +27,15 @@ public:
     Mapa(int altura, int largura);
     // Adiciona uma torre ao mapa
     void adicionarTorre(unique_ptr<Torre> torre);
-    /* void colocarMatriz(unique_ptr<Entidade> entidade, int x, int y); */
+  
     void printaMapa();
     // Adiciona um inimigo ao mapa
     void adicionarInimigo(unique_ptr<Inimigo> inimigo);
+    void atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnteriorY);
+    void tornarEspacoNulo(int posX, int posY) ;
 
     // Simula o combate entre torres e inimigos
-    void simular();
+    bool simular();
 };
 
 #endif
