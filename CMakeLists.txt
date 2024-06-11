@@ -5,17 +5,19 @@ project(MyProject)
 file(GLOB MAPA_SOURCES "src/mapa-cpp/*.cpp")
 file(GLOB TORRE_SOURCES "src/torre-cpp/*.cpp")
 file(GLOB INIMIGO_SOURCES "src/inimigo-cpp/*.cpp")
+file(GLOB INIMIGO_SOURCES "src/estrutura-cpp/*.cpp")
 
 # Combine all source files into a single list
 set(SOURCES
     ${MAPA_SOURCES}
     ${TORRE_SOURCES}
     ${INIMIGO_SOURCES}
+    ${ESTRUTURA_SOURCES}
     src/principal/main.cpp
 )
 
 # Include header files
-include_directories(Entidade-hpp Torre-hpp Inimigo-hpp Mapa-hpp)
+include_directories(Entidade-hpp Torre-hpp Inimigo-hpp Estrutura-hpp Mapa-hpp)
 
 # Create an executable
 add_executable(test ${SOURCES})

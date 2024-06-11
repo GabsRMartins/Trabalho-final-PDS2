@@ -383,9 +383,11 @@ CMakeFiles/test.dir/src/inimigo-cpp/Inimigo.cpp.o: /mnt/d/Trabalho\ Final\ PDS\ 
 CMakeFiles/test.dir/src/mapa-cpp/Mapa.cpp.o: /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/Mapa.cpp \
   /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/include/entidade-hpp/Entidade.hpp \
   /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/include/entidade-hpp/Entidade.hpp \
+  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/include/entidade-hpp/Entidade.hpp \
   /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp \
   /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/include/entidade-hpp/Entidade.hpp \
   /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp \
+  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/include/mapa-hpp/Estrutura.hpp \
   /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/include/mapa-hpp/Mapa.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -1305,6 +1307,8 @@ CMakeFiles/test.dir/src/torre-cpp/TorreDeFogo.cpp.o: /mnt/d/Trabalho\ Final\ PDS
 /usr/include/c++/13/bits/chrono.h:
 
 /usr/include/c++/13/backward/auto_ptr.h:
+
+/mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/include/mapa-hpp/Estrutura.hpp:
 
 /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp:
 

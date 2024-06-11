@@ -32,7 +32,8 @@ public:
     // Adiciona um inimigo ao mapa
     void adicionarInimigo(unique_ptr<Inimigo> inimigo);
     void atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnteriorY);
-    void tornarEspacoNulo(int posX, int posY) ;
+  
+   bool verificaEstrutura(int posX, int posY);
 
     // Simula o combate entre torres e inimigos
     bool simular();

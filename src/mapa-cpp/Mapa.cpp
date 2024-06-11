@@ -1,5 +1,6 @@
 #include "../../include/mapa-hpp/Mapa.hpp"
 #include "../../include/entidade-hpp/Entidade.hpp"
+#include "../../include/estrutura-hpp/Estrutura.hpp"
 #include <thread> // Biblioteca para trabalhar com threads
 #include <chrono> // Biblioteca para trabalhar com tempo
 #include <vector>
@@ -68,27 +69,32 @@ void Mapa::atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnteriorY
     if (posX >= 0 && posX < m_altura && posY >= 0 && posY < m_largura) {
         // Verificar se a posição anterior está dentro dos limites da matriz
         if (posAnteriorX >= 0 && posAnteriorX < m_altura && posAnteriorY >= 0 && posAnteriorY < m_largura) {
-            std::cout << "Removendo entidade da posição anterior (" << posAnteriorX << ", " << posAnteriorY << ").\n";
+  
+                
+            cout << "Removendo entidade da posição anterior (" << posAnteriorX << ", " << posAnteriorY << ").\n";
             // Liberar o ponteiro da posição anterior
             matrizMapa[posAnteriorX][posAnteriorY].release();
             // Definir a posição anterior como nullptr
             matrizMapa[posAnteriorX][posAnteriorY] = nullptr;
+            
         } else {
-            std::cout << "Posição anterior (" << posAnteriorX << ", " << posAnteriorY << ") fora dos limites.\n";
+            cout << "Posição anterior (" << posAnteriorX << ", " << posAnteriorY << ") fora dos limites.\n";
         }
 
         // Atualizar a matriz com a nova posição da entidade
-        std::cout << "Atualizando matriz na nova posição (" << posX << ", " << posY << ").\n";
+       cout << "Atualizando matriz na nova posição (" << posX << ", " << posY << ").\n";
         matrizMapa[posX][posY].reset(entidade);
     } else {
         std::cerr << "Nova posição (" << posX << ", " << posY << ") fora dos limites.\n";
     }
 }
 
-void Mapa::tornarEspacoNulo(int posX, int posY) {
-    // Verificar se as coordenadas estão dentro dos limites da matriz
+bool Mapa::verificaEstrutura(int posX, int posY) {
     if (posX >= 0 && posX < m_altura && posY >= 0 && posY < m_largura) {
-        matrizMapa[posX][posY] = nullptr;
+            if(matrizMapa[posX][posY] != nullptr){
+                return 1;
+            }
+            return 0;
     }
 }
 
@@ -126,7 +132,11 @@ bool Mapa::simular() {
           else{
                 int posAnteriorX = inimigo.getPosicaoX();
                 int posAnteriorY = inimigo.getPosicaoY();;
-                inimigo.mover();
+                int temEstrutura = verificaEstrutura(posAnteriorX + 1 , posAnteriorY + 1);
+                if(temEstrutura == 1){
+                    inimigo.moverX();
+                }
+                inimigo.moverY();
                 atualizaMatriz(&inimigo, posAnteriorX, posAnteriorY);
                 std::cout << "Inimigo na posição " << inimigo.getPosicaoX() << " " << std::endl;
                 }

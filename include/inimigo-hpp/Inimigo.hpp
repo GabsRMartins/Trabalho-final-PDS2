@@ -22,8 +22,8 @@ public:
     virtual ~Inimigo() = default;
 
     // Método para mover o inimigo
-    void mover();
-
+    void moverX();
+    void moverY();
     // Método para receber dano
     void receberDano(int dano);
 

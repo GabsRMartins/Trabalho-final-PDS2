@@ -11,10 +11,13 @@ Inimigo::Inimigo(const string& nome, int x, int y, int vida)
     : nome(nome), m_positionX(x) , m_positionY(y), vida(vida) {}
 
 // Método para mover o inimigo
-void Inimigo::mover() {
+void Inimigo::moverX() {
     m_positionX += 1; // Movimenta o inimigo uma posição para a frente
 }
 
+void Inimigo::moverY() {
+    m_positionY += 1; // Movimenta o inimigo uma posição para a frente
+}
 // Método para receber dano
 void Inimigo::receberDano(int dano) {
     vida -= dano;
