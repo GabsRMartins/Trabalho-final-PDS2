@@ -120,6 +120,8 @@ CMakeFiles/test.dir/src/principal/main.cpp.o: \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/principal/../../include/mapa-hpp/../inimigo-hpp/Inimigo.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/principal/../../include/mapa-hpp/../inimigo-hpp/../entidade-hpp/Entidade.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/principal/../../include/mapa-hpp/../estrutura-hpp/Estrutura.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/principal/../../include/mapa-hpp/../estrutura-hpp/../entidade-hpp/Entidade.hpp \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
@@ -183,6 +185,9 @@ CMakeFiles/test.dir/src/principal/main.cpp.o: \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/principal/../../include/torre-hpp/Torre.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/principal/../../include/inimigo-hpp/Esqueleto.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/principal/../../include/inimigo-hpp/Inimigo.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/principal/../../include/estrutura-hpp/Arvore.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/principal/../../include/estrutura-hpp/Estrutura.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/principal/../../include/estrutura-hpp/Parede.hpp \
  /usr/include/c++/13/thread /usr/include/c++/13/bits/std_thread.h \
  /usr/include/c++/13/bits/this_thread_sleep.h \
  /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \

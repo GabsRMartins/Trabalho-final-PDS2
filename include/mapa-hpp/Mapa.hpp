@@ -3,6 +3,7 @@
 
 #include "../torre-hpp/Torre.hpp"
 #include "../inimigo-hpp/Inimigo.hpp"
+#include "../estrutura-hpp/Estrutura.hpp"
 #include <vector> // Biblioteca para trabalhar com vetores (arrays dinâmicos)
 #include <memory> // Biblioteca para gerenciar alocação dinâmica de memória
 #include <iostream> // Biblioteca para entrada/saída padrão (ex.: std::cout)
@@ -16,8 +17,9 @@ using std::unique_ptr;
 // - <iostream>: Usada para exibir mensagens no console (por exemplo, std::cout).
 class Mapa {
 private:
-    vector<Torre*> torres;  // Vetor de torres no mapa
-    vector<Inimigo*> inimigos; // Vetor de inimigos no mapa
+    vector<Torre*> torres;  
+    vector<Inimigo*> inimigos; 
+    vector<Estrutura*> estruturas; 
     vector<vector<unique_ptr<Entidade>>> matrizMapa; 
     int m_altura;
     int m_largura;
@@ -31,9 +33,10 @@ public:
     void printaMapa();
     // Adiciona um inimigo ao mapa
     void adicionarInimigo(unique_ptr<Inimigo> inimigo);
+    void adicionarEstrutura(unique_ptr<Estrutura> Estrutura);
     void atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnteriorY);
   
-   bool verificaEstrutura(int posX, int posY);
+ /*   bool verificaEstrutura(int posX, int posY); */
 
     // Simula o combate entre torres e inimigos
     bool simular();

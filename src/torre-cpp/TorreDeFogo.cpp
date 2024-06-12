@@ -13,5 +13,5 @@ void TorreDeFogo::atacar() const {
 };
 
 void TorreDeFogo::print(){
-      cout << "🗼";
+      cout << "♜🔥";
 };

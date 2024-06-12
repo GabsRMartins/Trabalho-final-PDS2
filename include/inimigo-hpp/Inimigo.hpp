@@ -10,8 +10,8 @@ using std::string;
 class Inimigo : public Entidade {
 private:
     string nome; // Nome do inimigo
-    int m_positionX; // Posição da torre no mapa
-    int m_positionY; // Posição da torre no mapa
+    int m_positionX; // Posição do inimigo no mapa
+    int m_positionY; // Posição do inimigo no mapa
     int vida; // Pontos de vida do inimigo
 
 public:

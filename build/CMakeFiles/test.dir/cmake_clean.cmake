@@ -1,4 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test.dir/src/estrutura-cpp/Arvore.cpp.o"
+  "CMakeFiles/test.dir/src/estrutura-cpp/Arvore.cpp.o.d"
+  "CMakeFiles/test.dir/src/estrutura-cpp/Estrutura.cpp.o"
+  "CMakeFiles/test.dir/src/estrutura-cpp/Estrutura.cpp.o.d"
+  "CMakeFiles/test.dir/src/estrutura-cpp/Parede.cpp.o"
+  "CMakeFiles/test.dir/src/estrutura-cpp/Parede.cpp.o.d"
   "CMakeFiles/test.dir/src/inimigo-cpp/Esqueleto.cpp.o"
   "CMakeFiles/test.dir/src/inimigo-cpp/Esqueleto.cpp.o.d"
   "CMakeFiles/test.dir/src/inimigo-cpp/Inimigo.cpp.o"

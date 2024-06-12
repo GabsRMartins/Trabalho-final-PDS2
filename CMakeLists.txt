@@ -5,7 +5,7 @@ project(MyProject)
 file(GLOB MAPA_SOURCES "src/mapa-cpp/*.cpp")
 file(GLOB TORRE_SOURCES "src/torre-cpp/*.cpp")
 file(GLOB INIMIGO_SOURCES "src/inimigo-cpp/*.cpp")
-file(GLOB INIMIGO_SOURCES "src/estrutura-cpp/*.cpp")
+file(GLOB ESTRUTURA_SOURCES "src/estrutura-cpp/*.cpp")
 
 # Combine all source files into a single list
 set(SOURCES

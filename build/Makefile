@@ -129,6 +129,78 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
+src/estrutura-cpp/Arvore.o: src/estrutura-cpp/Arvore.cpp.o
+.PHONY : src/estrutura-cpp/Arvore.o
+
+# target to build an object file
+src/estrutura-cpp/Arvore.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Arvore.cpp.o
+.PHONY : src/estrutura-cpp/Arvore.cpp.o
+
+src/estrutura-cpp/Arvore.i: src/estrutura-cpp/Arvore.cpp.i
+.PHONY : src/estrutura-cpp/Arvore.i
+
+# target to preprocess a source file
+src/estrutura-cpp/Arvore.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Arvore.cpp.i
+.PHONY : src/estrutura-cpp/Arvore.cpp.i
+
+src/estrutura-cpp/Arvore.s: src/estrutura-cpp/Arvore.cpp.s
+.PHONY : src/estrutura-cpp/Arvore.s
+
+# target to generate assembly for a file
+src/estrutura-cpp/Arvore.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Arvore.cpp.s
+.PHONY : src/estrutura-cpp/Arvore.cpp.s
+
+src/estrutura-cpp/Estrutura.o: src/estrutura-cpp/Estrutura.cpp.o
+.PHONY : src/estrutura-cpp/Estrutura.o
+
+# target to build an object file
+src/estrutura-cpp/Estrutura.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Estrutura.cpp.o
+.PHONY : src/estrutura-cpp/Estrutura.cpp.o
+
+src/estrutura-cpp/Estrutura.i: src/estrutura-cpp/Estrutura.cpp.i
+.PHONY : src/estrutura-cpp/Estrutura.i
+
+# target to preprocess a source file
+src/estrutura-cpp/Estrutura.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Estrutura.cpp.i
+.PHONY : src/estrutura-cpp/Estrutura.cpp.i
+
+src/estrutura-cpp/Estrutura.s: src/estrutura-cpp/Estrutura.cpp.s
+.PHONY : src/estrutura-cpp/Estrutura.s
+
+# target to generate assembly for a file
+src/estrutura-cpp/Estrutura.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Estrutura.cpp.s
+.PHONY : src/estrutura-cpp/Estrutura.cpp.s
+
+src/estrutura-cpp/Parede.o: src/estrutura-cpp/Parede.cpp.o
+.PHONY : src/estrutura-cpp/Parede.o
+
+# target to build an object file
+src/estrutura-cpp/Parede.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Parede.cpp.o
+.PHONY : src/estrutura-cpp/Parede.cpp.o
+
+src/estrutura-cpp/Parede.i: src/estrutura-cpp/Parede.cpp.i
+.PHONY : src/estrutura-cpp/Parede.i
+
+# target to preprocess a source file
+src/estrutura-cpp/Parede.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Parede.cpp.i
+.PHONY : src/estrutura-cpp/Parede.cpp.i
+
+src/estrutura-cpp/Parede.s: src/estrutura-cpp/Parede.cpp.s
+.PHONY : src/estrutura-cpp/Parede.s
+
+# target to generate assembly for a file
+src/estrutura-cpp/Parede.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Parede.cpp.s
+.PHONY : src/estrutura-cpp/Parede.cpp.s
+
 src/inimigo-cpp/Esqueleto.o: src/inimigo-cpp/Esqueleto.cpp.o
 .PHONY : src/inimigo-cpp/Esqueleto.o
 
@@ -282,6 +354,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... src/estrutura-cpp/Arvore.o"
+	@echo "... src/estrutura-cpp/Arvore.i"
+	@echo "... src/estrutura-cpp/Arvore.s"
+	@echo "... src/estrutura-cpp/Estrutura.o"
+	@echo "... src/estrutura-cpp/Estrutura.i"
+	@echo "... src/estrutura-cpp/Estrutura.s"
+	@echo "... src/estrutura-cpp/Parede.o"
+	@echo "... src/estrutura-cpp/Parede.i"
+	@echo "... src/estrutura-cpp/Parede.s"
 	@echo "... src/inimigo-cpp/Esqueleto.o"
 	@echo "... src/inimigo-cpp/Esqueleto.i"
 	@echo "... src/inimigo-cpp/Esqueleto.s"
