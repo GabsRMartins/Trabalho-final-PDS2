@@ -5,6 +5,9 @@
 #include "../../include/estrutura-hpp/Parede.hpp"
 #include "../../include/simulador-hpp/Simulador.hpp"
 #include "../../include/mapa-hpp/MapaPadrao.hpp"
+#include "../../include/mapa-hpp/Cemiterio.hpp"
+#include "../../include/inimigo-hpp/Zumbi.hpp"
+
 
 #include <iostream>
 #include <thread>
@@ -19,7 +22,7 @@ using std::make_unique;
 
 int main() {
     Simulador simulador(10,10); // Definindo o tamanho do mapa como 10 posições
-    MapaPadrao mapa(10,10);
+    Cemiterio mapa(10,10);
     mapa.MontaMapa(simulador);
 
     simulador.adicionarTorre(make_unique<TorreDeFogo>(5,1));
@@ -28,10 +31,10 @@ int main() {
 
 
     // Adiciona inimigos no mapa
-    simulador.adicionarInimigo(make_unique<Esqueleto>(0,0));
-    simulador.adicionarInimigo(make_unique<Esqueleto>(2,0)); 
-    simulador.adicionarInimigo(make_unique<Esqueleto>(4,2)); 
-    simulador.adicionarInimigo(make_unique<Esqueleto>(2,2));  
+    simulador.adicionarInimigo(make_unique<Zumbi>(0,0));
+    simulador.adicionarInimigo(make_unique<Zumbi>(2,0)); 
+    simulador.adicionarInimigo(make_unique<Zumbi>(4,2)); 
+    simulador.adicionarInimigo(make_unique<Zumbi>(2,2));  
 
 
     // Inicia a simulação

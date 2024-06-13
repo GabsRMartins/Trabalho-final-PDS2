@@ -1,5 +1,5 @@
-#ifndef MAPAPADRAO_HPP
-#define MAPAPADRAO_HPP
+#ifndef Cemiterio_HPP
+#define Cemiterio_HPP
 
 #include "../torre-hpp/Torre.hpp"
 #include "../inimigo-hpp/Inimigo.hpp"
@@ -7,13 +7,12 @@
 #include "../simulador-hpp/Simulador.hpp"
 #include "../mapa-hpp/Mapa.hpp"
 
-class MapaPadrao : public Mapa {
+class Cemiterio : public Mapa {
 
 public:
-   
-   MapaPadrao(int altura, int largura);
-   void  MontaMapa(Simulador& simulador) override;
-
+  
+    Cemiterio(int altura, int largura);
+    void  MontaMapa(Simulador& simulador) override;
 
 };
 
