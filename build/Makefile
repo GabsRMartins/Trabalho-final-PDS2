@@ -273,6 +273,30 @@ src/mapa-cpp/Mapa.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/Mapa.cpp.s
 .PHONY : src/mapa-cpp/Mapa.cpp.s
 
+src/mapa-cpp/MapaPadrao.o: src/mapa-cpp/MapaPadrao.cpp.o
+.PHONY : src/mapa-cpp/MapaPadrao.o
+
+# target to build an object file
+src/mapa-cpp/MapaPadrao.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/MapaPadrao.cpp.o
+.PHONY : src/mapa-cpp/MapaPadrao.cpp.o
+
+src/mapa-cpp/MapaPadrao.i: src/mapa-cpp/MapaPadrao.cpp.i
+.PHONY : src/mapa-cpp/MapaPadrao.i
+
+# target to preprocess a source file
+src/mapa-cpp/MapaPadrao.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/MapaPadrao.cpp.i
+.PHONY : src/mapa-cpp/MapaPadrao.cpp.i
+
+src/mapa-cpp/MapaPadrao.s: src/mapa-cpp/MapaPadrao.cpp.s
+.PHONY : src/mapa-cpp/MapaPadrao.s
+
+# target to generate assembly for a file
+src/mapa-cpp/MapaPadrao.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/MapaPadrao.cpp.s
+.PHONY : src/mapa-cpp/MapaPadrao.cpp.s
+
 src/principal/main.o: src/principal/main.cpp.o
 .PHONY : src/principal/main.o
 
@@ -296,6 +320,30 @@ src/principal/main.s: src/principal/main.cpp.s
 src/principal/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/principal/main.cpp.s
 .PHONY : src/principal/main.cpp.s
+
+src/simulador-cpp/Simulador.o: src/simulador-cpp/Simulador.cpp.o
+.PHONY : src/simulador-cpp/Simulador.o
+
+# target to build an object file
+src/simulador-cpp/Simulador.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o
+.PHONY : src/simulador-cpp/Simulador.cpp.o
+
+src/simulador-cpp/Simulador.i: src/simulador-cpp/Simulador.cpp.i
+.PHONY : src/simulador-cpp/Simulador.i
+
+# target to preprocess a source file
+src/simulador-cpp/Simulador.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.i
+.PHONY : src/simulador-cpp/Simulador.cpp.i
+
+src/simulador-cpp/Simulador.s: src/simulador-cpp/Simulador.cpp.s
+.PHONY : src/simulador-cpp/Simulador.s
+
+# target to generate assembly for a file
+src/simulador-cpp/Simulador.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.s
+.PHONY : src/simulador-cpp/Simulador.cpp.s
 
 src/torre-cpp/Torre.o: src/torre-cpp/Torre.cpp.o
 .PHONY : src/torre-cpp/Torre.o
@@ -372,9 +420,15 @@ help:
 	@echo "... src/mapa-cpp/Mapa.o"
 	@echo "... src/mapa-cpp/Mapa.i"
 	@echo "... src/mapa-cpp/Mapa.s"
+	@echo "... src/mapa-cpp/MapaPadrao.o"
+	@echo "... src/mapa-cpp/MapaPadrao.i"
+	@echo "... src/mapa-cpp/MapaPadrao.s"
 	@echo "... src/principal/main.o"
 	@echo "... src/principal/main.i"
 	@echo "... src/principal/main.s"
+	@echo "... src/simulador-cpp/Simulador.o"
+	@echo "... src/simulador-cpp/Simulador.i"
+	@echo "... src/simulador-cpp/Simulador.s"
 	@echo "... src/torre-cpp/Torre.o"
 	@echo "... src/torre-cpp/Torre.i"
 	@echo "... src/torre-cpp/Torre.s"

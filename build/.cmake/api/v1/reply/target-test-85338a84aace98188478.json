@@ -25,13 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 23,
+				"line" : 25,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 20,
+				"line" : 22,
 				"parent" : 0
 			}
 		]
@@ -41,6 +41,10 @@
 		{
 			"includes" : 
 			[
+				{
+					"backtrace" : 2,
+					"path" : "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/Simulador-hpp"
+				},
 				{
 					"backtrace" : 2,
 					"path" : "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/Entidade-hpp"
@@ -73,7 +77,9 @@
 				5,
 				6,
 				7,
-				8
+				8,
+				9,
+				10
 			]
 		}
 	],
@@ -110,7 +116,9 @@
 				5,
 				6,
 				7,
-				8
+				8,
+				9,
+				10
 			]
 		}
 	],
@@ -120,6 +128,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/mapa-cpp/Mapa.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/mapa-cpp/MapaPadrao.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -162,6 +176,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/estrutura-cpp/Parede.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/simulador-cpp/Simulador.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

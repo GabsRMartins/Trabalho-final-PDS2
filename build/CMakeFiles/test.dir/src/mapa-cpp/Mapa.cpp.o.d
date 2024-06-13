@@ -122,6 +122,10 @@ CMakeFiles/test.dir/src/mapa-cpp/Mapa.cpp.o: \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/mapa-hpp/../inimigo-hpp/../entidade-hpp/Entidade.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/mapa-hpp/../estrutura-hpp/Estrutura.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/mapa-hpp/../estrutura-hpp/../entidade-hpp/Entidade.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/mapa-hpp/../simulador-hpp/Simulador.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/mapa-hpp/../simulador-hpp/../torre-hpp/Torre.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/mapa-hpp/../simulador-hpp/../inimigo-hpp/Inimigo.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/mapa-hpp/../simulador-hpp/../estrutura-hpp/Estrutura.hpp \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
