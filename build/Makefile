@@ -129,6 +129,126 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
+src/estrutura-cpp/Arvore.o: src/estrutura-cpp/Arvore.cpp.o
+.PHONY : src/estrutura-cpp/Arvore.o
+
+# target to build an object file
+src/estrutura-cpp/Arvore.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Arvore.cpp.o
+.PHONY : src/estrutura-cpp/Arvore.cpp.o
+
+src/estrutura-cpp/Arvore.i: src/estrutura-cpp/Arvore.cpp.i
+.PHONY : src/estrutura-cpp/Arvore.i
+
+# target to preprocess a source file
+src/estrutura-cpp/Arvore.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Arvore.cpp.i
+.PHONY : src/estrutura-cpp/Arvore.cpp.i
+
+src/estrutura-cpp/Arvore.s: src/estrutura-cpp/Arvore.cpp.s
+.PHONY : src/estrutura-cpp/Arvore.s
+
+# target to generate assembly for a file
+src/estrutura-cpp/Arvore.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Arvore.cpp.s
+.PHONY : src/estrutura-cpp/Arvore.cpp.s
+
+src/estrutura-cpp/Estrutura.o: src/estrutura-cpp/Estrutura.cpp.o
+.PHONY : src/estrutura-cpp/Estrutura.o
+
+# target to build an object file
+src/estrutura-cpp/Estrutura.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Estrutura.cpp.o
+.PHONY : src/estrutura-cpp/Estrutura.cpp.o
+
+src/estrutura-cpp/Estrutura.i: src/estrutura-cpp/Estrutura.cpp.i
+.PHONY : src/estrutura-cpp/Estrutura.i
+
+# target to preprocess a source file
+src/estrutura-cpp/Estrutura.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Estrutura.cpp.i
+.PHONY : src/estrutura-cpp/Estrutura.cpp.i
+
+src/estrutura-cpp/Estrutura.s: src/estrutura-cpp/Estrutura.cpp.s
+.PHONY : src/estrutura-cpp/Estrutura.s
+
+# target to generate assembly for a file
+src/estrutura-cpp/Estrutura.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Estrutura.cpp.s
+.PHONY : src/estrutura-cpp/Estrutura.cpp.s
+
+src/estrutura-cpp/Lapide.o: src/estrutura-cpp/Lapide.cpp.o
+.PHONY : src/estrutura-cpp/Lapide.o
+
+# target to build an object file
+src/estrutura-cpp/Lapide.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Lapide.cpp.o
+.PHONY : src/estrutura-cpp/Lapide.cpp.o
+
+src/estrutura-cpp/Lapide.i: src/estrutura-cpp/Lapide.cpp.i
+.PHONY : src/estrutura-cpp/Lapide.i
+
+# target to preprocess a source file
+src/estrutura-cpp/Lapide.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Lapide.cpp.i
+.PHONY : src/estrutura-cpp/Lapide.cpp.i
+
+src/estrutura-cpp/Lapide.s: src/estrutura-cpp/Lapide.cpp.s
+.PHONY : src/estrutura-cpp/Lapide.s
+
+# target to generate assembly for a file
+src/estrutura-cpp/Lapide.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Lapide.cpp.s
+.PHONY : src/estrutura-cpp/Lapide.cpp.s
+
+src/estrutura-cpp/Parede.o: src/estrutura-cpp/Parede.cpp.o
+.PHONY : src/estrutura-cpp/Parede.o
+
+# target to build an object file
+src/estrutura-cpp/Parede.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Parede.cpp.o
+.PHONY : src/estrutura-cpp/Parede.cpp.o
+
+src/estrutura-cpp/Parede.i: src/estrutura-cpp/Parede.cpp.i
+.PHONY : src/estrutura-cpp/Parede.i
+
+# target to preprocess a source file
+src/estrutura-cpp/Parede.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Parede.cpp.i
+.PHONY : src/estrutura-cpp/Parede.cpp.i
+
+src/estrutura-cpp/Parede.s: src/estrutura-cpp/Parede.cpp.s
+.PHONY : src/estrutura-cpp/Parede.s
+
+# target to generate assembly for a file
+src/estrutura-cpp/Parede.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Parede.cpp.s
+.PHONY : src/estrutura-cpp/Parede.cpp.s
+
+src/estrutura-cpp/Teia.o: src/estrutura-cpp/Teia.cpp.o
+.PHONY : src/estrutura-cpp/Teia.o
+
+# target to build an object file
+src/estrutura-cpp/Teia.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Teia.cpp.o
+.PHONY : src/estrutura-cpp/Teia.cpp.o
+
+src/estrutura-cpp/Teia.i: src/estrutura-cpp/Teia.cpp.i
+.PHONY : src/estrutura-cpp/Teia.i
+
+# target to preprocess a source file
+src/estrutura-cpp/Teia.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Teia.cpp.i
+.PHONY : src/estrutura-cpp/Teia.cpp.i
+
+src/estrutura-cpp/Teia.s: src/estrutura-cpp/Teia.cpp.s
+.PHONY : src/estrutura-cpp/Teia.s
+
+# target to generate assembly for a file
+src/estrutura-cpp/Teia.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Teia.cpp.s
+.PHONY : src/estrutura-cpp/Teia.cpp.s
+
 src/inimigo-cpp/Esqueleto.o: src/inimigo-cpp/Esqueleto.cpp.o
 .PHONY : src/inimigo-cpp/Esqueleto.o
 
@@ -177,6 +297,54 @@ src/inimigo-cpp/Inimigo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Inimigo.cpp.s
 .PHONY : src/inimigo-cpp/Inimigo.cpp.s
 
+src/inimigo-cpp/Zumbi.o: src/inimigo-cpp/Zumbi.cpp.o
+.PHONY : src/inimigo-cpp/Zumbi.o
+
+# target to build an object file
+src/inimigo-cpp/Zumbi.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Zumbi.cpp.o
+.PHONY : src/inimigo-cpp/Zumbi.cpp.o
+
+src/inimigo-cpp/Zumbi.i: src/inimigo-cpp/Zumbi.cpp.i
+.PHONY : src/inimigo-cpp/Zumbi.i
+
+# target to preprocess a source file
+src/inimigo-cpp/Zumbi.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Zumbi.cpp.i
+.PHONY : src/inimigo-cpp/Zumbi.cpp.i
+
+src/inimigo-cpp/Zumbi.s: src/inimigo-cpp/Zumbi.cpp.s
+.PHONY : src/inimigo-cpp/Zumbi.s
+
+# target to generate assembly for a file
+src/inimigo-cpp/Zumbi.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Zumbi.cpp.s
+.PHONY : src/inimigo-cpp/Zumbi.cpp.s
+
+src/mapa-cpp/Cemiterio.o: src/mapa-cpp/Cemiterio.cpp.o
+.PHONY : src/mapa-cpp/Cemiterio.o
+
+# target to build an object file
+src/mapa-cpp/Cemiterio.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.o
+.PHONY : src/mapa-cpp/Cemiterio.cpp.o
+
+src/mapa-cpp/Cemiterio.i: src/mapa-cpp/Cemiterio.cpp.i
+.PHONY : src/mapa-cpp/Cemiterio.i
+
+# target to preprocess a source file
+src/mapa-cpp/Cemiterio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.i
+.PHONY : src/mapa-cpp/Cemiterio.cpp.i
+
+src/mapa-cpp/Cemiterio.s: src/mapa-cpp/Cemiterio.cpp.s
+.PHONY : src/mapa-cpp/Cemiterio.s
+
+# target to generate assembly for a file
+src/mapa-cpp/Cemiterio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.s
+.PHONY : src/mapa-cpp/Cemiterio.cpp.s
+
 src/mapa-cpp/Mapa.o: src/mapa-cpp/Mapa.cpp.o
 .PHONY : src/mapa-cpp/Mapa.o
 
@@ -201,6 +369,30 @@ src/mapa-cpp/Mapa.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/Mapa.cpp.s
 .PHONY : src/mapa-cpp/Mapa.cpp.s
 
+src/mapa-cpp/MapaPadrao.o: src/mapa-cpp/MapaPadrao.cpp.o
+.PHONY : src/mapa-cpp/MapaPadrao.o
+
+# target to build an object file
+src/mapa-cpp/MapaPadrao.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/MapaPadrao.cpp.o
+.PHONY : src/mapa-cpp/MapaPadrao.cpp.o
+
+src/mapa-cpp/MapaPadrao.i: src/mapa-cpp/MapaPadrao.cpp.i
+.PHONY : src/mapa-cpp/MapaPadrao.i
+
+# target to preprocess a source file
+src/mapa-cpp/MapaPadrao.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/MapaPadrao.cpp.i
+.PHONY : src/mapa-cpp/MapaPadrao.cpp.i
+
+src/mapa-cpp/MapaPadrao.s: src/mapa-cpp/MapaPadrao.cpp.s
+.PHONY : src/mapa-cpp/MapaPadrao.s
+
+# target to generate assembly for a file
+src/mapa-cpp/MapaPadrao.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/MapaPadrao.cpp.s
+.PHONY : src/mapa-cpp/MapaPadrao.cpp.s
+
 src/principal/main.o: src/principal/main.cpp.o
 .PHONY : src/principal/main.o
 
@@ -224,6 +416,30 @@ src/principal/main.s: src/principal/main.cpp.s
 src/principal/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/principal/main.cpp.s
 .PHONY : src/principal/main.cpp.s
+
+src/simulador-cpp/Simulador.o: src/simulador-cpp/Simulador.cpp.o
+.PHONY : src/simulador-cpp/Simulador.o
+
+# target to build an object file
+src/simulador-cpp/Simulador.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o
+.PHONY : src/simulador-cpp/Simulador.cpp.o
+
+src/simulador-cpp/Simulador.i: src/simulador-cpp/Simulador.cpp.i
+.PHONY : src/simulador-cpp/Simulador.i
+
+# target to preprocess a source file
+src/simulador-cpp/Simulador.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.i
+.PHONY : src/simulador-cpp/Simulador.cpp.i
+
+src/simulador-cpp/Simulador.s: src/simulador-cpp/Simulador.cpp.s
+.PHONY : src/simulador-cpp/Simulador.s
+
+# target to generate assembly for a file
+src/simulador-cpp/Simulador.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.s
+.PHONY : src/simulador-cpp/Simulador.cpp.s
 
 src/torre-cpp/Torre.o: src/torre-cpp/Torre.cpp.o
 .PHONY : src/torre-cpp/Torre.o
@@ -282,18 +498,45 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... src/estrutura-cpp/Arvore.o"
+	@echo "... src/estrutura-cpp/Arvore.i"
+	@echo "... src/estrutura-cpp/Arvore.s"
+	@echo "... src/estrutura-cpp/Estrutura.o"
+	@echo "... src/estrutura-cpp/Estrutura.i"
+	@echo "... src/estrutura-cpp/Estrutura.s"
+	@echo "... src/estrutura-cpp/Lapide.o"
+	@echo "... src/estrutura-cpp/Lapide.i"
+	@echo "... src/estrutura-cpp/Lapide.s"
+	@echo "... src/estrutura-cpp/Parede.o"
+	@echo "... src/estrutura-cpp/Parede.i"
+	@echo "... src/estrutura-cpp/Parede.s"
+	@echo "... src/estrutura-cpp/Teia.o"
+	@echo "... src/estrutura-cpp/Teia.i"
+	@echo "... src/estrutura-cpp/Teia.s"
 	@echo "... src/inimigo-cpp/Esqueleto.o"
 	@echo "... src/inimigo-cpp/Esqueleto.i"
 	@echo "... src/inimigo-cpp/Esqueleto.s"
 	@echo "... src/inimigo-cpp/Inimigo.o"
 	@echo "... src/inimigo-cpp/Inimigo.i"
 	@echo "... src/inimigo-cpp/Inimigo.s"
+	@echo "... src/inimigo-cpp/Zumbi.o"
+	@echo "... src/inimigo-cpp/Zumbi.i"
+	@echo "... src/inimigo-cpp/Zumbi.s"
+	@echo "... src/mapa-cpp/Cemiterio.o"
+	@echo "... src/mapa-cpp/Cemiterio.i"
+	@echo "... src/mapa-cpp/Cemiterio.s"
 	@echo "... src/mapa-cpp/Mapa.o"
 	@echo "... src/mapa-cpp/Mapa.i"
 	@echo "... src/mapa-cpp/Mapa.s"
+	@echo "... src/mapa-cpp/MapaPadrao.o"
+	@echo "... src/mapa-cpp/MapaPadrao.i"
+	@echo "... src/mapa-cpp/MapaPadrao.s"
 	@echo "... src/principal/main.o"
 	@echo "... src/principal/main.i"
 	@echo "... src/principal/main.s"
+	@echo "... src/simulador-cpp/Simulador.o"
+	@echo "... src/simulador-cpp/Simulador.i"
+	@echo "... src/simulador-cpp/Simulador.s"
 	@echo "... src/torre-cpp/Torre.o"
 	@echo "... src/torre-cpp/Torre.i"
 	@echo "... src/torre-cpp/Torre.s"

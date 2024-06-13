@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/Torre-hpp" -I"/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/Inimigo-hpp" -I"/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/Mapa-hpp"
+CXX_INCLUDES = -I"/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/Simulador-hpp" -I"/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/Entidade-hpp" -I"/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/Torre-hpp" -I"/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/Inimigo-hpp" -I"/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/Estrutura-hpp" -I"/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/Mapa-hpp"
 
 CXX_FLAGS = 
 

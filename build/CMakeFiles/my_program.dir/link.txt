@@ -1,1 +1,0 @@
-/usr/bin/c++ "CMakeFiles/my_program.dir/src/mapa-cpp/Mapa.cpp.o" "CMakeFiles/my_program.dir/src/torre-cpp/Torre.cpp.o" "CMakeFiles/my_program.dir/src/torre-cpp/TorreDeFogo.cpp.o" "CMakeFiles/my_program.dir/src/inimigo-cpp/Esqueleto.cpp.o" "CMakeFiles/my_program.dir/src/inimigo-cpp/Inimigo.cpp.o" CMakeFiles/my_program.dir/src/principal/main.cpp.o -o my_program 

@@ -8,10 +8,12 @@
 class TorreDeFogo : public Torre {
 public:
     //O construtor TorreDeFogo é responsável por inicializar a Torre de Fogo com os valores específicos (nome, posição, alcance e ataque).
-    TorreDeFogo(int posicao);
+    TorreDeFogo(int x, int y);
     //O método atacar() é implementado para a Torre de Fogo e exibe uma mensagem indicando que ela ataca com fogo.
     void atacar() const override;
+    void print() override;
 };
+
 
 #endif
 

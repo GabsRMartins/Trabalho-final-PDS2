@@ -2,6 +2,7 @@ CMakeFiles/test.dir/src/inimigo-cpp/Inimigo.cpp.o: \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/inimigo-cpp/Inimigo.cpp \
  /usr/include/stdc-predef.h \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/inimigo-cpp/../../include/inimigo-hpp/Inimigo.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/inimigo-cpp/../../include/inimigo-hpp/../entidade-hpp/Entidade.hpp \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

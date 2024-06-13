@@ -1,3 +1,0 @@
-/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/build/CMakeFiles/my_program.dir
-/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/build/CMakeFiles/edit_cache.dir
-/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/build/CMakeFiles/rebuild_cache.dir
