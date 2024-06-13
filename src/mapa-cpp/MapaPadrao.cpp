@@ -13,13 +13,20 @@
 
  void MapaPadrao::MontaMapa(Simulador& simulador){
 
-    simulador.adicionarEstrutura(make_unique<Arvore>(1,1));
-    simulador.adicionarEstrutura(make_unique<Arvore>(2,1));
-    simulador.adicionarEstrutura(make_unique<Parede>(3,1));
-    simulador.adicionarEstrutura(make_unique<Arvore>(4,1));
-    simulador.adicionarEstrutura(make_unique<Parede>(7,1));
-    simulador.adicionarEstrutura(make_unique<Parede>(8,1));
-    simulador.adicionarEstrutura(make_unique<Parede>(9,1));
-    simulador.adicionarEstrutura(make_unique<Arvore>(1,3));
-    simulador.adicionarEstrutura(make_unique<Arvore>(1,5));
+  for (int y = 0; y <m_altura; ++y) {
+            for (int x = 0; x < m_largura; ++x) {
+                if (x % 2 != 0) { // Somente colunas impares
+                    if (y % 2 == 0) {
+                        simulador.adicionarEstrutura(std::make_unique<Arvore>(y, x));
+                    } else {
+                        simulador.adicionarEstrutura(std::make_unique<Parede>(y, x));
+                    }
+                }
+            }
+        }
+
+   
+
+
+
   }

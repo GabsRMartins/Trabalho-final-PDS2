@@ -17,7 +17,7 @@ using std::unique_ptr;
 // - <memory>: Fornece recursos para gerenciar alocação e liberação de memória.
 // - <iostream>: Usada para exibir mensagens no console (por exemplo, std::cout).
 class Mapa {
-private:
+protected:
   
     int m_altura;
     int m_largura;
