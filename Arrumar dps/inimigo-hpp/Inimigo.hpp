@@ -1,14 +1,14 @@
 #ifndef INIMIGO_HPP
 #define INIMIGO_HPP
 
-//#include "../entidade-hpp/Entidade.hpp"
+#include "../entidade-hpp/Entidade.hpp"
 #include <string>
 
 using std::string;
 
 
-class Inimigo  {
-protected:
+class Inimigo : public Entidade  {
+private:
     string nome; // Nome do inimigo
     int m_positionX; // Posição da torre no mapa
     int m_positionY; // Posição da torre no mapa
