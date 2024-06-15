@@ -20,19 +20,7 @@ using std::endl;
 
 
 
-void mapaPadrao(Simulador& simulador){
-    MapaPadrao mapa(10,10);
-    mapa.MontaMapa(simulador);
 
-    simulador.adicionarTorre(make_unique<TorreDeFogo>(5,1));
-    simulador.adicionarTorre(make_unique<TorreDeFogo>(6,1));
-    simulador.adicionarTorre(make_unique<TorreDeFogo>(0,1));
-
-    simulador.adicionarInimigo(make_unique<Esqueleto>(0,0));
-    simulador.adicionarInimigo(make_unique<Esqueleto>(2,0)); 
-    simulador.adicionarInimigo(make_unique<Esqueleto>(4,2)); 
-    simulador.adicionarInimigo(make_unique<Esqueleto>(2,2));  
-};
 
 void cemiterio(Simulador& simulador){
 
@@ -54,27 +42,8 @@ void cemiterio(Simulador& simulador){
 
 
 int main() {
-    Simulador simulador(10,10); 
-
-    cout<<"Bem vindo ao Defense PDS 2"<< endl;
-    int opcao;
-    cout<<"Escolha o Mapa";
-    cout<<" [1] Mapa Padrão || [2] Cemitério"<< endl;
-    scanf("%d",&opcao);
-    switch (opcao)
-    {
-    case 1:
-        mapaPadrao(simulador);
-       break;
-
-   case 2:     
-             cemiterio(simulador);
-    break;
-    default:
-            cout << "Opção inválida!" << endl;
-            return 1;
-    };
     // Inicia a simulação
-    simulador.simular();
+    Simulador simulacao;
+    simulacao.simular();
     return 0;
 }

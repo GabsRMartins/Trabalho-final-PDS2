@@ -39,31 +39,37 @@
 	"compileGroups" : 
 	[
 		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g  "
+				}
+			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/Simulador-hpp"
+					"path" : "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Simulador-hpp"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/Entidade-hpp"
+					"path" : "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Entidade-hpp"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/Torre-hpp"
+					"path" : "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Torre-hpp"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/Inimigo-hpp"
+					"path" : "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Inimigo-hpp"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/Estrutura-hpp"
+					"path" : "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Estrutura-hpp"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/mnt/d/Trabalho Final PDS 2/Trabalho-final-PDS2/Mapa-hpp"
+					"path" : "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Mapa-hpp"
 				}
 			],
 			"language" : "CXX",
@@ -92,6 +98,10 @@
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"

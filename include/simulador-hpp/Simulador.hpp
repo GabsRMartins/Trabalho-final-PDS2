@@ -27,6 +27,7 @@ protected:
 public:
     //Tamanho do mapa
     Simulador(int altura, int largura);
+    Simulador();
     // Adiciona uma torre ao mapa
     void adicionarTorre(unique_ptr<Torre> torre);
   
@@ -40,6 +41,7 @@ public:
 
     // Simula o combate entre torres e inimigos
     bool simular();
+    void startSimulacao();
 };
 
 #endif

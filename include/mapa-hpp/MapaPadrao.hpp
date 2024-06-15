@@ -12,9 +12,12 @@ class MapaPadrao : public Mapa {
 public:
    
    MapaPadrao(int altura, int largura);
-   void  MontaMapa(Simulador& simulador) override;
+   void MontaMapa(Simulador& simulador) override;
+   void adicionarMapa(Simulador& simulador);
 
 
 };
+
+   
 
 #endif

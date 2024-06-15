@@ -3,6 +3,9 @@
 #include "../../include/estrutura-hpp/Estrutura.hpp"
 #include "../../include/inimigo-hpp/Inimigo.hpp"
 #include "../../include/simulador-hpp/Simulador.hpp"
+#include "../../include/interface-hpp/Interface.hpp"
+
+
 #include <thread> // Biblioteca para trabalhar com threads
 #include <chrono> // Biblioteca para trabalhar com tempo
 #include <vector>
@@ -15,6 +18,8 @@ using std::vector;
 using std::unique_ptr;
 using std::move;
 using std::cout;
+using std::endl;
+
 
 
 
@@ -27,6 +32,10 @@ Simulador::Simulador(int altura, int largura) : m_altura(altura), m_largura(larg
         linha.resize(m_largura); // Redimensiona o número de colunas da linha
     }
 }
+
+Simulador::Simulador() {
+}
+
 void Simulador::adicionarTorre(unique_ptr<Torre> torre) {
 
     torres.push_back(torre.get()); // Adiciona o ponteiro cru ao vetor torres
@@ -185,4 +194,29 @@ bool Simulador::simular() {
     }
 }
 
+}
+
+void Simulador::startSimulacao(){
+    Interface dificuldade;
+    cout<<"Bem vindo ao Defense PDS 2"<< endl;
+    int opcao;
+    cout<<"Qual a dificuldade você gostaria de jogar?";
+    cout<<" [1] Fácil || [2] Médio || [3] Difícil" << endl;
+    scanf("%d",&opcao);
+    switch (opcao)
+    {
+    case 1:
+        dificuldade.facil();
+        break;
+
+    case 2:     
+        dificuldade.medio();
+        break;
+    case 3:     
+        dificuldade.dificil();
+        break;
+    default:
+            cout << "Opção inválida! Digite um valor entre 1 e 3 para selecionar a dificuldade!" << endl;
+
+    }
 }
