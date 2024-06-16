@@ -1,17 +1,25 @@
 #include "../../include/estrutura-hpp/Teia.hpp"
 #include "../../include/estrutura-hpp/Lapide.hpp"
- #include "../../include/simulador-hpp/Simulador.hpp"
- #include "../../include/mapa-hpp/Cemiterio.hpp" 
+#include "../../include/simulador-hpp/Simulador.hpp"
+#include "../../include/torre-hpp/TorreDeFogo.hpp"
+#include "../../include/inimigo-hpp/Esqueleto.hpp"
+#include "../../include/mapa-hpp/Cemiterio.hpp" 
+#include "iostream"
  
- using std::make_unique;
+using std::make_unique;
+using std::cout;
 
   
   Cemiterio::Cemiterio(int altura, int largura) : Mapa(altura,largura) {
+
+   cout<<" Cemiterio Criado "<< std::endl;
+
 
 }
 
 
  void Cemiterio::MontaMapa(Simulador& simulador){
+   cout<<"Entrou no  MontaMapa ";
 
   for (int y = 0; y <m_altura; ++y) {
             for (int x = 0; x < m_largura; ++x) {
@@ -25,12 +33,13 @@
             }
         }
 
+   cout<<" MontaMapa funcionou";
   }
 
-void Cemiterio:: adicionarMapa(Simulador& simulador,int a, int b){
-    Cemiterio(a,b);
-    MontaMapa(mapa);
+void Cemiterio:: adicionarMapa(Simulador& simulador){
+    cout<<"Chegou aqui";
 
+    cout<<" MontaMapa funcionou";
     simulador.adicionarTorre(make_unique<TorreDeFogo>(5,1));
     simulador.adicionarTorre(make_unique<TorreDeFogo>(6,1));
     simulador.adicionarTorre(make_unique<TorreDeFogo>(0,1));

@@ -4,6 +4,8 @@
 #include "../../include/mapa-hpp/MapaPadrao.hpp" 
 #include "../../include/torre-hpp/TorreDeFogo.hpp"
 #include "../../include/inimigo-hpp/Esqueleto.hpp"
+#include "iostream"
+
  
  using std::make_unique;
 
@@ -20,9 +22,9 @@
             for (int x = 0; x < m_largura; ++x) {
                 if (x % 2 != 0) { // Somente colunas impares
                     if (y % 2 == 0) {
-                        simulador.adicionarEstrutura(std::make_unique<Arvore>(y, x));
+                        simulador.adicionarEstrutura(make_unique<Arvore>(y, x));
                     } else {
-                        simulador.adicionarEstrutura(std::make_unique<Parede>(y, x));
+                        simulador.adicionarEstrutura(make_unique<Parede>(y, x));
                     }
                 }
             }
@@ -31,8 +33,7 @@
 
 
 void MapaPadrao:: adicionarMapa(Simulador& simulador){
-    MapaPadrao mapa(10,10);
-    MontaMapa(simulador);
+
 
     simulador.adicionarTorre(make_unique<TorreDeFogo>(5,1));
     simulador.adicionarTorre(make_unique<TorreDeFogo>(6,1));

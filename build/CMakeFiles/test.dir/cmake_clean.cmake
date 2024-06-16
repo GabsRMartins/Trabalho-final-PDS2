@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/test.dir/src/inimigo-cpp/Esqueleto.cpp.o"
   "CMakeFiles/test.dir/src/inimigo-cpp/Inimigo.cpp.o"
   "CMakeFiles/test.dir/src/inimigo-cpp/Zumbi.cpp.o"
+  "CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.o"
   "CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.o"
   "CMakeFiles/test.dir/src/mapa-cpp/Mapa.cpp.o"
   "CMakeFiles/test.dir/src/mapa-cpp/MapaPadrao.cpp.o"

@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/src/inimigo-cpp/Esqueleto.cpp" "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/build/CMakeFiles/test.dir/src/inimigo-cpp/Esqueleto.cpp.o"
   "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/src/inimigo-cpp/Inimigo.cpp" "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/build/CMakeFiles/test.dir/src/inimigo-cpp/Inimigo.cpp.o"
   "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/src/inimigo-cpp/Zumbi.cpp" "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/build/CMakeFiles/test.dir/src/inimigo-cpp/Zumbi.cpp.o"
+  "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/src/interface-cpp/Interface.cpp" "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/build/CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.o"
   "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/src/mapa-cpp/Cemiterio.cpp" "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/build/CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.o"
   "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/src/mapa-cpp/Mapa.cpp" "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/build/CMakeFiles/test.dir/src/mapa-cpp/Mapa.cpp.o"
   "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/src/mapa-cpp/MapaPadrao.cpp" "/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/build/CMakeFiles/test.dir/src/mapa-cpp/MapaPadrao.cpp.o"
@@ -30,6 +31,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Inimigo-hpp"
   "../Estrutura-hpp"
   "../Mapa-hpp"
+  "../Interface-hpp"
   )
 
 # Targets to which this target links.

@@ -21,29 +21,14 @@ using std::endl;
 
 
 
-
-void cemiterio(Simulador& simulador){
-
-    Cemiterio mapa(10,10);
-    mapa.MontaMapa(simulador);
-
-    simulador.adicionarTorre(make_unique<TorreDeFogo>(5,1));
-    simulador.adicionarTorre(make_unique<TorreDeFogo>(6,1));
-    simulador.adicionarTorre(make_unique<TorreDeFogo>(0,1));
-
-    simulador.adicionarInimigo(make_unique<Zumbi>(0,0));
-    simulador.adicionarInimigo(make_unique<Zumbi>(2,0)); 
-    simulador.adicionarInimigo(make_unique<Zumbi>(4,2)); 
-    simulador.adicionarInimigo(make_unique<Zumbi>(2,2));  
-
-
-};
-
-
-
 int main() {
     // Inicia a simulação
+   
     Simulador simulacao;
+    simulacao.startSimulacao(simulacao);
     simulacao.simular();
     return 0;
 }
+
+
+

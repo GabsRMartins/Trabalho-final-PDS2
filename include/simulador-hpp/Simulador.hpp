@@ -37,11 +37,11 @@ public:
     void adicionarEstrutura(unique_ptr<Estrutura> Estrutura);
     void atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnteriorY);
   
- /*   bool verificaEstrutura(int posX, int posY); */
+ /*bool verificaEstrutura(int posX, int posY); */
 
     // Simula o combate entre torres e inimigos
     bool simular();
-    void startSimulacao();
+    bool startSimulacao(Simulador& simulador);
 };
 
 #endif

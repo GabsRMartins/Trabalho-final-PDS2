@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Simulador-hpp -I/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Entidade-hpp -I/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Torre-hpp -I/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Inimigo-hpp -I/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Estrutura-hpp -I/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Mapa-hpp 
+CXX_INCLUDES = -I/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Simulador-hpp -I/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Entidade-hpp -I/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Torre-hpp -I/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Inimigo-hpp -I/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Estrutura-hpp -I/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Mapa-hpp -I/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/Interface-hpp 
 

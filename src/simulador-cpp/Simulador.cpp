@@ -4,6 +4,9 @@
 #include "../../include/inimigo-hpp/Inimigo.hpp"
 #include "../../include/simulador-hpp/Simulador.hpp"
 #include "../../include/interface-hpp/Interface.hpp"
+#include "../../include/mapa-hpp/Cemiterio.hpp"
+
+#include "iostream"
 
 
 #include <thread> // Biblioteca para trabalhar com threads
@@ -140,6 +143,7 @@ void Simulador::printaMapa() {
 }
 
 bool Simulador::simular() {
+    cout << "Começa Simulação" << endl;
      
     int endMap = m_altura;
     bool endGame = false;
@@ -196,7 +200,7 @@ bool Simulador::simular() {
 
 }
 
-void Simulador::startSimulacao(){
+bool Simulador::startSimulacao(Simulador& simulador){
     Interface dificuldade;
     cout<<"Bem vindo ao Defense PDS 2"<< endl;
     int opcao;
@@ -205,18 +209,41 @@ void Simulador::startSimulacao(){
     scanf("%d",&opcao);
     switch (opcao)
     {
-    case 1:
-        dificuldade.facil();
+    case 1:{
+        
+        dificuldade.facil(simulador);
         break;
+    }
 
     case 2:     
-        dificuldade.medio();
+        {
+       /*  dificuldade.medio(simulador); */
+       
+                Cemiterio cemiterio(10,10);
+                cout << "Você escolheu Cemitério Tenebroso." << endl;
+                cemiterio.MontaMapa(simulador);
+                cemiterio.adicionarMapa(simulador);
+                
+
+                cout << "Saindo do Loop" << endl;
+               
+         
         break;
-    case 3:     
-        dificuldade.dificil();
+    
+        }
+
+
+    case 3:   
+      {
+        dificuldade.dificil(simulador);
         break;
+    }
     default:
             cout << "Opção inválida! Digite um valor entre 1 e 3 para selecionar a dificuldade!" << endl;
-
+            break;
     }
+    
+                cout << "Saindo da Função Loop" << endl;
+                return 1;
+
 }

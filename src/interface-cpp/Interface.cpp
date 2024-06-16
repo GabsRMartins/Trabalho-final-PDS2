@@ -6,13 +6,9 @@
 #include "../../include/interface-hpp/Interface.hpp"
 #include "../../include/mapa-hpp/MapaPadrao.hpp" 
 #include "../../include/mapa-hpp/Cemiterio.hpp" 
-#include <thread> // Biblioteca para trabalhar com threads
-#include <chrono> // Biblioteca para trabalhar com tempo
+
 #include <vector>
-#include <iostream>
-// Aqui temos duas bibliotecas importantes:
-// - <thread>: Permite criar e gerenciar threads (processos paralelos).
-// - <chrono>: Fornece funções para medir o tempo e criar pausas.
+#include "iostream"
 #include <cmath> // Para std::abs
 
 using std::vector;
@@ -20,9 +16,11 @@ using std::cout;
 using std::endl;
 using std::cin;
 
+Interface::Interface() {
+    
+}
 
-
-void Interface::facil(){
+void Interface::facil(Simulador& simulador){
     
 
     while (true) {
@@ -33,14 +31,18 @@ void Interface::facil(){
 
         switch (opcao) {
             case 1:
+            {
                 MapaPadrao mapaPadrao(12,12);
                 cout << "Você escolheu Floresta Encantada." << endl;
                 mapaPadrao.adicionarMapa(simulador);
+            }
                 break;
             case 2:
+            {
                 Cemiterio cemiterio(12,12);
                 cout << "Você escolheu Cemitério Tenebroso." << endl;
                 cemiterio.adicionarMapa(simulador);
+            }
                 break;
             case 0:
                 break;
@@ -53,7 +55,7 @@ void Interface::facil(){
     }
 }
 
-void Interface::medio(){
+void Interface::medio(Simulador& simulador){
     
 
     while (true) {
@@ -64,15 +66,22 @@ void Interface::medio(){
 
         switch (opcao) {
             case 1:
+            {
                 MapaPadrao mapaPadrao(10,10);
                 cout << "Você escolheu Floresta Encantada." << endl;
+                mapaPadrao.MontaMapa(simulador);
                 mapaPadrao.adicionarMapa(simulador);
                 break;
+                }
+
             case 2:
-                MapaPadrao mapaPadrao(10,10);
+             {
+                Cemiterio cemiterio(10,10);
                 cout << "Você escolheu Cemitério Tenebroso." << endl;
+                cemiterio.MontaMapa(simulador);
                 cemiterio.adicionarMapa(simulador);
                 break;
+                }
             case 0:
                 break;
             default:
@@ -84,7 +93,7 @@ void Interface::medio(){
     }
 }
 
-void Interface::dificil(){
+void Interface::dificil(Simulador& simulador){
     
 
     while (true) {
@@ -95,14 +104,18 @@ void Interface::dificil(){
 
         switch (opcao) {
             case 1:
+             {
                 MapaPadrao mapaPadrao(8,8);
                 cout << "Você escolheu Floresta Encantada." << endl;
                 mapaPadrao.adicionarMapa(simulador);
+                }
                 break;
             case 2:
-                MapaPadrao mapaPadrao(8,8);
+                {
+                Cemiterio cemiterio(8,8);
                 cout << "Você escolheu Cemitério Tenebroso." << endl;
                 cemiterio.adicionarMapa(simulador);
+                }
                 break;
             case 0:
                 break;

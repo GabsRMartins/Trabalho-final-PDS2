@@ -339,6 +339,33 @@ src/inimigo-cpp/Zumbi.cpp.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Zumbi.cpp.s
 .PHONY : src/inimigo-cpp/Zumbi.cpp.s
 
+src/interface-cpp/Interface.o: src/interface-cpp/Interface.cpp.o
+
+.PHONY : src/interface-cpp/Interface.o
+
+# target to build an object file
+src/interface-cpp/Interface.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.o
+.PHONY : src/interface-cpp/Interface.cpp.o
+
+src/interface-cpp/Interface.i: src/interface-cpp/Interface.cpp.i
+
+.PHONY : src/interface-cpp/Interface.i
+
+# target to preprocess a source file
+src/interface-cpp/Interface.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.i
+.PHONY : src/interface-cpp/Interface.cpp.i
+
+src/interface-cpp/Interface.s: src/interface-cpp/Interface.cpp.s
+
+.PHONY : src/interface-cpp/Interface.s
+
+# target to generate assembly for a file
+src/interface-cpp/Interface.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.s
+.PHONY : src/interface-cpp/Interface.cpp.s
+
 src/mapa-cpp/Cemiterio.o: src/mapa-cpp/Cemiterio.cpp.o
 
 .PHONY : src/mapa-cpp/Cemiterio.o
@@ -561,6 +588,9 @@ help:
 	@echo "... src/inimigo-cpp/Zumbi.o"
 	@echo "... src/inimigo-cpp/Zumbi.i"
 	@echo "... src/inimigo-cpp/Zumbi.s"
+	@echo "... src/interface-cpp/Interface.o"
+	@echo "... src/interface-cpp/Interface.i"
+	@echo "... src/interface-cpp/Interface.s"
 	@echo "... src/mapa-cpp/Cemiterio.o"
 	@echo "... src/mapa-cpp/Cemiterio.i"
 	@echo "... src/mapa-cpp/Cemiterio.s"

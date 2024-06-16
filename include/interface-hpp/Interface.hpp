@@ -10,9 +10,9 @@ protected:
     
 public:
     Interface();
-    void facil();
-    void medio();
-    void dificil();
+    void facil(Simulador& simulador);
+    void medio(Simulador& simulador);
+    void dificil(Simulador& simulador);
 };
 
 #endif

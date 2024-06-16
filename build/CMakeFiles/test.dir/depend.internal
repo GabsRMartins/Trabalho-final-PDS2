@@ -39,16 +39,29 @@ CMakeFiles/test.dir/src/inimigo-cpp/Zumbi.cpp.o
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/inimigo-hpp/Zumbi.hpp
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/src/inimigo-cpp/Zumbi.cpp
+CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.o
+ /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/entidade-hpp/Entidade.hpp
+ /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+ /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+ /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/interface-hpp/Interface.hpp
+ /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/mapa-hpp/Cemiterio.hpp
+ /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/mapa-hpp/Mapa.hpp
+ /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/mapa-hpp/MapaPadrao.hpp
+ /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
+ /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp
+ /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/src/interface-cpp/Interface.cpp
 CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.o
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/entidade-hpp/Entidade.hpp
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/estrutura-hpp/Lapide.hpp
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/estrutura-hpp/Teia.hpp
+ /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/inimigo-hpp/Esqueleto.hpp
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/mapa-hpp/Cemiterio.hpp
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/mapa-hpp/Mapa.hpp
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp
+ /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/torre-hpp/TorreDeFogo.hpp
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/src/mapa-cpp/Cemiterio.cpp
 CMakeFiles/test.dir/src/mapa-cpp/Mapa.cpp.o
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/entidade-hpp/Entidade.hpp
@@ -90,6 +103,8 @@ CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/entidade-hpp/Entidade.hpp
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+ /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/interface-hpp/Interface.hpp
+ /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/mapa-hpp/Cemiterio.hpp
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/mapa-hpp/Mapa.hpp
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
  /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp

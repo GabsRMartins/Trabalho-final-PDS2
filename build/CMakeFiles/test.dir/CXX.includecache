@@ -8,23 +8,11 @@
 
 /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/entidade-hpp/Entidade.hpp
 
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/estrutura-hpp/Arvore.hpp
-Estrutura.hpp
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
-
 /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
 ../entidade-hpp/Entidade.hpp
 /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/entidade-hpp/Entidade.hpp
 string
 -
-
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/estrutura-hpp/Parede.hpp
-Estrutura.hpp
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
-
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/inimigo-hpp/Esqueleto.hpp
-Inimigo.hpp
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
 
 /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
 ../entidade-hpp/Entidade.hpp
@@ -32,9 +20,9 @@ Inimigo.hpp
 string
 -
 
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/inimigo-hpp/Zumbi.hpp
-Inimigo.hpp
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/interface-hpp/Interface.hpp
+../simulador-hpp/Simulador.hpp
+/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
 
 /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/mapa-hpp/Cemiterio.hpp
 ../torre-hpp/Torre.hpp
@@ -64,18 +52,6 @@ memory
 iostream
 -
 
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/mapa-hpp/MapaPadrao.hpp
-../torre-hpp/Torre.hpp
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp
-../inimigo-hpp/Inimigo.hpp
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
-../estrutura-hpp/Estrutura.hpp
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
-../simulador-hpp/Simulador.hpp
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
-../mapa-hpp/Mapa.hpp
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/mapa-hpp/Mapa.hpp
-
 /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
 ../torre-hpp/Torre.hpp
 /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp
@@ -96,37 +72,29 @@ iostream
 string
 -
 
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/torre-hpp/TorreDeFogo.hpp
-Torre.hpp
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp
-iostream
--
-
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/src/principal/main.cpp
+/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/src/simulador-cpp/Simulador.cpp
 ../../include/mapa-hpp/Mapa.hpp
 /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/mapa-hpp/Mapa.hpp
-../../include/torre-hpp/TorreDeFogo.hpp
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/torre-hpp/TorreDeFogo.hpp
-../../include/inimigo-hpp/Esqueleto.hpp
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/inimigo-hpp/Esqueleto.hpp
-../../include/estrutura-hpp/Arvore.hpp
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/estrutura-hpp/Arvore.hpp
-../../include/estrutura-hpp/Parede.hpp
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/estrutura-hpp/Parede.hpp
+../../include/entidade-hpp/Entidade.hpp
+/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/entidade-hpp/Entidade.hpp
+../../include/estrutura-hpp/Estrutura.hpp
+/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+../../include/inimigo-hpp/Inimigo.hpp
+/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
 ../../include/simulador-hpp/Simulador.hpp
 /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
-../../include/mapa-hpp/MapaPadrao.hpp
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/mapa-hpp/MapaPadrao.hpp
+../../include/interface-hpp/Interface.hpp
+/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/interface-hpp/Interface.hpp
 ../../include/mapa-hpp/Cemiterio.hpp
 /home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/mapa-hpp/Cemiterio.hpp
-../../include/inimigo-hpp/Zumbi.hpp
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/include/inimigo-hpp/Zumbi.hpp
 iostream
-/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/src/principal/iostream
+/home/naomy/UFMG/PDS2/Trabalho-final-PDS2/src/simulador-cpp/iostream
 thread
 -
 chrono
 -
-memory
+vector
+-
+cmath
 -
 

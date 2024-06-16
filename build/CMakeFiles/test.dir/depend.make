@@ -39,15 +39,28 @@ CMakeFiles/test.dir/src/inimigo-cpp/Zumbi.cpp.o: ../include/inimigo-hpp/Inimigo.
 CMakeFiles/test.dir/src/inimigo-cpp/Zumbi.cpp.o: ../include/inimigo-hpp/Zumbi.hpp
 CMakeFiles/test.dir/src/inimigo-cpp/Zumbi.cpp.o: ../src/inimigo-cpp/Zumbi.cpp
 
+CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.o: ../include/entidade-hpp/Entidade.hpp
+CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.o: ../include/estrutura-hpp/Estrutura.hpp
+CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.o: ../include/inimigo-hpp/Inimigo.hpp
+CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.o: ../include/interface-hpp/Interface.hpp
+CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.o: ../include/mapa-hpp/Cemiterio.hpp
+CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.o: ../include/mapa-hpp/Mapa.hpp
+CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.o: ../include/mapa-hpp/MapaPadrao.hpp
+CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.o: ../include/simulador-hpp/Simulador.hpp
+CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.o: ../include/torre-hpp/Torre.hpp
+CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.o: ../src/interface-cpp/Interface.cpp
+
 CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.o: ../include/entidade-hpp/Entidade.hpp
 CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.o: ../include/estrutura-hpp/Estrutura.hpp
 CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.o: ../include/estrutura-hpp/Lapide.hpp
 CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.o: ../include/estrutura-hpp/Teia.hpp
+CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.o: ../include/inimigo-hpp/Esqueleto.hpp
 CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.o: ../include/inimigo-hpp/Inimigo.hpp
 CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.o: ../include/mapa-hpp/Cemiterio.hpp
 CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.o: ../include/mapa-hpp/Mapa.hpp
 CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.o: ../include/simulador-hpp/Simulador.hpp
 CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.o: ../include/torre-hpp/Torre.hpp
+CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.o: ../include/torre-hpp/TorreDeFogo.hpp
 CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.o: ../src/mapa-cpp/Cemiterio.cpp
 
 CMakeFiles/test.dir/src/mapa-cpp/Mapa.cpp.o: ../include/entidade-hpp/Entidade.hpp
@@ -89,6 +102,8 @@ CMakeFiles/test.dir/src/principal/main.cpp.o: ../src/principal/main.cpp
 CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o: ../include/entidade-hpp/Entidade.hpp
 CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o: ../include/estrutura-hpp/Estrutura.hpp
 CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o: ../include/inimigo-hpp/Inimigo.hpp
+CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o: ../include/interface-hpp/Interface.hpp
+CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o: ../include/mapa-hpp/Cemiterio.hpp
 CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o: ../include/mapa-hpp/Mapa.hpp
 CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o: ../include/simulador-hpp/Simulador.hpp
 CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o: ../include/torre-hpp/Torre.hpp
