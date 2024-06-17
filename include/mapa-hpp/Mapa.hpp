@@ -28,7 +28,7 @@ public:
     // Adiciona uma torre ao mapa
   
     void virtual MontaMapa(Simulador& simulador) = 0;
-    void virtual adicionarMapa(Simulador& simulador)=0;
+    void virtual adicionarMapa(Simulador& simulador) = 0;
 
   
 

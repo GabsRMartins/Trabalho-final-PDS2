@@ -33,6 +33,7 @@
 
 
 void MapaPadrao:: adicionarMapa(Simulador& simulador){
+    MontaMapa(simulador);
 
 
     simulador.adicionarTorre(make_unique<TorreDeFogo>(5,1));
