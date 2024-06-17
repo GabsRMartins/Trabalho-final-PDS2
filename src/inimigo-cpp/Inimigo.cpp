@@ -21,7 +21,9 @@ void Inimigo::moverY() {
 // Método para receber dano
 void Inimigo::receberDano(int dano) {
     vida -= dano;
-    if (vida < 0) vida = 0;
+    if (vida < 0){
+    vida = 0;
+    } 
     cout << nome << " recebeu " << dano << " de dano. Vida restante: " << vida << "\n";
 }
 

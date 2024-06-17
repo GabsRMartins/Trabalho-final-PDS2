@@ -81,39 +81,39 @@ void Simulador::adicionarEstrutura(unique_ptr<Estrutura> estrutura) {
 
 
 
-void Simulador::atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnteriorY) {
+void Simulador::atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnteriorY, int Vida) {
     // Verificar se a entidade é válida
-    if (!entidade) {
-        std::cerr << "Entidade inválida.\n";
-        return;
-    }
+  
 
     // Obter a posição da entidade
     int posX = entidade->getPosicaoX();
     int posY = entidade->getPosicaoY();
 
-/*     std::cout << "Atualizando matriz para entidade na posição (" << posX << ", " << posY << ")"
-              << " movida da posição (" << posAnteriorX << ", " << posAnteriorY << ").\n"; */
-
     // Verificar se a nova posição está dentro dos limites da matriz
     if (posX >= 0 && posX < m_altura && posY >= 0 && posY < m_largura) {
         // Verificar se a posição anterior está dentro dos limites da matriz
-        if (posAnteriorX >= 0 && posAnteriorX < m_altura && posAnteriorY >= 0 && posAnteriorY < m_largura) {
-  
-                
-        /*     cout << "Removendo entidade da posição anterior (" << posAnteriorX << ", " << posAnteriorY << ").\n"; */
-            // Liberar o ponteiro da posição anterior
-            matrizMapa[posAnteriorX][posAnteriorY].release();
-            // Definir a posição anterior como nullptr
-            matrizMapa[posAnteriorX][posAnteriorY] = nullptr;
-            
-        } else {
+        if (posAnteriorX >= 0 && posAnteriorX < m_altura && posAnteriorY >= 0 && posAnteriorY < m_largura) 
+        {
+           if (matrizMapa[posAnteriorX][posAnteriorY] != nullptr) {
+                matrizMapa[posAnteriorX][posAnteriorY].release();
+            }
+            } 
+            else 
+            {
             cout << "Posição anterior (" << posAnteriorX << ", " << posAnteriorY << ") fora dos limites.\n";
-        }
+            }
+          if (Vida == 0) {
+                matrizMapa[posX][posY].release();
+                matrizMapa[posX][posY] = nullptr;
 
+            
+    
+            }
+        else
+        {
         // Atualizar a matriz com a nova posição da entidade
-  /*      cout << "Atualizando matriz na nova posição (" << posX << ", " << posY << ").\n"; */
         matrizMapa[posX][posY].reset(entidade);
+        }
     } else {
         std::cerr << "Nova posição (" << posX << ", " << posY << ") fora dos limites.\n";
     }
@@ -141,63 +141,70 @@ void Simulador::printaMapa() {
         cout << std::endl;
     }
 }
-
 bool Simulador::simular() {
     cout << "Começa Simulação" << endl;
-     
-    int endMap = m_altura;
+
+    int endMap = m_altura - 1;
     bool endGame = false;
     bool victory = false;
     bool defeat = false;
+   
+
+
 
     while (true) {
-        for (const auto& ptr_inimigo : inimigos) {
-            auto& inimigo = *ptr_inimigo; // Desreferenciar o ponteiro para obter o objeto real
-            if (inimigo.getVida() > 0) {
-                 cout << "Posicao: " << inimigo.getPosicaoX() << " - Vida: " << inimigo.getVida() << "\n";
-                    if(inimigo.getPosicaoX() == endMap){
+        for (auto it = inimigos.begin(); it != inimigos.end();) {
+            auto& inimigo = **it; // Desreferenciar o ponteiro para obter o objeto real
+            int vidaInimigo = inimigo.getVida();
+            int posAnteriorX = inimigo.getPosicaoX();
+            int posAnteriorY = inimigo.getPosicaoY();
 
+            if (vidaInimigo > 0) {
+                cout << "Posicao: " << posAnteriorX << " - Vida: " << vidaInimigo << "\n";
+                if (posAnteriorX == endMap) {
                     endGame = true;
-                    defeat  = true;
-          }
-          else{
-                int posAnteriorX = inimigo.getPosicaoX();
-                int posAnteriorY = inimigo.getPosicaoY();
-                inimigo.moverX();
-                atualizaMatriz(&inimigo, posAnteriorX, posAnteriorY);
-                std::cout << "Inimigo na posição " << inimigo.getPosicaoX() << " " << std::endl;
+                    defeat = true;
                 }
+                inimigo.moverX();
+                atualizaMatriz(&inimigo, posAnteriorX, posAnteriorY, vidaInimigo);
+                cout << "Inimigo na posição " << inimigo.getPosicaoX() << endl;
+
                 for (const auto& ptr_torre : torres) {
                     auto& torre = *ptr_torre; // Desreferenciar o ponteiro para obter o objeto real
                     if (std::abs(torre.getPosicaoX() - inimigo.getPosicaoX()) <= torre.getAlcance()) {
                         torre.atacar();
                         inimigo.receberDano(torre.getAtaque());
+                        if(inimigo.getVida() == 0){
+                        break;
+
+                        }
                     }
                 }
                 printaMapa();
+                ++it; // Avançar o iterador para o próximo inimigo
             } else {
-            
-            endGame = true;
-            victory = true;
-
+                atualizaMatriz(&inimigo, posAnteriorX, posAnteriorY, vidaInimigo); 
+                it = inimigos.erase(it); // Remover inimigo derrotado e atualizar o iterador
+            if( inimigos.size() == 0)
+            {
+                endGame = true;
+                victory = true;
+             }
             }
 
-        if (endGame && defeat) {
-            cout << "Inimigos chegaram até o final!!!" << "\n";
-            cout << "You Lose" << "\n";
-            return 0;
-        } else if (endGame && victory) {
-            cout << "Inimigos Derrotados! Bom trabalho!" << "\n";
-            cout << "You Win" << "\n";
-            return 1;
-            
+            if (endGame && defeat) {
+                cout << "Inimigos chegaram até o final!!!" << "\n";
+                cout << "You Lose" << "\n";
+                return false;
+            } else if (endGame && victory) {
+                cout << "Inimigos Derrotados! Bom trabalho!" << "\n";
+                cout << "You Win" << "\n";
+                return true;
+            }
+        std::this_thread::sleep_for(std::chrono::seconds(2));
         }
 
-
-        std::this_thread::sleep_for(std::chrono::seconds(2));
     }
-}
-
 }
 
 void Simulador::startSimulacao(Simulador& simulador){
@@ -209,28 +216,21 @@ void Simulador::startSimulacao(Simulador& simulador){
     scanf("%d",&opcao);
     switch (opcao)
     {
-    case 1:{
-        
+    case 1:
+        {
         dificuldade.facil(simulador);
         break;
-    }
-
+        }
     case 2:     
         {
         dificuldade.medio(simulador);
-
-               
-         
         break;
-    
         }
-
-
     case 3:   
-      {
+        {
         dificuldade.dificil(simulador);
         break;
-    }
+        }
     default:
             cout << "Opção inválida! Digite um valor entre 1 e 3 para selecionar a dificuldade!" << endl;
             break;
