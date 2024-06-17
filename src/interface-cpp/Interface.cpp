@@ -36,6 +36,7 @@ void Interface::facil(Simulador& simulador){
                 MapaPadrao mapaPadrao(12,12);
                 cout << "Você escolheu Floresta Encantada." << endl;
                 mapaPadrao.adicionarMapa(simulador);
+                simulador.simular(1);
             }
                 break;
             case 2:
@@ -44,6 +45,7 @@ void Interface::facil(Simulador& simulador){
                 Cemiterio cemiterio(12,12);
                 cout << "Você escolheu Cemitério Tenebroso." << endl;
                 cemiterio.adicionarMapa(simulador);
+                simulador.simular(1);
             }
                 break;
             case 0:
@@ -73,6 +75,7 @@ void Interface::medio(Simulador& simulador){
                 MapaPadrao mapaPadrao(10,10);
                 cout << "Você escolheu Floresta Encantada." << endl;
                 mapaPadrao.adicionarMapa(simulador);
+                simulador.simular(2);
                 break;
                 }
 
@@ -82,6 +85,7 @@ void Interface::medio(Simulador& simulador){
                 Cemiterio cemiterio(10,10);
                 cout << "Você escolheu Cemitério Tenebroso." << endl;
                 cemiterio.adicionarMapa(simulador);
+                simulador.simular(2);
                 break;
                 }
             case 0:
@@ -111,6 +115,7 @@ void Interface::dificil(Simulador& simulador){
                 MapaPadrao mapaPadrao(8,8);
                 cout << "Você escolheu Floresta Encantada." << endl;
                 mapaPadrao.adicionarMapa(simulador);
+                simulador.simular(3);
                 }
                 break;
             case 2:
@@ -119,6 +124,7 @@ void Interface::dificil(Simulador& simulador){
                 Cemiterio cemiterio(8,8);
                 cout << "Você escolheu Cemitério Tenebroso." << endl;
                 cemiterio.adicionarMapa(simulador);
+                simulador.simular(3);
                 }
                 break;
             case 0:

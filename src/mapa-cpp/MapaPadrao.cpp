@@ -39,8 +39,8 @@ void MapaPadrao:: adicionarMapa(Simulador& simulador){
    
     simulador.adicionarTorre(make_unique<TorreDeFogo>(6,1));
     simulador.adicionarTorre(make_unique<TorreDeFogo>(7,1));
-    simulador.adicionarTorre(make_unique<TorreDeFogo>(8,1));
-    simulador.adicionarTorre(make_unique<TorreDeFogo>(9,1));
+    simulador.adicionarTorre(make_unique<TorreDeFogo>(4,1));
+    simulador.adicionarTorre(make_unique<TorreDeFogo>(5,1));
 
     
 
