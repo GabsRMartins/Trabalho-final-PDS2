@@ -35,7 +35,7 @@ public:
     // Adiciona um inimigo ao mapa
     void adicionarInimigo(unique_ptr<Inimigo> inimigo);
     void adicionarEstrutura(unique_ptr<Estrutura> Estrutura);
-    void atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnteriorY);
+    void atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnteriorY, int Vida);
     void setLimites(int altura, int largura);
   
  /*bool verificaEstrutura(int posX, int posY); */

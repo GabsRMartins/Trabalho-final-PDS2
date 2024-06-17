@@ -36,12 +36,17 @@ void MapaPadrao:: adicionarMapa(Simulador& simulador){
     MontaMapa(simulador);
 
 
-    simulador.adicionarTorre(make_unique<TorreDeFogo>(5,1));
+   
     simulador.adicionarTorre(make_unique<TorreDeFogo>(6,1));
-    simulador.adicionarTorre(make_unique<TorreDeFogo>(0,1));
+    simulador.adicionarTorre(make_unique<TorreDeFogo>(7,1));
+    simulador.adicionarTorre(make_unique<TorreDeFogo>(8,1));
+    simulador.adicionarTorre(make_unique<TorreDeFogo>(9,1));
+
+    
 
     simulador.adicionarInimigo(make_unique<Esqueleto>(0,0));
-    simulador.adicionarInimigo(make_unique<Esqueleto>(2,0)); 
-    simulador.adicionarInimigo(make_unique<Esqueleto>(4,2)); 
-    simulador.adicionarInimigo(make_unique<Esqueleto>(2,2));  
+    simulador.adicionarInimigo(make_unique<Esqueleto>(4,0));
+
+
+
 };
