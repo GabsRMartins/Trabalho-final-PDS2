@@ -200,7 +200,7 @@ bool Simulador::simular() {
 
 }
 
-bool Simulador::startSimulacao(Simulador& simulador){
+void Simulador::startSimulacao(Simulador& simulador){
     Interface dificuldade;
     cout<<"Bem vindo ao Defense PDS 2"<< endl;
     int opcao;
@@ -217,15 +217,8 @@ bool Simulador::startSimulacao(Simulador& simulador){
 
     case 2:     
         {
-       /*  dificuldade.medio(simulador); */
-       
-                Cemiterio cemiterio(10,10);
-                cout << "Você escolheu Cemitério Tenebroso." << endl;
-                cemiterio.MontaMapa(simulador);
-                cemiterio.adicionarMapa(simulador);
-                
+        dificuldade.medio(simulador);
 
-                cout << "Saindo do Loop" << endl;
                
          
         break;
@@ -243,7 +236,21 @@ bool Simulador::startSimulacao(Simulador& simulador){
             break;
     }
     
-                cout << "Saindo da Função Loop" << endl;
-                return 1;
+                
+               
+
+}
+
+
+void Simulador::setLimites(int altura, int largura) 
+{
+    m_altura = altura; 
+    m_largura = largura;
+
+      matrizMapa.resize(m_altura); // Redimensiona o número de linhas da matriz
+
+   for (auto& linha : matrizMapa) {
+        linha.resize(m_largura); // Redimensiona o número de colunas da linha
+    }
 
 }

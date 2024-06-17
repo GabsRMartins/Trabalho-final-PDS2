@@ -14,7 +14,7 @@ public:
     Cemiterio(int altura, int largura);
     void MontaMapa(Simulador& simulador) override;
     void adicionarMapa(Simulador& simulador) override;
-
+    ~Cemiterio();
 
 };
 

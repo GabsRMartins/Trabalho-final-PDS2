@@ -19,7 +19,7 @@ using std::cout;
 
 
  void Cemiterio::MontaMapa(Simulador& simulador){
-   cout<<"Entrou no  MontaMapa ";
+
 
   for (int y = 0; y <m_altura; ++y) {
             for (int x = 0; x < m_largura; ++x) {
@@ -33,13 +33,12 @@ using std::cout;
             }
         }
 
-   cout<<" MontaMapa funcionou";
+
   }
 
 void Cemiterio:: adicionarMapa(Simulador& simulador){
-    cout<<"Chegou aqui";
-
-    cout<<" MontaMapa funcionou";
+    MontaMapa(simulador);
+ 
     simulador.adicionarTorre(make_unique<TorreDeFogo>(5,1));
     simulador.adicionarTorre(make_unique<TorreDeFogo>(6,1));
     simulador.adicionarTorre(make_unique<TorreDeFogo>(0,1));
@@ -49,3 +48,10 @@ void Cemiterio:: adicionarMapa(Simulador& simulador){
     simulador.adicionarInimigo(make_unique<Esqueleto>(4,2)); 
     simulador.adicionarInimigo(make_unique<Esqueleto>(2,2));  
 };
+
+
+
+Cemiterio::~Cemiterio(){
+    cout<<" Cemiterio Destruido";
+
+}
