@@ -35,7 +35,7 @@ void Interface::facil(Simulador& simulador){
                 simulador.setLimites(12,12);
                 MapaPadrao mapaPadrao(12,12);
                 cout << "Você escolheu Floresta Encantada." << endl;
-                mapaPadrao.adicionarMapa(simulador);
+                mapaPadrao.MontaMapa(simulador);
             }
                 break;
             case 2:
@@ -43,7 +43,7 @@ void Interface::facil(Simulador& simulador){
                 simulador.setLimites(12,12);
                 Cemiterio cemiterio(12,12);
                 cout << "Você escolheu Cemitério Tenebroso." << endl;
-                cemiterio.adicionarMapa(simulador);
+                cemiterio.MontaMapa(simulador);
             }
                 break;
             case 0:
@@ -72,7 +72,7 @@ void Interface::medio(Simulador& simulador){
                 simulador.setLimites(10,10);
                 MapaPadrao mapaPadrao(10,10);
                 cout << "Você escolheu Floresta Encantada." << endl;
-                mapaPadrao.adicionarMapa(simulador);
+                mapaPadrao.MontaMapa(simulador);
                 break;
                 }
 
@@ -81,7 +81,7 @@ void Interface::medio(Simulador& simulador){
                 simulador.setLimites(10,10);
                 Cemiterio cemiterio(10,10);
                 cout << "Você escolheu Cemitério Tenebroso." << endl;
-                cemiterio.adicionarMapa(simulador);
+                cemiterio.MontaMapa(simulador);
                 break;
                 }
             case 0:
@@ -110,7 +110,7 @@ void Interface::dificil(Simulador& simulador){
                 simulador.setLimites(8,8);
                 MapaPadrao mapaPadrao(8,8);
                 cout << "Você escolheu Floresta Encantada." << endl;
-                mapaPadrao.adicionarMapa(simulador);
+                mapaPadrao.MontaMapa(simulador);
                 }
                 break;
             case 2:
@@ -118,7 +118,7 @@ void Interface::dificil(Simulador& simulador){
                 simulador.setLimites(8,8);
                 Cemiterio cemiterio(8,8);
                 cout << "Você escolheu Cemitério Tenebroso." << endl;
-                cemiterio.adicionarMapa(simulador);
+                cemiterio.MontaMapa(simulador);
                 }
                 break;
             case 0:

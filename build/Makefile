@@ -225,6 +225,30 @@ src/estrutura-cpp/Parede.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Parede.cpp.s
 .PHONY : src/estrutura-cpp/Parede.cpp.s
 
+src/estrutura-cpp/Slot.o: src/estrutura-cpp/Slot.cpp.o
+.PHONY : src/estrutura-cpp/Slot.o
+
+# target to build an object file
+src/estrutura-cpp/Slot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Slot.cpp.o
+.PHONY : src/estrutura-cpp/Slot.cpp.o
+
+src/estrutura-cpp/Slot.i: src/estrutura-cpp/Slot.cpp.i
+.PHONY : src/estrutura-cpp/Slot.i
+
+# target to preprocess a source file
+src/estrutura-cpp/Slot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Slot.cpp.i
+.PHONY : src/estrutura-cpp/Slot.cpp.i
+
+src/estrutura-cpp/Slot.s: src/estrutura-cpp/Slot.cpp.s
+.PHONY : src/estrutura-cpp/Slot.s
+
+# target to generate assembly for a file
+src/estrutura-cpp/Slot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Slot.cpp.s
+.PHONY : src/estrutura-cpp/Slot.cpp.s
+
 src/estrutura-cpp/Teia.o: src/estrutura-cpp/Teia.cpp.o
 .PHONY : src/estrutura-cpp/Teia.o
 
@@ -345,6 +369,54 @@ src/interface-cpp/Interface.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.s
 .PHONY : src/interface-cpp/Interface.cpp.s
 
+src/mapa-cpp/CasteloAbandonado.o: src/mapa-cpp/CasteloAbandonado.cpp.o
+.PHONY : src/mapa-cpp/CasteloAbandonado.o
+
+# target to build an object file
+src/mapa-cpp/CasteloAbandonado.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/CasteloAbandonado.cpp.o
+.PHONY : src/mapa-cpp/CasteloAbandonado.cpp.o
+
+src/mapa-cpp/CasteloAbandonado.i: src/mapa-cpp/CasteloAbandonado.cpp.i
+.PHONY : src/mapa-cpp/CasteloAbandonado.i
+
+# target to preprocess a source file
+src/mapa-cpp/CasteloAbandonado.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/CasteloAbandonado.cpp.i
+.PHONY : src/mapa-cpp/CasteloAbandonado.cpp.i
+
+src/mapa-cpp/CasteloAbandonado.s: src/mapa-cpp/CasteloAbandonado.cpp.s
+.PHONY : src/mapa-cpp/CasteloAbandonado.s
+
+# target to generate assembly for a file
+src/mapa-cpp/CasteloAbandonado.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/CasteloAbandonado.cpp.s
+.PHONY : src/mapa-cpp/CasteloAbandonado.cpp.s
+
+src/mapa-cpp/CavernaOculta.o: src/mapa-cpp/CavernaOculta.cpp.o
+.PHONY : src/mapa-cpp/CavernaOculta.o
+
+# target to build an object file
+src/mapa-cpp/CavernaOculta.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/CavernaOculta.cpp.o
+.PHONY : src/mapa-cpp/CavernaOculta.cpp.o
+
+src/mapa-cpp/CavernaOculta.i: src/mapa-cpp/CavernaOculta.cpp.i
+.PHONY : src/mapa-cpp/CavernaOculta.i
+
+# target to preprocess a source file
+src/mapa-cpp/CavernaOculta.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/CavernaOculta.cpp.i
+.PHONY : src/mapa-cpp/CavernaOculta.cpp.i
+
+src/mapa-cpp/CavernaOculta.s: src/mapa-cpp/CavernaOculta.cpp.s
+.PHONY : src/mapa-cpp/CavernaOculta.s
+
+# target to generate assembly for a file
+src/mapa-cpp/CavernaOculta.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/CavernaOculta.cpp.s
+.PHONY : src/mapa-cpp/CavernaOculta.cpp.s
+
 src/mapa-cpp/Cemiterio.o: src/mapa-cpp/Cemiterio.cpp.o
 .PHONY : src/mapa-cpp/Cemiterio.o
 
@@ -368,6 +440,30 @@ src/mapa-cpp/Cemiterio.s: src/mapa-cpp/Cemiterio.cpp.s
 src/mapa-cpp/Cemiterio.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/Cemiterio.cpp.s
 .PHONY : src/mapa-cpp/Cemiterio.cpp.s
+
+src/mapa-cpp/DesertoMisterioso.o: src/mapa-cpp/DesertoMisterioso.cpp.o
+.PHONY : src/mapa-cpp/DesertoMisterioso.o
+
+# target to build an object file
+src/mapa-cpp/DesertoMisterioso.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/DesertoMisterioso.cpp.o
+.PHONY : src/mapa-cpp/DesertoMisterioso.cpp.o
+
+src/mapa-cpp/DesertoMisterioso.i: src/mapa-cpp/DesertoMisterioso.cpp.i
+.PHONY : src/mapa-cpp/DesertoMisterioso.i
+
+# target to preprocess a source file
+src/mapa-cpp/DesertoMisterioso.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/DesertoMisterioso.cpp.i
+.PHONY : src/mapa-cpp/DesertoMisterioso.cpp.i
+
+src/mapa-cpp/DesertoMisterioso.s: src/mapa-cpp/DesertoMisterioso.cpp.s
+.PHONY : src/mapa-cpp/DesertoMisterioso.s
+
+# target to generate assembly for a file
+src/mapa-cpp/DesertoMisterioso.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/DesertoMisterioso.cpp.s
+.PHONY : src/mapa-cpp/DesertoMisterioso.cpp.s
 
 src/mapa-cpp/Mapa.o: src/mapa-cpp/Mapa.cpp.o
 .PHONY : src/mapa-cpp/Mapa.o
@@ -489,6 +585,30 @@ src/torre-cpp/Torre.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/torre-cpp/Torre.cpp.s
 .PHONY : src/torre-cpp/Torre.cpp.s
 
+src/torre-cpp/TorreDeEletricidade.o: src/torre-cpp/TorreDeEletricidade.cpp.o
+.PHONY : src/torre-cpp/TorreDeEletricidade.o
+
+# target to build an object file
+src/torre-cpp/TorreDeEletricidade.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/torre-cpp/TorreDeEletricidade.cpp.o
+.PHONY : src/torre-cpp/TorreDeEletricidade.cpp.o
+
+src/torre-cpp/TorreDeEletricidade.i: src/torre-cpp/TorreDeEletricidade.cpp.i
+.PHONY : src/torre-cpp/TorreDeEletricidade.i
+
+# target to preprocess a source file
+src/torre-cpp/TorreDeEletricidade.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/torre-cpp/TorreDeEletricidade.cpp.i
+.PHONY : src/torre-cpp/TorreDeEletricidade.cpp.i
+
+src/torre-cpp/TorreDeEletricidade.s: src/torre-cpp/TorreDeEletricidade.cpp.s
+.PHONY : src/torre-cpp/TorreDeEletricidade.s
+
+# target to generate assembly for a file
+src/torre-cpp/TorreDeEletricidade.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/torre-cpp/TorreDeEletricidade.cpp.s
+.PHONY : src/torre-cpp/TorreDeEletricidade.cpp.s
+
 src/torre-cpp/TorreDeFogo.o: src/torre-cpp/TorreDeFogo.cpp.o
 .PHONY : src/torre-cpp/TorreDeFogo.o
 
@@ -534,6 +654,9 @@ help:
 	@echo "... src/estrutura-cpp/Parede.o"
 	@echo "... src/estrutura-cpp/Parede.i"
 	@echo "... src/estrutura-cpp/Parede.s"
+	@echo "... src/estrutura-cpp/Slot.o"
+	@echo "... src/estrutura-cpp/Slot.i"
+	@echo "... src/estrutura-cpp/Slot.s"
 	@echo "... src/estrutura-cpp/Teia.o"
 	@echo "... src/estrutura-cpp/Teia.i"
 	@echo "... src/estrutura-cpp/Teia.s"
@@ -549,9 +672,18 @@ help:
 	@echo "... src/interface-cpp/Interface.o"
 	@echo "... src/interface-cpp/Interface.i"
 	@echo "... src/interface-cpp/Interface.s"
+	@echo "... src/mapa-cpp/CasteloAbandonado.o"
+	@echo "... src/mapa-cpp/CasteloAbandonado.i"
+	@echo "... src/mapa-cpp/CasteloAbandonado.s"
+	@echo "... src/mapa-cpp/CavernaOculta.o"
+	@echo "... src/mapa-cpp/CavernaOculta.i"
+	@echo "... src/mapa-cpp/CavernaOculta.s"
 	@echo "... src/mapa-cpp/Cemiterio.o"
 	@echo "... src/mapa-cpp/Cemiterio.i"
 	@echo "... src/mapa-cpp/Cemiterio.s"
+	@echo "... src/mapa-cpp/DesertoMisterioso.o"
+	@echo "... src/mapa-cpp/DesertoMisterioso.i"
+	@echo "... src/mapa-cpp/DesertoMisterioso.s"
 	@echo "... src/mapa-cpp/Mapa.o"
 	@echo "... src/mapa-cpp/Mapa.i"
 	@echo "... src/mapa-cpp/Mapa.s"
@@ -567,6 +699,9 @@ help:
 	@echo "... src/torre-cpp/Torre.o"
 	@echo "... src/torre-cpp/Torre.i"
 	@echo "... src/torre-cpp/Torre.s"
+	@echo "... src/torre-cpp/TorreDeEletricidade.o"
+	@echo "... src/torre-cpp/TorreDeEletricidade.i"
+	@echo "... src/torre-cpp/TorreDeEletricidade.s"
 	@echo "... src/torre-cpp/TorreDeFogo.o"
 	@echo "... src/torre-cpp/TorreDeFogo.i"
 	@echo "... src/torre-cpp/TorreDeFogo.s"
