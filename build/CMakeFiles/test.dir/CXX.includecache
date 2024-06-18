@@ -1,0 +1,512 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/entidade-hpp/Entidade.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Arvore.hpp
+Estrutura.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Cacto.hpp
+Estrutura.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+../entidade-hpp/Entidade.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/entidade-hpp/Entidade.hpp
+string
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Lapide.hpp
+Estrutura.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Parede.hpp
+Estrutura.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Slot.hpp
+Estrutura.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Teia.hpp
+Estrutura.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Templo.hpp
+Estrutura.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Escorpiao.hpp
+string
+-
+Inimigo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Esqueleto.hpp
+string
+-
+Inimigo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+../entidade-hpp/Entidade.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/entidade-hpp/Entidade.hpp
+string
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Lobisomen.hpp
+Inimigo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Mumia.hpp
+Inimigo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Vampiro.hpp
+Inimigo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Zumbi.hpp
+string
+-
+Inimigo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/interface-hpp/Interface.hpp
+../simulador-hpp/Simulador.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/Cemiterio.hpp
+../torre-hpp/Torre.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp
+../inimigo-hpp/Inimigo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+../estrutura-hpp/Estrutura.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+../simulador-hpp/Simulador.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
+../mapa-hpp/Mapa.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/Mapa.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/DesertoMisterioso.hpp
+../torre-hpp/Torre.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp
+../inimigo-hpp/Inimigo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+../estrutura-hpp/Estrutura.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+../simulador-hpp/Simulador.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
+../mapa-hpp/Mapa.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/Mapa.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/Mapa.hpp
+../torre-hpp/Torre.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp
+../inimigo-hpp/Inimigo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+../estrutura-hpp/Estrutura.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+../simulador-hpp/Simulador.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
+vector
+-
+memory
+-
+iostream
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/MapaPadrao.hpp
+../torre-hpp/Torre.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp
+../inimigo-hpp/Inimigo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+../estrutura-hpp/Estrutura.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+../simulador-hpp/Simulador.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
+../mapa-hpp/Mapa.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/Mapa.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
+../torre-hpp/Torre.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp
+../inimigo-hpp/Inimigo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+../estrutura-hpp/Estrutura.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+vector
+-
+memory
+-
+iostream
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp
+../entidade-hpp/Entidade.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/entidade-hpp/Entidade.hpp
+string
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeAgua.hpp
+Torre.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp
+iostream
+-
+string
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeEletricidade.hpp
+Torre.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeFantasmas.hpp
+Torre.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp
+iostream
+-
+string
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeFogo.hpp
+Torre.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp
+iostream
+-
+string
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeGelo.hpp
+Torre.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp
+iostream
+-
+string
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeVeneno.hpp
+Torre.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp
+iostream
+-
+string
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/estrutura-cpp/Arvore.cpp
+../../include/estrutura-hpp/Arvore.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Arvore.hpp
+iostream
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/estrutura-cpp/iostream
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/estrutura-cpp/Cacto.cpp
+../../include/estrutura-hpp/Cacto.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Cacto.hpp
+iostream
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/estrutura-cpp/iostream
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/estrutura-cpp/Estrutura.cpp
+../../include/estrutura-hpp/Estrutura.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+iostream
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/estrutura-cpp/Lapide.cpp
+../../include/estrutura-hpp/Lapide.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Lapide.hpp
+iostream
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/estrutura-cpp/iostream
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/estrutura-cpp/Parede.cpp
+../../include/estrutura-hpp/Parede.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Parede.hpp
+iostream
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/estrutura-cpp/iostream
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/estrutura-cpp/Slot.cpp
+../../include/estrutura-hpp/Slot.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Slot.hpp
+iostream
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/estrutura-cpp/iostream
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/estrutura-cpp/Teia.cpp
+../../include/estrutura-hpp/Teia.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Teia.hpp
+iostream
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/estrutura-cpp/iostream
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/estrutura-cpp/Templo.cpp
+../../include/estrutura-hpp/Templo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Templo.hpp
+iostream
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/estrutura-cpp/iostream
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/inimigo-cpp/Escorpiao.cpp
+../../include/inimigo-hpp/Escorpiao.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Escorpiao.hpp
+iostream
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/inimigo-cpp/iostream
+string
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/inimigo-cpp/Esqueleto.cpp
+../../include/inimigo-hpp/Esqueleto.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Esqueleto.hpp
+iostream
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/inimigo-cpp/iostream
+string
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/inimigo-cpp/Inimigo.cpp
+../../include/inimigo-hpp/Inimigo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+iostream
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/inimigo-cpp/Lobisomen.cpp
+../../include/inimigo-hpp/Lobisomen.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Lobisomen.hpp
+iostream
+-
+ctime
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/inimigo-cpp/Mumia.cpp
+../../include/inimigo-hpp/Mumia.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Mumia.hpp
+iostream
+-
+ctime
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/inimigo-cpp/Vampiro.cpp
+../../include/inimigo-hpp/Vampiro.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Vampiro.hpp
+iostream
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/inimigo-cpp/iostream
+string
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/inimigo-cpp/Zumbi.cpp
+../../include/inimigo-hpp/Zumbi.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Zumbi.hpp
+iostream
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/inimigo-cpp/iostream
+string
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/interface-cpp/Interface.cpp
+../../include/mapa-hpp/Mapa.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/Mapa.hpp
+../../include/entidade-hpp/Entidade.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/entidade-hpp/Entidade.hpp
+../../include/estrutura-hpp/Estrutura.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+../../include/inimigo-hpp/Inimigo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+../../include/simulador-hpp/Simulador.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
+../../include/interface-hpp/Interface.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/interface-hpp/Interface.hpp
+../../include/mapa-hpp/MapaPadrao.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/MapaPadrao.hpp
+../../include/mapa-hpp/Cemiterio.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/Cemiterio.hpp
+../../include/mapa-hpp/DesertoMisterioso.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/DesertoMisterioso.hpp
+vector
+-
+iostream
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/interface-cpp/iostream
+cmath
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/mapa-cpp/Cemiterio.cpp
+../../include/estrutura-hpp/Teia.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Teia.hpp
+../../include/estrutura-hpp/Lapide.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Lapide.hpp
+../../include/estrutura-hpp/Slot.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Slot.hpp
+../../include/simulador-hpp/Simulador.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
+../../include/torre-hpp/TorreDeVeneno.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeVeneno.hpp
+../../include/torre-hpp/TorreDeFantasmas.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeFantasmas.hpp
+../../include/inimigo-hpp/Esqueleto.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Esqueleto.hpp
+../../include/inimigo-hpp/Zumbi.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Zumbi.hpp
+../../include/mapa-hpp/Cemiterio.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/Cemiterio.hpp
+../../include/interface-hpp/Interface.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/interface-hpp/Interface.hpp
+iostream
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/mapa-cpp/iostream
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/mapa-cpp/DesertoMisterioso.cpp
+../../include/estrutura-hpp/Templo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Templo.hpp
+../../include/estrutura-hpp/Cacto.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Cacto.hpp
+../../include/estrutura-hpp/Slot.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Slot.hpp
+../../include/simulador-hpp/Simulador.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
+../../include/mapa-hpp/DesertoMisterioso.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/DesertoMisterioso.hpp
+../../include/torre-hpp/TorreDeAgua.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeAgua.hpp
+../../include/torre-hpp/TorreDeGelo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeGelo.hpp
+../../include/inimigo-hpp/Mumia.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Mumia.hpp
+../../include/inimigo-hpp/Escorpiao.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Escorpiao.hpp
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/mapa-cpp/Mapa.cpp
+../../include/mapa-hpp/Mapa.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/Mapa.hpp
+../../include/entidade-hpp/Entidade.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/entidade-hpp/Entidade.hpp
+../../include/estrutura-hpp/Estrutura.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+../../include/inimigo-hpp/Inimigo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+thread
+-
+chrono
+-
+vector
+-
+string
+-
+cmath
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/mapa-cpp/MapaPadrao.cpp
+../../include/estrutura-hpp/Arvore.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Arvore.hpp
+../../include/estrutura-hpp/Parede.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Parede.hpp
+../../include/estrutura-hpp/Slot.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Slot.hpp
+../../include/simulador-hpp/Simulador.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
+../../include/mapa-hpp/MapaPadrao.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/MapaPadrao.hpp
+../../include/torre-hpp/TorreDeFogo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeFogo.hpp
+../../include/torre-hpp/TorreDeEletricidade.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeEletricidade.hpp
+../../include/inimigo-hpp/Vampiro.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Vampiro.hpp
+../../include/inimigo-hpp/Lobisomen.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Lobisomen.hpp
+iostream
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/mapa-cpp/iostream
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/principal/main.cpp
+../../include/mapa-hpp/Mapa.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/Mapa.hpp
+../../include/torre-hpp/TorreDeFogo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeFogo.hpp
+../../include/inimigo-hpp/Esqueleto.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Esqueleto.hpp
+../../include/estrutura-hpp/Arvore.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Arvore.hpp
+../../include/estrutura-hpp/Parede.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Parede.hpp
+../../include/simulador-hpp/Simulador.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
+../../include/mapa-hpp/MapaPadrao.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/MapaPadrao.hpp
+../../include/mapa-hpp/Cemiterio.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/Cemiterio.hpp
+../../include/inimigo-hpp/Zumbi.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Zumbi.hpp
+iostream
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/principal/iostream
+thread
+-
+chrono
+-
+memory
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/simulador-cpp/Simulador.cpp
+../../include/mapa-hpp/Mapa.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/Mapa.hpp
+../../include/entidade-hpp/Entidade.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/entidade-hpp/Entidade.hpp
+../../include/estrutura-hpp/Estrutura.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/estrutura-hpp/Estrutura.hpp
+../../include/inimigo-hpp/Inimigo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/inimigo-hpp/Inimigo.hpp
+../../include/simulador-hpp/Simulador.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/simulador-hpp/Simulador.hpp
+../../include/interface-hpp/Interface.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/interface-hpp/Interface.hpp
+../../include/mapa-hpp/Cemiterio.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/mapa-hpp/Cemiterio.hpp
+iostream
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/simulador-cpp/iostream
+thread
+-
+chrono
+-
+vector
+-
+cmath
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/torre-cpp/Torre.cpp
+../../include/torre-hpp/Torre.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/Torre.hpp
+vector
+-
+iostream
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/torre-cpp/iostream
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/torre-cpp/TorreDeAgua.cpp
+../../include/torre-hpp/TorreDeAgua.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeAgua.hpp
+string
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/torre-cpp/TorreDeEletricidade.cpp
+../../include/torre-hpp/TorreDeEletricidade.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeEletricidade.hpp
+iostream
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/torre-cpp/iostream
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/torre-cpp/TorreDeFantasmas.cpp
+../../include/torre-hpp/TorreDeFantasmas.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeFantasmas.hpp
+string
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/torre-cpp/TorreDeFogo.cpp
+../../include/torre-hpp/TorreDeFogo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeFogo.hpp
+string
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/torre-cpp/TorreDeGelo.cpp
+../../include/torre-hpp/TorreDeGelo.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeGelo.hpp
+string
+-
+
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/src/torre-cpp/TorreDeVeneno.cpp
+../../include/torre-hpp/TorreDeVeneno.hpp
+/home/elaine/Documentos/Programação de Software II/pds/Trabalho-final-PDS2/include/torre-hpp/TorreDeVeneno.hpp
+string
+-
+
