@@ -5,7 +5,8 @@
 #include "../../include/mapa-hpp/MapaPadrao.hpp" 
 #include "../../include/torre-hpp/TorreDeFogo.hpp"
 #include "../../include/torre-hpp/TorreDeEletricidade.hpp"
-#include "../../include/inimigo-hpp/Esqueleto.hpp"
+#include "../../include/inimigo-hpp/Vampiro.hpp"
+#include "../../include/inimigo-hpp/Lobisomen.hpp"
 #include "iostream"
 
  
@@ -35,46 +36,81 @@
             }
         }
 
-      adicionarTorreMapa(simulador);
+    
   }
 
 
-void MapaPadrao::adicionarMapa(Simulador& simulador){
-    MontaMapa(simulador);
-    simulador.adicionarTorre(make_unique<TorreDeFogo>(6,1));
-    simulador.adicionarTorre(make_unique<TorreDeFogo>(7,1));
-    simulador.adicionarTorre(make_unique<TorreDeFogo>(8,1));
-    simulador.adicionarTorre(make_unique<TorreDeFogo>(9,1));
-    simulador.adicionarInimigo(make_unique<Esqueleto>(0,0));
-    simulador.adicionarInimigo(make_unique<Esqueleto>(4,0));
-
-};
 
 
-void MapaPadrao::adicionarHorda(Simulador& simulador){
 
-    simulador.adicionarInimigo(make_unique<Esqueleto>(0,0));
-    simulador.adicionarInimigo(make_unique<Esqueleto>(4,0));
-    simulador.adicionarInimigo(make_unique<Esqueleto>(4,2));
-    simulador.adicionarInimigo(make_unique<Esqueleto>(4,4));
-    simulador.adicionarInimigo(make_unique<Esqueleto>(0,2));
+void MapaPadrao::adicionarHorda(Simulador& simulador, int dificuldade){
+
+    switch (dificuldade){
+        case 1:{
+            simulador.adicionarInimigo(make_unique<Vampiro>(0,0));
+            simulador.adicionarInimigo(make_unique<Vampiro>(2,0));
+            simulador.adicionarInimigo(make_unique<Vampiro>(6,0));
+            simulador.adicionarInimigo(make_unique<Vampiro>(10,0));
+            simulador.adicionarInimigo(make_unique<Vampiro>(4,0));
+            break;}
+        case 2:{
+            simulador.adicionarInimigo(make_unique<Vampiro>(0,0));
+            simulador.adicionarInimigo(make_unique<Vampiro>(2,0));
+            simulador.adicionarInimigo(make_unique<Vampiro>(4,0));
+            simulador.adicionarInimigo(make_unique<Vampiro>(6,0));
+            simulador.adicionarInimigo(make_unique<Vampiro>(8,0));
+
+            simulador.adicionarInimigo(make_unique<Lobisomen>(2,2));
+            simulador.adicionarInimigo(make_unique<Lobisomen>(6,2));
+            break;}
+        case 3:{
+            simulador.adicionarInimigo(make_unique<Vampiro>(0,0));
+            simulador.adicionarInimigo(make_unique<Vampiro>(2,0));
+            simulador.adicionarInimigo(make_unique<Vampiro>(4,0));
+            simulador.adicionarInimigo(make_unique<Vampiro>(6,0));
+
+            simulador.adicionarInimigo(make_unique<Lobisomen>(0,2));
+            simulador.adicionarInimigo(make_unique<Lobisomen>(2,4));
+            simulador.adicionarInimigo(make_unique<Lobisomen>(2,2));
+            simulador.adicionarInimigo(make_unique<Lobisomen>(6,2));
+            break;}
+
+        }
+
 
 }
 
-
-
-
-
-
-void MapaPadrao::adicionarTorreMapa(Simulador& simulador){
-    simulador.adicionarEstrutura(make_unique<Slot>(6,1));
+void MapaPadrao::adicionarTorreMapa(Simulador& simulador,int dificuldade){
+    simulador.adicionarEstrutura(make_unique<Slot>(4,1));
+    simulador.adicionarEstrutura(make_unique<Slot>(5,1));
     simulador.adicionarEstrutura(make_unique<Slot>(7,3));
-    simulador.adicionarEstrutura(make_unique<Slot>(8,1));
-    simulador.adicionarEstrutura(make_unique<Slot>(9,3));
-    simulador.adicionarEstrutura(make_unique<Slot>(8,5));
-    simulador.adicionarEstrutura(make_unique<Slot>(9,7));
+    simulador.adicionarEstrutura(make_unique<Slot>(6,3));
+    simulador.adicionarEstrutura(make_unique<Slot>(4,5));
+    simulador.adicionarEstrutura(make_unique<Slot>(3,5));
+    simulador.adicionarEstrutura(make_unique<Slot>(7,7));
+    simulador.adicionarEstrutura(make_unique<Slot>(2,7));
+    simulador.adicionarEstrutura(make_unique<Slot>(4,9));
+    simulador.adicionarEstrutura(make_unique<Slot>(7,9));
+    simulador.adicionarEstrutura(make_unique<Slot>(6,11));
+    simulador.adicionarEstrutura(make_unique<Slot>(4,11));
     simulador.printaMapa();
-    int escolha = 4 ;
+
+    int escolha;
+    switch (dificuldade){
+        case 1:{
+            escolha=5;
+            break;
+        }
+        case 2:{
+            escolha=4;
+            break;
+        }
+        case 3:{
+            escolha=3;
+            break;
+        }
+
+    }
     do {
     cout << "Você tem " << escolha <<  " torrês disponiveís" << endl;
     cout << "Escolha qual coluna  você deseja colocar a torre" << endl;
@@ -84,26 +120,50 @@ void MapaPadrao::adicionarTorreMapa(Simulador& simulador){
         switch (opcao) 
     {
         case 1:
-        {
-        simulador.adicionarTorre(make_unique<TorreDeFogo>(6,1));
-        simulador.adicionarTorre(make_unique<TorreDeEletricidade>(7,1));
-        escolha--;
-        break;
+            {
+            simulador.adicionarTorre(make_unique<TorreDeFogo>(4,1));
+            simulador.adicionarTorre(make_unique<TorreDeEletricidade>(5,1));
+            escolha--;
+        break;}
+        case 3:
+            {
+            simulador.adicionarTorre(make_unique<TorreDeFogo>(7,3));
+            simulador.adicionarTorre(make_unique<TorreDeEletricidade>(6,3));;
+            escolha--;
+            break;
         }
-        case 2:
+        case 5:{
+            simulador.adicionarTorre(make_unique<TorreDeFogo>(4,5));
+            simulador.adicionarTorre(make_unique<TorreDeFogo>(3,5));
+            escolha--;
+            break;
+            }
+        case 7:
         {
-        simulador.adicionarTorre(make_unique<TorreDeEletricidade>(6,3));
-        simulador.adicionarTorre(make_unique<TorreDeFogo>(9,3));
-        escolha--;
-        break;
+            simulador.adicionarTorre(make_unique<TorreDeFogo>(7,7));
+            simulador.adicionarTorre(make_unique<TorreDeEletricidade>(2,7));
+            escolha--;
+            break;
         }
-         case 3:
+        case 9:
         {
-        escolha--;
-        break;
+            simulador.adicionarTorre(make_unique<TorreDeEletricidade>(4,9));
+            simulador.adicionarTorre(make_unique<TorreDeEletricidade>(7,9));;
+            escolha--;
+            break;
         }
- }
-    }
+        case 11:
+        {
+            simulador.adicionarTorre(make_unique<TorreDeEletricidade>(6,11));
+            simulador.adicionarTorre(make_unique<TorreDeFogo>(4,11));
+            escolha--;
+            break;
+        }
+            default:
+                cout << "Opção inválida! Por favor, digite um valor de coluna válido." << endl;
+                continue; // Volta para o início do loop para pedir outra entrada válida
+        }
+ }          
     while (escolha > 0);
-    adicionarHorda(simulador);
-};
+    adicionarHorda(simulador, dificuldade);
+}

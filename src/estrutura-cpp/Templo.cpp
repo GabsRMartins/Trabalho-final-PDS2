@@ -6,5 +6,5 @@ Templo::Templo(int x, int y)
 
  void Templo::print(){
 
-    std::cout << "  🛕  ";
+    std::cout << "🛕";
  }

@@ -194,6 +194,7 @@ CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.o: \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/interface-cpp/../../include/mapa-hpp/MapaPadrao.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/interface-cpp/../../include/mapa-hpp/../mapa-hpp/Mapa.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/interface-cpp/../../include/mapa-hpp/Cemiterio.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/interface-cpp/../../include/mapa-hpp/DesertoMisterioso.hpp \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \

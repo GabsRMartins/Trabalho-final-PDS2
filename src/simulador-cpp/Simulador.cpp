@@ -104,6 +104,7 @@ void Simulador::atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnte
             }
           if (Vida == 0) {
                 matrizMapa[posX][posY].release();
+                
             }
         else
         {
@@ -170,8 +171,7 @@ bool Simulador:: simular(int dificuldade) {
 
             if (vidaInimigo > 0) {
                 cout<< "\n-----------------INICIO DO ROUND "<< rounds <<"-----------------\n";
-                cout << "Inimigo detectado! (na posicao:" << posAnteriorX;//remover
-
+                cout << "Inimigo detectado!";
                 if (posAnteriorX == endMap) {
                     endGame = true;
                     defeat = true;
@@ -215,7 +215,7 @@ bool Simulador:: simular(int dificuldade) {
                 cout << "VICTORY!" << "\n";
                 return true;
             }
-        std::this_thread::sleep_for(std::chrono::seconds(2));
+        std::this_thread::sleep_for(std::chrono::seconds(3));
         }
 
     }
@@ -223,7 +223,7 @@ bool Simulador:: simular(int dificuldade) {
 
 void Simulador::startSimulacao(Simulador& simulador){
     Interface dificuldade;
-    cout<<"Bem vindo ao Defense PDS 2"<< endl;
+    cout<<"Bem vindo ao Defense PDS 2!"<< endl;
     int opcao;
     cout<<"Qual a dificuldade você gostaria de jogar?";
     cout<<" [1] Fácil || [2] Médio || [3] Difícil" << endl;

@@ -13,10 +13,9 @@ public:
   
     Cemiterio(int altura, int largura);
     void MontaMapa(Simulador& simulador) override;
-    void adicionarMapa(Simulador& simulador) override;
-    void  adicionarTorreMapa(Simulador& simulador) override;
-    void  adicionarHorda(Simulador& simulador) override;
-    ~Cemiterio();
+    void  adicionarTorreMapa(Simulador& simulador, int dificuldade) override;
+    void  adicionarHorda(Simulador& simulador,int dificuldade) override;
+   
 
 };
 

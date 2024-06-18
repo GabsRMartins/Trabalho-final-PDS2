@@ -10,7 +10,7 @@ TorreDeGelo::TorreDeGelo(int x, int y)
 
 // Implementação do método de ataque específico para a Torre de Fogo
 void TorreDeGelo::atacar() const {
-   cout <<  nome << " na posição: " << "["<< m_positionX << "]" << "["<< m_positionY << "]"  << " ataca com fogo!\n";
+   cout <<  nome << " na posição: " << "["<< m_positionX << "]" << "["<< m_positionY << "]"  << " ataca com gelo!\n";
 
 };
 

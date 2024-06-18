@@ -6,7 +6,7 @@ using std::cout;
 
 // Construtor da classe TorreDeFogo
 TorreDeFogo::TorreDeFogo(int x, int y)
-    : Torre("Torre de Fogo", x,y, 3, 10) {}
+    : Torre("Torre de Fogo", x,y, 3, 30) {}
 
 // Implementação do método de ataque específico para a Torre de Fogo
 void TorreDeFogo::atacar() const {

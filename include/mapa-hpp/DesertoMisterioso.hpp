@@ -14,9 +14,11 @@ class DesertoMisterioso : public Mapa {
 public:
     // Construtor da classe DesertoMisterioso que inicializa a altura e largura do mapa
     DesertoMisterioso(int altura, int largura);
+ 
+   void MontaMapa(Simulador& simulador) override;
+   void  adicionarTorreMapa(Simulador& simulador, int dificuldade) override;
+   void  adicionarHorda(Simulador& simulador, int dificuldade) override;
 
-    // Método que monta o mapa do Deserto Misterioso no simulador
-    void MontaMapa(Simulador& simulador) override;
 };
 
 #endif // Finaliza a definição de DESERTOMISTERIOSO_HPP para evitar inclusões múltiplas

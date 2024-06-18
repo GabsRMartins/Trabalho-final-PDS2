@@ -153,6 +153,30 @@ src/estrutura-cpp/Arvore.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Arvore.cpp.s
 .PHONY : src/estrutura-cpp/Arvore.cpp.s
 
+src/estrutura-cpp/Cacto.o: src/estrutura-cpp/Cacto.cpp.o
+.PHONY : src/estrutura-cpp/Cacto.o
+
+# target to build an object file
+src/estrutura-cpp/Cacto.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Cacto.cpp.o
+.PHONY : src/estrutura-cpp/Cacto.cpp.o
+
+src/estrutura-cpp/Cacto.i: src/estrutura-cpp/Cacto.cpp.i
+.PHONY : src/estrutura-cpp/Cacto.i
+
+# target to preprocess a source file
+src/estrutura-cpp/Cacto.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Cacto.cpp.i
+.PHONY : src/estrutura-cpp/Cacto.cpp.i
+
+src/estrutura-cpp/Cacto.s: src/estrutura-cpp/Cacto.cpp.s
+.PHONY : src/estrutura-cpp/Cacto.s
+
+# target to generate assembly for a file
+src/estrutura-cpp/Cacto.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Cacto.cpp.s
+.PHONY : src/estrutura-cpp/Cacto.cpp.s
+
 src/estrutura-cpp/Estrutura.o: src/estrutura-cpp/Estrutura.cpp.o
 .PHONY : src/estrutura-cpp/Estrutura.o
 
@@ -273,6 +297,54 @@ src/estrutura-cpp/Teia.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Teia.cpp.s
 .PHONY : src/estrutura-cpp/Teia.cpp.s
 
+src/estrutura-cpp/Templo.o: src/estrutura-cpp/Templo.cpp.o
+.PHONY : src/estrutura-cpp/Templo.o
+
+# target to build an object file
+src/estrutura-cpp/Templo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Templo.cpp.o
+.PHONY : src/estrutura-cpp/Templo.cpp.o
+
+src/estrutura-cpp/Templo.i: src/estrutura-cpp/Templo.cpp.i
+.PHONY : src/estrutura-cpp/Templo.i
+
+# target to preprocess a source file
+src/estrutura-cpp/Templo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Templo.cpp.i
+.PHONY : src/estrutura-cpp/Templo.cpp.i
+
+src/estrutura-cpp/Templo.s: src/estrutura-cpp/Templo.cpp.s
+.PHONY : src/estrutura-cpp/Templo.s
+
+# target to generate assembly for a file
+src/estrutura-cpp/Templo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/estrutura-cpp/Templo.cpp.s
+.PHONY : src/estrutura-cpp/Templo.cpp.s
+
+src/inimigo-cpp/Escorpiao.o: src/inimigo-cpp/Escorpiao.cpp.o
+.PHONY : src/inimigo-cpp/Escorpiao.o
+
+# target to build an object file
+src/inimigo-cpp/Escorpiao.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Escorpiao.cpp.o
+.PHONY : src/inimigo-cpp/Escorpiao.cpp.o
+
+src/inimigo-cpp/Escorpiao.i: src/inimigo-cpp/Escorpiao.cpp.i
+.PHONY : src/inimigo-cpp/Escorpiao.i
+
+# target to preprocess a source file
+src/inimigo-cpp/Escorpiao.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Escorpiao.cpp.i
+.PHONY : src/inimigo-cpp/Escorpiao.cpp.i
+
+src/inimigo-cpp/Escorpiao.s: src/inimigo-cpp/Escorpiao.cpp.s
+.PHONY : src/inimigo-cpp/Escorpiao.s
+
+# target to generate assembly for a file
+src/inimigo-cpp/Escorpiao.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Escorpiao.cpp.s
+.PHONY : src/inimigo-cpp/Escorpiao.cpp.s
+
 src/inimigo-cpp/Esqueleto.o: src/inimigo-cpp/Esqueleto.cpp.o
 .PHONY : src/inimigo-cpp/Esqueleto.o
 
@@ -321,6 +393,78 @@ src/inimigo-cpp/Inimigo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Inimigo.cpp.s
 .PHONY : src/inimigo-cpp/Inimigo.cpp.s
 
+src/inimigo-cpp/Lobisomen.o: src/inimigo-cpp/Lobisomen.cpp.o
+.PHONY : src/inimigo-cpp/Lobisomen.o
+
+# target to build an object file
+src/inimigo-cpp/Lobisomen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Lobisomen.cpp.o
+.PHONY : src/inimigo-cpp/Lobisomen.cpp.o
+
+src/inimigo-cpp/Lobisomen.i: src/inimigo-cpp/Lobisomen.cpp.i
+.PHONY : src/inimigo-cpp/Lobisomen.i
+
+# target to preprocess a source file
+src/inimigo-cpp/Lobisomen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Lobisomen.cpp.i
+.PHONY : src/inimigo-cpp/Lobisomen.cpp.i
+
+src/inimigo-cpp/Lobisomen.s: src/inimigo-cpp/Lobisomen.cpp.s
+.PHONY : src/inimigo-cpp/Lobisomen.s
+
+# target to generate assembly for a file
+src/inimigo-cpp/Lobisomen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Lobisomen.cpp.s
+.PHONY : src/inimigo-cpp/Lobisomen.cpp.s
+
+src/inimigo-cpp/Mumia.o: src/inimigo-cpp/Mumia.cpp.o
+.PHONY : src/inimigo-cpp/Mumia.o
+
+# target to build an object file
+src/inimigo-cpp/Mumia.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Mumia.cpp.o
+.PHONY : src/inimigo-cpp/Mumia.cpp.o
+
+src/inimigo-cpp/Mumia.i: src/inimigo-cpp/Mumia.cpp.i
+.PHONY : src/inimigo-cpp/Mumia.i
+
+# target to preprocess a source file
+src/inimigo-cpp/Mumia.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Mumia.cpp.i
+.PHONY : src/inimigo-cpp/Mumia.cpp.i
+
+src/inimigo-cpp/Mumia.s: src/inimigo-cpp/Mumia.cpp.s
+.PHONY : src/inimigo-cpp/Mumia.s
+
+# target to generate assembly for a file
+src/inimigo-cpp/Mumia.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Mumia.cpp.s
+.PHONY : src/inimigo-cpp/Mumia.cpp.s
+
+src/inimigo-cpp/Vampiro.o: src/inimigo-cpp/Vampiro.cpp.o
+.PHONY : src/inimigo-cpp/Vampiro.o
+
+# target to build an object file
+src/inimigo-cpp/Vampiro.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Vampiro.cpp.o
+.PHONY : src/inimigo-cpp/Vampiro.cpp.o
+
+src/inimigo-cpp/Vampiro.i: src/inimigo-cpp/Vampiro.cpp.i
+.PHONY : src/inimigo-cpp/Vampiro.i
+
+# target to preprocess a source file
+src/inimigo-cpp/Vampiro.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Vampiro.cpp.i
+.PHONY : src/inimigo-cpp/Vampiro.cpp.i
+
+src/inimigo-cpp/Vampiro.s: src/inimigo-cpp/Vampiro.cpp.s
+.PHONY : src/inimigo-cpp/Vampiro.s
+
+# target to generate assembly for a file
+src/inimigo-cpp/Vampiro.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/inimigo-cpp/Vampiro.cpp.s
+.PHONY : src/inimigo-cpp/Vampiro.cpp.s
+
 src/inimigo-cpp/Zumbi.o: src/inimigo-cpp/Zumbi.cpp.o
 .PHONY : src/inimigo-cpp/Zumbi.o
 
@@ -368,54 +512,6 @@ src/interface-cpp/Interface.s: src/interface-cpp/Interface.cpp.s
 src/interface-cpp/Interface.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/interface-cpp/Interface.cpp.s
 .PHONY : src/interface-cpp/Interface.cpp.s
-
-src/mapa-cpp/CasteloAbandonado.o: src/mapa-cpp/CasteloAbandonado.cpp.o
-.PHONY : src/mapa-cpp/CasteloAbandonado.o
-
-# target to build an object file
-src/mapa-cpp/CasteloAbandonado.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/CasteloAbandonado.cpp.o
-.PHONY : src/mapa-cpp/CasteloAbandonado.cpp.o
-
-src/mapa-cpp/CasteloAbandonado.i: src/mapa-cpp/CasteloAbandonado.cpp.i
-.PHONY : src/mapa-cpp/CasteloAbandonado.i
-
-# target to preprocess a source file
-src/mapa-cpp/CasteloAbandonado.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/CasteloAbandonado.cpp.i
-.PHONY : src/mapa-cpp/CasteloAbandonado.cpp.i
-
-src/mapa-cpp/CasteloAbandonado.s: src/mapa-cpp/CasteloAbandonado.cpp.s
-.PHONY : src/mapa-cpp/CasteloAbandonado.s
-
-# target to generate assembly for a file
-src/mapa-cpp/CasteloAbandonado.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/CasteloAbandonado.cpp.s
-.PHONY : src/mapa-cpp/CasteloAbandonado.cpp.s
-
-src/mapa-cpp/CavernaOculta.o: src/mapa-cpp/CavernaOculta.cpp.o
-.PHONY : src/mapa-cpp/CavernaOculta.o
-
-# target to build an object file
-src/mapa-cpp/CavernaOculta.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/CavernaOculta.cpp.o
-.PHONY : src/mapa-cpp/CavernaOculta.cpp.o
-
-src/mapa-cpp/CavernaOculta.i: src/mapa-cpp/CavernaOculta.cpp.i
-.PHONY : src/mapa-cpp/CavernaOculta.i
-
-# target to preprocess a source file
-src/mapa-cpp/CavernaOculta.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/CavernaOculta.cpp.i
-.PHONY : src/mapa-cpp/CavernaOculta.cpp.i
-
-src/mapa-cpp/CavernaOculta.s: src/mapa-cpp/CavernaOculta.cpp.s
-.PHONY : src/mapa-cpp/CavernaOculta.s
-
-# target to generate assembly for a file
-src/mapa-cpp/CavernaOculta.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mapa-cpp/CavernaOculta.cpp.s
-.PHONY : src/mapa-cpp/CavernaOculta.cpp.s
 
 src/mapa-cpp/Cemiterio.o: src/mapa-cpp/Cemiterio.cpp.o
 .PHONY : src/mapa-cpp/Cemiterio.o
@@ -705,6 +801,30 @@ src/torre-cpp/TorreDeGelo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/torre-cpp/TorreDeGelo.cpp.s
 .PHONY : src/torre-cpp/TorreDeGelo.cpp.s
 
+src/torre-cpp/TorreDeVeneno.o: src/torre-cpp/TorreDeVeneno.cpp.o
+.PHONY : src/torre-cpp/TorreDeVeneno.o
+
+# target to build an object file
+src/torre-cpp/TorreDeVeneno.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/torre-cpp/TorreDeVeneno.cpp.o
+.PHONY : src/torre-cpp/TorreDeVeneno.cpp.o
+
+src/torre-cpp/TorreDeVeneno.i: src/torre-cpp/TorreDeVeneno.cpp.i
+.PHONY : src/torre-cpp/TorreDeVeneno.i
+
+# target to preprocess a source file
+src/torre-cpp/TorreDeVeneno.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/torre-cpp/TorreDeVeneno.cpp.i
+.PHONY : src/torre-cpp/TorreDeVeneno.cpp.i
+
+src/torre-cpp/TorreDeVeneno.s: src/torre-cpp/TorreDeVeneno.cpp.s
+.PHONY : src/torre-cpp/TorreDeVeneno.s
+
+# target to generate assembly for a file
+src/torre-cpp/TorreDeVeneno.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/torre-cpp/TorreDeVeneno.cpp.s
+.PHONY : src/torre-cpp/TorreDeVeneno.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -717,6 +837,9 @@ help:
 	@echo "... src/estrutura-cpp/Arvore.o"
 	@echo "... src/estrutura-cpp/Arvore.i"
 	@echo "... src/estrutura-cpp/Arvore.s"
+	@echo "... src/estrutura-cpp/Cacto.o"
+	@echo "... src/estrutura-cpp/Cacto.i"
+	@echo "... src/estrutura-cpp/Cacto.s"
 	@echo "... src/estrutura-cpp/Estrutura.o"
 	@echo "... src/estrutura-cpp/Estrutura.i"
 	@echo "... src/estrutura-cpp/Estrutura.s"
@@ -732,24 +855,33 @@ help:
 	@echo "... src/estrutura-cpp/Teia.o"
 	@echo "... src/estrutura-cpp/Teia.i"
 	@echo "... src/estrutura-cpp/Teia.s"
+	@echo "... src/estrutura-cpp/Templo.o"
+	@echo "... src/estrutura-cpp/Templo.i"
+	@echo "... src/estrutura-cpp/Templo.s"
+	@echo "... src/inimigo-cpp/Escorpiao.o"
+	@echo "... src/inimigo-cpp/Escorpiao.i"
+	@echo "... src/inimigo-cpp/Escorpiao.s"
 	@echo "... src/inimigo-cpp/Esqueleto.o"
 	@echo "... src/inimigo-cpp/Esqueleto.i"
 	@echo "... src/inimigo-cpp/Esqueleto.s"
 	@echo "... src/inimigo-cpp/Inimigo.o"
 	@echo "... src/inimigo-cpp/Inimigo.i"
 	@echo "... src/inimigo-cpp/Inimigo.s"
+	@echo "... src/inimigo-cpp/Lobisomen.o"
+	@echo "... src/inimigo-cpp/Lobisomen.i"
+	@echo "... src/inimigo-cpp/Lobisomen.s"
+	@echo "... src/inimigo-cpp/Mumia.o"
+	@echo "... src/inimigo-cpp/Mumia.i"
+	@echo "... src/inimigo-cpp/Mumia.s"
+	@echo "... src/inimigo-cpp/Vampiro.o"
+	@echo "... src/inimigo-cpp/Vampiro.i"
+	@echo "... src/inimigo-cpp/Vampiro.s"
 	@echo "... src/inimigo-cpp/Zumbi.o"
 	@echo "... src/inimigo-cpp/Zumbi.i"
 	@echo "... src/inimigo-cpp/Zumbi.s"
 	@echo "... src/interface-cpp/Interface.o"
 	@echo "... src/interface-cpp/Interface.i"
 	@echo "... src/interface-cpp/Interface.s"
-	@echo "... src/mapa-cpp/CasteloAbandonado.o"
-	@echo "... src/mapa-cpp/CasteloAbandonado.i"
-	@echo "... src/mapa-cpp/CasteloAbandonado.s"
-	@echo "... src/mapa-cpp/CavernaOculta.o"
-	@echo "... src/mapa-cpp/CavernaOculta.i"
-	@echo "... src/mapa-cpp/CavernaOculta.s"
 	@echo "... src/mapa-cpp/Cemiterio.o"
 	@echo "... src/mapa-cpp/Cemiterio.i"
 	@echo "... src/mapa-cpp/Cemiterio.s"
@@ -786,6 +918,9 @@ help:
 	@echo "... src/torre-cpp/TorreDeGelo.o"
 	@echo "... src/torre-cpp/TorreDeGelo.i"
 	@echo "... src/torre-cpp/TorreDeGelo.s"
+	@echo "... src/torre-cpp/TorreDeVeneno.o"
+	@echo "... src/torre-cpp/TorreDeVeneno.i"
+	@echo "... src/torre-cpp/TorreDeVeneno.s"
 .PHONY : help
 
 

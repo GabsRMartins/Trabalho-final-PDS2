@@ -6,5 +6,5 @@ Teia::Teia(int x, int y)
 
  void Teia::print(){
 
-    std::cout << "🕸️";
+    std::cout << "🕸️ ";
  }

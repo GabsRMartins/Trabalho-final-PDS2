@@ -1,7 +1,7 @@
 CMakeFiles/test.dir/src/mapa-cpp/DesertoMisterioso.cpp.o: \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/DesertoMisterioso.cpp \
  /usr/include/stdc-predef.h \
- /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/estrutura-hpp/Teia.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/estrutura-hpp/Templo.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/estrutura-hpp/Estrutura.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/estrutura-hpp/../entidade-hpp/Entidade.hpp \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
@@ -118,7 +118,8 @@ CMakeFiles/test.dir/src/mapa-cpp/DesertoMisterioso.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/estrutura-hpp/Arvore.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/estrutura-hpp/Cacto.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/estrutura-hpp/Slot.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/simulador-hpp/Simulador.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/simulador-hpp/../torre-hpp/Torre.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/simulador-hpp/../torre-hpp/../entidade-hpp/Entidade.hpp \
@@ -193,4 +194,10 @@ CMakeFiles/test.dir/src/mapa-cpp/DesertoMisterioso.cpp.o: \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/mapa-hpp/../mapa-hpp/../torre-hpp/Torre.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/mapa-hpp/../mapa-hpp/../inimigo-hpp/Inimigo.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/mapa-hpp/../mapa-hpp/../estrutura-hpp/Estrutura.hpp \
- /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/mapa-hpp/../mapa-hpp/../simulador-hpp/Simulador.hpp
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/mapa-hpp/../mapa-hpp/../simulador-hpp/Simulador.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/torre-hpp/TorreDeAgua.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/torre-hpp/Torre.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/torre-hpp/TorreDeGelo.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/inimigo-hpp/Mumia.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/inimigo-hpp/Inimigo.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/inimigo-hpp/Escorpiao.hpp
