@@ -24,4 +24,4 @@ set(SOURCES
 include_directories( Simulador-hpp Entidade-hpp Torre-hpp Inimigo-hpp Estrutura-hpp Mapa-hpp Interface-hpp)
 
 # Create an executable
-add_executable(test ${SOURCES})
+add_executable(jogo ${SOURCES})
