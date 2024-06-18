@@ -8,12 +8,13 @@
 #include "../../include/inimigo-hpp/Vampiro.hpp"
 #include "../../include/inimigo-hpp/Lobisomen.hpp"
 #include "iostream"
-
+#include <set>
  
  using std::make_unique;
  using std::cout;
  using std::endl;
  using std::cin;
+ using std::set;
 
   
   MapaPadrao::MapaPadrao(int altura, int largura) : Mapa(altura,largura) {
@@ -72,7 +73,7 @@ void MapaPadrao::adicionarHorda(Simulador& simulador, int dificuldade){
             simulador.adicionarInimigo(make_unique<Lobisomen>(0,2));
             simulador.adicionarInimigo(make_unique<Lobisomen>(2,4));
             simulador.adicionarInimigo(make_unique<Lobisomen>(2,2));
-            simulador.adicionarInimigo(make_unique<Lobisomen>(6,2));
+            simulador.adicionarInimigo(make_unique<Lobisomen>(6,2));          
             break;}
 
         }
@@ -87,12 +88,18 @@ void MapaPadrao::adicionarTorreMapa(Simulador& simulador,int dificuldade){
     simulador.adicionarEstrutura(make_unique<Slot>(6,3));
     simulador.adicionarEstrutura(make_unique<Slot>(4,5));
     simulador.adicionarEstrutura(make_unique<Slot>(3,5));
+
     simulador.adicionarEstrutura(make_unique<Slot>(7,7));
     simulador.adicionarEstrutura(make_unique<Slot>(2,7));
+    if(dificuldade < 3){
     simulador.adicionarEstrutura(make_unique<Slot>(4,9));
     simulador.adicionarEstrutura(make_unique<Slot>(7,9));
+    if(dificuldade < 2){
+        
     simulador.adicionarEstrutura(make_unique<Slot>(6,11));
     simulador.adicionarEstrutura(make_unique<Slot>(4,11));
+    }
+    }
     simulador.printaMapa();
 
     int escolha;
@@ -111,12 +118,19 @@ void MapaPadrao::adicionarTorreMapa(Simulador& simulador,int dificuldade){
         }
 
     }
-    do {
-    cout << "Você tem " << escolha <<  " torrês disponiveís" << endl;
-    cout << "Escolha qual coluna  você deseja colocar a torre" << endl;
+       set<int> colunasEscolhidas;
+    while (escolha > 0)  {
+    cout << "Você tem " << escolha <<  " colunas  disponiveís para alocar as torres" << endl;
+
+    cout << "Digite o número de qual coluna você deseja colocar as torres: " << endl;
+    cout << "Os slots em vermelho são os disponíveis para receber as torres. Lembrando que são somente números ímpares!" << endl;
+  
     int opcao;
     cin >> opcao;
-
+     if (colunasEscolhidas.find(opcao) != colunasEscolhidas.end()) {
+            cout << "Coluna já escolhida! Por favor, escolha outra coluna." << endl;
+            continue; // Pede uma nova entrada válida
+        }
         switch (opcao) 
     {
         case 1:
@@ -163,7 +177,8 @@ void MapaPadrao::adicionarTorreMapa(Simulador& simulador,int dificuldade){
                 cout << "Opção inválida! Por favor, digite um valor de coluna válido." << endl;
                 continue; // Volta para o início do loop para pedir outra entrada válida
         }
+        colunasEscolhidas.insert(opcao);
  }          
-    while (escolha > 0);
+  
     adicionarHorda(simulador, dificuldade);
 }

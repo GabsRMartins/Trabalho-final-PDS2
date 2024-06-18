@@ -22,6 +22,13 @@ using std::unique_ptr;
 using std::move;
 using std::cout;
 using std::endl;
+using std::exception;
+using std::endl;
+using std::cerr;
+using std::out_of_range;
+using std::invalid_argument;
+
+
 
 
 
@@ -40,50 +47,90 @@ Simulador::Simulador() {
 }
 
 void Simulador::adicionarTorre(unique_ptr<Torre> torre) {
+    try {
+        // Verificar se a torre é válida
+        if (!torre) {
+            throw invalid_argument("Torre inválida!");
+        }
 
-    torres.push_back(torre.get()); // Adiciona o ponteiro cru ao vetor torres
-    int posX = torre->getPosicaoX();
-    int posY = torre->getPosicaoY();
+        int posX = torre->getPosicaoX();
+        int posY = torre->getPosicaoY();
 
-    if (posX >= 0 && posX < m_altura && posY >= 0 && posY < m_largura) {
-        // Adiciona um ponteiro para a torre à matriz
-        matrizMapa[posX][posY] = move(torre);
+        // Verificar se a posição está dentro dos limites da matriz
+        if (posX >= 0 && posX < m_altura && posY >= 0 && posY < m_largura) {
+            // Adiciona a torre ao vetor torres e à matriz
+            torres.push_back(torre.get());
+            matrizMapa[posX][posY] = move(torre);
+        } else {
+            throw out_of_range("Posição da torre fora dos limites da matriz!");
+        }
+    } catch (const exception& e) {
+        cerr << "Erro ao adicionar a torre: " << e.what() << '\n';
+    } catch (...) {
+        cerr << "Erro desconhecido ao adicionar a torre.\n";
     }
 }
 
 
 
 void Simulador::adicionarInimigo(unique_ptr<Inimigo> inimigo) {
+    try {
+        // Verificar se o inimigo é válido
+        if (!inimigo) {
+            throw invalid_argument("Inimigo inválido!");
+        }
 
-   inimigos.push_back(inimigo.get());
+        int posX = inimigo->getPosicaoX();
+        int posY = inimigo->getPosicaoY();
 
-    int posX = inimigo->getPosicaoX();
-    int posY = inimigo->getPosicaoY();
-      if (posX>= 0 && posX < m_altura &&   posY >= 0 && posY < m_largura) {
-        // Adiciona um ponteiro para a inimigo à matriz
-        matrizMapa[posX][posY] = move(inimigo);
+        // Verificar se a posição está dentro dos limites da matriz
+        if (posX >= 0 && posX < m_altura && posY >= 0 && posY < m_largura) {
+            // Adiciona o inimigo ao vetor inimigos e à matriz
+            inimigos.push_back(inimigo.get());
+            matrizMapa[posX][posY] = move(inimigo);
+        } else {
+            throw out_of_range("Posição do inimigo fora dos limites da matriz!");
+        }
+    } catch (const exception& e) {
+        cerr << "Erro ao adicionar o inimigo: " << e.what() << '\n';
+    } catch (...) {
+        cerr << "Erro desconhecido ao adicionar o inimigo.\n";
     }
 }
-
 
 void Simulador::adicionarEstrutura(unique_ptr<Estrutura> estrutura) {
+    try {
+        // Verificar se a estrutura é válida
+        if (!estrutura) {
+            throw invalid_argument("Estrutura inválida!");
+        }
 
-    estruturas.push_back(estrutura.get());
+        int posX = estrutura->getPosicaoX();
+        int posY = estrutura->getPosicaoY();
 
-    int posX = estrutura->getPosicaoX();
-    int posY = estrutura->getPosicaoY();
-
-    if (posX >= 0 && posX < m_altura && posY >= 0 && posY < m_largura) {
-        // Adiciona um ponteiro para a estrutura à matriz
-        matrizMapa[posX][posY] = move(estrutura);
+        // Verificar se a posição está dentro dos limites da matriz
+        if (posX >= 0 && posX < m_altura && posY >= 0 && posY < m_largura) {
+            // Adiciona a estrutura ao vetor estruturas e à matriz
+            estruturas.push_back(estrutura.get());
+            matrizMapa[posX][posY] = move(estrutura);
+        } else {
+            throw out_of_range("Posição da estrutura fora dos limites da matriz!");
+        }
+    } catch (const exception& e) {
+        cerr << "Erro ao adicionar a estrutura: " << e.what() << '\n';
+    } catch (...) {
+        cerr << "Erro desconhecido ao adicionar a estrutura.\n";
     }
 }
-
 
 
 void Simulador::atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnteriorY, int Vida) {
-    // Verificar se a entidade é válida
-  
+       try {
+        // Verificar se a entidade é válida
+        if (!entidade) {
+            cerr << "Entidade inválida!\n";
+            return;
+        }
 
     // Obter a posição da entidade
     int posX = entidade->getPosicaoX();
@@ -112,19 +159,15 @@ void Simulador::atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnte
         matrizMapa[posX][posY].reset(entidade);
         }
     } else {
-        std::cerr << "Nova posição (" << posX << ", " << posY << ") fora dos limites.\n";
+        cerr << "Inimigo chegou ao final do mapa!\n";
     }
 }
-
-/* bool Simulador::verificaEstrutura(int posX, int posY) {
-    if (posX >= 0 && posX < m_altura && posY >= 0 && posY < m_largura) {
-            if(matrizMapa[posX][posY] != nullptr){
-                return 1;
-            }
-            return 0;
+   catch (const exception& e) {
+        cerr << "Erro ao atualizar a matriz: " << e.what() << '\n';
+    } catch (...) {
+        cerr << "Erro desconhecido ao atualizar a matriz.\n";
     }
-} */
-
+}
 
 void Simulador::printaMapa() {
     for (const auto& linha : matrizMapa) {
@@ -208,11 +251,11 @@ bool Simulador:: simular(int dificuldade) {
 
             if (endGame && defeat) {
                 cout << "Inimigos chegaram até o final :(" << "\n";
-                cout << "DEFEAT!" << "\n";
+                cout << "DEFEAT!😖" << "\n";
                 return false;
             } else if (endGame && victory) {
                 cout << "Inimigos Derrotados! Bom trabalho!" << "\n";
-                cout << "VICTORY!" << "\n";
+                cout << "VICTORY!🏆" << "\n";
                 return true;
             }
         std::this_thread::sleep_for(std::chrono::seconds(3));
@@ -226,7 +269,7 @@ void Simulador::startSimulacao(Simulador& simulador){
     cout<<"Bem vindo ao Defense PDS 2!"<< endl;
     int opcao;
     cout<<"Qual a dificuldade você gostaria de jogar?";
-    cout<<" [1] Fácil || [2] Médio || [3] Difícil" << endl;
+    cout<<" [1] Fácil || [2] Médio || [3] Difícil || [0] Sair" << endl;
     scanf("%d",&opcao);
     switch (opcao)
     {
@@ -245,6 +288,8 @@ void Simulador::startSimulacao(Simulador& simulador){
         dificuldade.dificil(simulador);
         break;
         }
+    case 0:
+            break;
     default:
             cout << "Opção inválida! Digite um valor entre 1 e 3 para selecionar a dificuldade!" << endl;
             break;
