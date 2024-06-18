@@ -67,9 +67,9 @@ void Simulador::adicionarTorre(unique_ptr<Torre> torre) {
             throw out_of_range("Posição da torre fora dos limites da matriz!");
         }
     } catch (const exception& e) {
-        cerr << "Erro ao adicionar a torre: " << e.what() << '\n';
+        cerr << "Erro ao adicionar a torre: " << e.what() << '\n'; // Capturar e exibir exceções conhecidas
     } catch (...) {
-        cerr << "Erro desconhecido ao adicionar a torre.\n";
+        cerr << "Erro desconhecido ao adicionar a torre.\n"; // Capturar e exibir exceções desconhecidas
     }
 }
 
@@ -79,7 +79,7 @@ void Simulador::adicionarInimigo(unique_ptr<Inimigo> inimigo) {
     try {
         // Verificar se o inimigo é válido
         if (!inimigo) {
-            throw invalid_argument("Inimigo inválido!");
+            throw invalid_argument("Inimigo inválido!"); // Lança uma exceção se o inimigo for nulo
         }
 
         int posX = inimigo->getPosicaoX();
@@ -88,15 +88,15 @@ void Simulador::adicionarInimigo(unique_ptr<Inimigo> inimigo) {
         // Verificar se a posição está dentro dos limites da matriz
         if (posX >= 0 && posX < m_altura && posY >= 0 && posY < m_largura) {
             // Adiciona o inimigo ao vetor inimigos e à matriz
-            inimigos.push_back(inimigo.get());
-            matrizMapa[posX][posY] = move(inimigo);
+            inimigos.push_back(inimigo.get()); // Adiciona o ponteiro do inimigo ao vetor
+            matrizMapa[posX][posY] = move(inimigo); // Move o inimigo para a posição na matriz
         } else {
-            throw out_of_range("Posição do inimigo fora dos limites da matriz!");
+            throw out_of_range("Posição do inimigo fora dos limites da matriz!"); // Lança uma exceção se a posição for fora dos limites
         }
     } catch (const exception& e) {
-        cerr << "Erro ao adicionar o inimigo: " << e.what() << '\n';
+        cerr << "Erro ao adicionar o inimigo: " << e.what() << '\n'; // Capturar e exibir exceções conhecidas
     } catch (...) {
-        cerr << "Erro desconhecido ao adicionar o inimigo.\n";
+        cerr << "Erro desconhecido ao adicionar o inimigo.\n"; // Capturar e exibir exceções desconhecidas
     }
 }
 
@@ -114,15 +114,15 @@ void Simulador::adicionarEstrutura(unique_ptr<Estrutura> estrutura) {
         // Verificar se a posição está dentro dos limites da matriz
         if (posX >= 0 && posX < m_altura && posY >= 0 && posY < m_largura) {
             // Adiciona a estrutura ao vetor estruturas e à matriz
-            estruturas.push_back(estrutura.get());
-            matrizMapa[posX][posY] = move(estrutura);
+            estruturas.push_back(estrutura.get()); // Adiciona o ponteiro da estrutura ao vetor
+            matrizMapa[posX][posY] = move(estrutura); // Move a estrutura para a posição na matriz
         } else {
-            throw out_of_range("Posição da estrutura fora dos limites da matriz!");
+            throw out_of_range("Posição da estrutura fora dos limites da matriz!"); // Lança uma exceção se a posição for inválida
         }
     } catch (const exception& e) {
-        cerr << "Erro ao adicionar a estrutura: " << e.what() << '\n';
+        cerr << "Erro ao adicionar a estrutura: " << e.what() << '\n'; // Captura e exibe exceções conhecidas
     } catch (...) {
-        cerr << "Erro desconhecido ao adicionar a estrutura.\n";
+        cerr << "Erro desconhecido ao adicionar a estrutura.\n"; // Captura e exibe exceções desconhecidas
     }
 }
 
@@ -131,7 +131,7 @@ void Simulador::atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnte
        try {
         // Verificar se a entidade é válida
         if (!entidade) {
-            cerr << "Entidade inválida!\n";
+            cerr << "Entidade inválida!\n"; // Exibe erro se a entidade for nula
             return;
         }
 
@@ -143,17 +143,19 @@ void Simulador::atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnte
     if (posX >= 0 && posX < m_altura && posY >= 0 && posY < m_largura) {
         // Verificar se a posição anterior está dentro dos limites da matriz
         if (posAnteriorX >= 0 && posAnteriorX < m_altura && posAnteriorY >= 0 && posAnteriorY < m_largura) 
-        {
+        {   
+            // Se a posição anterior não estiver vazia, liberar o ponteiro
            if (matrizMapa[posAnteriorX][posAnteriorY] != nullptr) {
                 matrizMapa[posAnteriorX][posAnteriorY].release();
             }
             } 
             else 
             {
-            cout << "Posição anterior (" << posAnteriorX << ", " << posAnteriorY << ") fora dos limites.\n";
+            cout << "Posição anterior (" << posAnteriorX << ", " << posAnteriorY << ") fora dos limites.\n"; // Informa se a posição anterior está fora dos limites
             }
           // Verificar se a entidade ainda está viva
           if (Vida == 0) {
+                // Se a entidade estiver morta, liberar o ponteiro na posição atual
                 matrizMapa[posX][posY].release();
                 
             }
@@ -163,44 +165,44 @@ void Simulador::atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnte
         matrizMapa[posX][posY].reset(entidade);
         }
     } else {
-        cerr << "Inimigo chegou ao final do mapa!\n";
+        cerr << "Inimigo chegou ao final do mapa!\n"; // Exibe erro se a entidade chegou ao final do mapa
     }
 }
    catch (const exception& e) {
-        cerr << "Erro ao atualizar a matriz: " << e.what() << '\n';
+        cerr << "Erro ao atualizar a matriz: " << e.what() << '\n'; // Captura e exibe exceções conhecidas
     } catch (...) {
-        cerr << "Erro desconhecido ao atualizar a matriz.\n";
+        cerr << "Erro desconhecido ao atualizar a matriz.\n"; // Captura e exibe exceções desconhecidas
     }
 }
 // Método para imprimir o mapa
 void Simulador::printaMapa() {
-    for (const auto& linha : matrizMapa) {
-        for (const auto& entidade_ptr : linha) {
-            if (entidade_ptr) {
-                entidade_ptr->print();
+    for (const auto& linha : matrizMapa) { // Iterar sobre cada linha da matriz do mapa
+        for (const auto& entidade_ptr : linha) { // Iterar sobre cada entidade na linha
+            if (entidade_ptr) { 
+                entidade_ptr->print(); // Se a entidade existir, imprimir a entidade
             } else {
-                cout << " - ";
+                cout << " - "; // Se não houver entidade, imprimir um espaço vazio
             }
         }
-        cout << std::endl;
+        cout << std::endl; // Quebrar a linha após imprimir cada linha do mapa
     }
 }
 
 // Método para simular o jogo
 bool Simulador:: simular(int dificuldade) {
     cout << "\n"<< "-----------Partida iniciada!-------------" << endl;
-    int endMap = m_altura - 1;
-    bool endGame = false;
-    bool victory = false;
-    bool defeat = false;
-    int rounds=1;
-   
+    int endMap = m_altura - 1; // Define o fim do mapa como a altura menos um
+    bool endGame = false; // Flag para determinar o fim do jogo
+    bool victory = false; // Flag para determinar a vitória
+    bool defeat = false; // Flag para determinar a derrota
+    int rounds=1; // Contador de rodadas
+    
 
-    while (true) {
-        for (auto it = inimigos.begin(); it != inimigos.end();) {
+    while (true) { // Loop principal do jogo
+        for (auto it = inimigos.begin(); it != inimigos.end();) { // Iterar sobre os inimigos
             auto& inimigo = **it; // Desreferenciar o ponteiro para obter o objeto real
             int vidaInimigo;
-            switch (dificuldade) {
+            switch (dificuldade) {  // Definir a vida do inimigo com base na dificuldade escolhida
                 case 1:
                 {
                     vidaInimigo = inimigo.getVidaFacil();
@@ -215,51 +217,51 @@ bool Simulador:: simular(int dificuldade) {
                 
                 }break;
                 }
-            int posAnteriorX = inimigo.getPosicaoX();
-            int posAnteriorY = inimigo.getPosicaoY();
+            int posAnteriorX = inimigo.getPosicaoX(); // Guarda a posição X anterior do inimigo
+            int posAnteriorY = inimigo.getPosicaoY(); // Guarda a posição Y anterior do inimigo
 
-            if (vidaInimigo > 0) {
+            if (vidaInimigo > 0) { // Se o inimigo ainda estiver vivo
                 cout<< "\n-----------------INICIO DO ROUND "<< rounds <<"-----------------\n";
                 cout << "Inimigo detectado!";
-                if (posAnteriorX == endMap) {
+                if (posAnteriorX == endMap) { // Se o inimigo alcançou o fim do mapa
                     endGame = true;
                     defeat = true;
                 }
-                inimigo.moverX();
-                atualizaMatriz(&inimigo, posAnteriorX, posAnteriorY, vidaInimigo);
+                inimigo.moverX(); // Mover o inimigo no eixo X
+                atualizaMatriz(&inimigo, posAnteriorX, posAnteriorY, vidaInimigo); // Atualizar a matriz com a nova posição do inimigo
                cout << "\nPreparando ataque contra o inimigo na posição [" << inimigo.getPosicaoX() << "] - Vida: " << vidaInimigo << endl; 
 
-                for (const auto& ptr_torre : torres) {
+                for (const auto& ptr_torre : torres) { // Iterar sobre as torres
                     auto& torre = *ptr_torre; // Desreferenciar o ponteiro para obter o objeto real
-                    if (std::abs(torre.getPosicaoX() - inimigo.getPosicaoX()) <= torre.getAlcance()) {
+                    if (std::abs(torre.getPosicaoX() - inimigo.getPosicaoX()) <= torre.getAlcance()) { // Se a torre estiver no alcance do inimigo
                         
-                        if(inimigo.getVida() == 0){
+                        if(inimigo.getVida() == 0){  // Se o inimigo estiver morto
                             cout<<"\nInimigo derrotado!\n";
-                        break;}
-                        torre.atacar();
-                        inimigo.receberDano(torre.getAtaque());
+                        break;} // Sair do loop das torres se o inimigo estiver morto
+                        torre.atacar(); // Torre ataca o inimigo
+                        inimigo.receberDano(torre.getAtaque()); // Inimigo recebe dano da torre
                     }
                 }
                 cout<< "\nMapa do round "<<rounds<<"!\n\n";
-                printaMapa();
+                printaMapa(); // Imprimir o mapa atualizado
                 ++it; // Avançar o interador para o próximo inimigo
                 cout<< "\n-----------------FIM DO ROUND "<< rounds <<"-----------------\n";
-                rounds=rounds+1;
+                rounds=rounds+1; // Incrementar contador de rodadas
             } else {
-                atualizaMatriz(&inimigo, posAnteriorX, posAnteriorY, vidaInimigo); 
+                atualizaMatriz(&inimigo, posAnteriorX, posAnteriorY, vidaInimigo); // Atualizar a matriz com a posição anterior do inimigo morto 
                 it = inimigos.erase(it); // Remover inimigo derrotado e atualizar o iterador
-            if( inimigos.size() == 0)
+            if( inimigos.size() == 0) // Se todos os inimigos forem derrotados
             {
                 endGame = true;
                 victory = true;
              }
             }
 
-            if (endGame && defeat) {
+            if (endGame && defeat) {  // Se o jogo terminou com derrota
                 cout << "Inimigos chegaram até o final :(" << "\n";
                 cout << "DEFEAT!😖" << "\n";
                 return false;
-            } else if (endGame && victory) {
+            } else if (endGame && victory) { // Se o jogo terminou com vitória
                 cout << "Inimigos Derrotados! Bom trabalho!" << "\n";
                 cout << "VICTORY!🏆" << "\n";
                 return true;
