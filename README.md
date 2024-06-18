@@ -2,7 +2,7 @@
 
  O trabalho é um jogo tower defense que tem como estrutura primordial o simulador que armazena entidades, tais como torres, inimigos e estruturas.
 
-### Como Compilar
+## Como Compilar
 
 Para compilar o programa utilizamos a biblicoteca do CMAKE, Utilize o comando sudo apt-get install cmake para instalar
     -Crie um diretório de build mkdir build dentro da pasta Trabalho-final-PDS2;
@@ -12,7 +12,7 @@ Para compilar o programa utilizamos a biblicoteca do CMAKE, Utilize o comando su
     -Execute o programa criado jogo usando "./jogo".
 
 
-### Mais informações
+## Mais informações
 
 Defense PDS 2 é um jogo de defesa onde o jogador deve escolher a dificuldade, o mapa e alocar torres em colunas específicas para proteger seu território contra hordas de inimigos.
 
