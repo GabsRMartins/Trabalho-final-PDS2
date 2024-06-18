@@ -89,6 +89,7 @@ CMakeFiles/test.dir/src/principal/main.cpp.o: ../src/principal/main.cpp
 CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o: ../include/entidade-hpp/Entidade.hpp
 CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o: ../include/estrutura-hpp/Estrutura.hpp
 CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o: ../include/inimigo-hpp/Inimigo.hpp
+CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o: ../include/interface-hpp/Interface.hpp
 CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o: ../include/mapa-hpp/Mapa.hpp
 CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o: ../include/simulador-hpp/Simulador.hpp
 CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o: ../include/torre-hpp/Torre.hpp
