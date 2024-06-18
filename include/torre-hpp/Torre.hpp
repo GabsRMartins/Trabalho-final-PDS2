@@ -36,7 +36,6 @@ public:
 
     void print() override;
 
-    virtual string getTipo()=0;
 };
 
 #endif

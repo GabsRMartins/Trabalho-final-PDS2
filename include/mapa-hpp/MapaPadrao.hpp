@@ -13,7 +13,7 @@ public:
    
    MapaPadrao(int altura, int largura);
    void MontaMapa(Simulador& simulador) override;
-   void adicionarMapa(Simulador& simulador) override;
+   void  adicionarMapa(Simulador& simulador) override;
    void  adicionarTorreMapa(Simulador& simulador) override;
    void  adicionarHorda(Simulador& simulador) override;
 

@@ -104,10 +104,6 @@ void Simulador::atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnte
             }
           if (Vida == 0) {
                 matrizMapa[posX][posY].release();
-                matrizMapa[posX][posY] = nullptr;
-
-            
-    
             }
         else
         {
@@ -141,17 +137,14 @@ void Simulador::printaMapa() {
         cout << std::endl;
     }
 }
-bool Simulador::simular(int dificuldade) {
+bool Simulador:: simular(int dificuldade) {
     cout << "\n"<< "-----------Partida iniciada!-------------" << endl;
-
     int endMap = m_altura - 1;
     bool endGame = false;
     bool victory = false;
     bool defeat = false;
     int rounds=1;
-            
-
-
+   
 
     while (true) {
         for (auto it = inimigos.begin(); it != inimigos.end();) {
@@ -172,37 +165,35 @@ bool Simulador::simular(int dificuldade) {
                 
                 }break;
                 }
-            
             int posAnteriorX = inimigo.getPosicaoX();
             int posAnteriorY = inimigo.getPosicaoY();
-            
+
             if (vidaInimigo > 0) {
                 cout<< "\n-----------------INICIO DO ROUND "<< rounds <<"-----------------\n";
-
                 cout << "Inimigo detectado! (na posicao:" << posAnteriorX;//remover
+
                 if (posAnteriorX == endMap) {
                     endGame = true;
                     defeat = true;
                 }
                 inimigo.moverX();
                 atualizaMatriz(&inimigo, posAnteriorX, posAnteriorY, vidaInimigo);
-                cout << "\nPreparando ataque contra o inimigo na posição [" << inimigo.getPosicaoX() << "] - Vida: " << vidaInimigo << endl; 
+               cout << "\nPreparando ataque contra o inimigo na posição [" << inimigo.getPosicaoX() << "] - Vida: " << vidaInimigo << endl; 
 
                 for (const auto& ptr_torre : torres) {
                     auto& torre = *ptr_torre; // Desreferenciar o ponteiro para obter o objeto real
                     if (std::abs(torre.getPosicaoX() - inimigo.getPosicaoX()) <= torre.getAlcance()) {
+                        
                         if(inimigo.getVida() == 0){
                             cout<<"\nInimigo derrotado!\n";
                         break;}
                         torre.atacar();
                         inimigo.receberDano(torre.getAtaque());
-                       
-
                     }
                 }
                 cout<< "\nMapa do round "<<rounds<<"!\n\n";
                 printaMapa();
-                ++it; // Avançar o iterador para o próximo inimigo
+                ++it; // Avançar o interador para o próximo inimigo
                 cout<< "\n-----------------FIM DO ROUND "<< rounds <<"-----------------\n";
                 rounds=rounds+1;
             } else {
@@ -214,7 +205,7 @@ bool Simulador::simular(int dificuldade) {
                 victory = true;
              }
             }
-            
+
             if (endGame && defeat) {
                 cout << "Inimigos chegaram até o final :(" << "\n";
                 cout << "DEFEAT!" << "\n";
@@ -223,11 +214,8 @@ bool Simulador::simular(int dificuldade) {
                 cout << "Inimigos Derrotados! Bom trabalho!" << "\n";
                 cout << "VICTORY!" << "\n";
                 return true;
-            } 
-
+            }
         std::this_thread::sleep_for(std::chrono::seconds(2));
-        
-
         }
 
     }
@@ -235,7 +223,7 @@ bool Simulador::simular(int dificuldade) {
 
 void Simulador::startSimulacao(Simulador& simulador){
     Interface dificuldade;
-    cout<<"Bem vindo ao Defense PDS 2!"<< endl;
+    cout<<"Bem vindo ao Defense PDS 2"<< endl;
     int opcao;
     cout<<"Qual a dificuldade você gostaria de jogar?";
     cout<<" [1] Fácil || [2] Médio || [3] Difícil" << endl;

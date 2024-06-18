@@ -37,7 +37,7 @@ public:
     int getVidaDificil() const;
     int getVidaFacil() const;
   
-    virtual string getTipo()=0;
+  
     virtual void print() = 0; 
 };
 

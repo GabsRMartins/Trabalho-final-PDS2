@@ -1,5 +1,5 @@
-#include "../../include/estrutura-hpp/Teia.hpp" // Inclui a definição da classe Teia
-#include "../../include/estrutura-hpp/Arvore.hpp" // Inclui a definição da classe Arvore
+#include "../../include/estrutura-hpp/Templo.hpp" // Inclui a definição da classe Teia
+#include "../../include/estrutura-hpp/Areia.hpp" // Inclui a definição da classe Arvore
 #include "../../include/simulador-hpp/Simulador.hpp" // Inclui a definição da classe Simulador
 #include "../../include/mapa-hpp/DesertoMisterioso.hpp" // Inclui a definição da classe DesertoMisterioso
 
@@ -19,10 +19,10 @@ void DesertoMisterioso::MontaMapa(Simulador& simulador) {
                 // Se a linha for par
                 if (y % 2 == 0) {
                     // Adiciona uma teia na posição (y, x)
-                    simulador.adicionarEstrutura(make_unique<Teia>(y, x));
+                    simulador.adicionarEstrutura(make_unique<Areia>(y, x));
                 } else {
                     // Caso contrário, adiciona uma árvore na posição (y, x)
-                    simulador.adicionarEstrutura(make_unique<Arvore>(y, x));
+                    simulador.adicionarEstrutura(make_unique<Templo>(y, x));
                 }
             }
         }

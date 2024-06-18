@@ -10,7 +10,7 @@ public:
     // Construtor da classe Zumbi
     Zumbi(int x, int y);
     void print() override;
-    string getTipo() override;
+
 
 };
 #endif

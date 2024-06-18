@@ -10,7 +10,7 @@ public:
     // Construtor da classe Esqueleto
     Esqueleto(int x, int y);
     void print() override;
-    string getTipo() override;
+   
 };
 
 #endif

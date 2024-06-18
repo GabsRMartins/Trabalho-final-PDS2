@@ -4,13 +4,10 @@
 using std::string;
 
 Esqueleto::Esqueleto(int x, int y)
-    : Inimigo("Esqueleto", x, y, 50) {}
+    : Inimigo("Esqueleto", x, y, 30) {}
 
  void Esqueleto::print(){
 
     std::cout << "💀";
  }
 
-string Esqueleto::getTipo(){
-    return "Esqueleto";
-}

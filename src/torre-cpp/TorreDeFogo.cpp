@@ -18,6 +18,3 @@ void TorreDeFogo::print(){
       cout << "♜🔥";
 };
 
-string TorreDeFogo::getTipo(){
-    return "Torre De Fogo";
-}

@@ -4,13 +4,10 @@
 using std::string;
 
 Zumbi::Zumbi(int x, int y)
-    : Inimigo("Zumbi", x, y, 50) {}
+    : Inimigo("Zumbi", x, y, 80) {}
 
  void Zumbi::print(){
 
     std::cout << "🧟";
  }
 
-string Zumbi::getTipo(){
-   return "Zumbi";
-}
