@@ -27,8 +27,10 @@ public:
     Mapa(int altura, int largura);
     // Adiciona uma torre ao mapa
   
-   void virtual  MontaMapa(Simulador& simulador) = 0;
-
+    void virtual MontaMapa(Simulador& simulador) = 0;
+    void virtual adicionarTorreMapa(Simulador& simulador, int dificuldade) = 0;
+    void virtual adicionarHorda(Simulador& simulador, int dificuldade) = 0;
+  
 
   
 

@@ -6,5 +6,5 @@ Lapide::Lapide(int x, int y)
 
  void Lapide::print(){
 
-    std::cout << "🪦";
+    std::cout << "🪦 ";
  }

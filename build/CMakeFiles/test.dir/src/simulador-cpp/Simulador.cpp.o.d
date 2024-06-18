@@ -189,6 +189,10 @@ CMakeFiles/test.dir/src/simulador-cpp/Simulador.cpp.o: \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/simulador-cpp/../../include/estrutura-hpp/Estrutura.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/simulador-cpp/../../include/inimigo-hpp/Inimigo.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/simulador-cpp/../../include/simulador-hpp/Simulador.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/simulador-cpp/../../include/interface-hpp/Interface.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/simulador-cpp/../../include/interface-hpp/../simulador-hpp/Simulador.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/simulador-cpp/../../include/mapa-hpp/Cemiterio.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/simulador-cpp/../../include/mapa-hpp/../mapa-hpp/Mapa.hpp \
  /usr/include/c++/13/thread /usr/include/c++/13/bits/std_thread.h \
  /usr/include/c++/13/bits/this_thread_sleep.h \
  /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \

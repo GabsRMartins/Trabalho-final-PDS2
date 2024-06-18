@@ -119,6 +119,7 @@ CMakeFiles/test.dir/src/mapa-cpp/MapaPadrao.cpp.o: \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/estrutura-hpp/Parede.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/estrutura-hpp/Slot.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/simulador-hpp/Simulador.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/simulador-hpp/../torre-hpp/Torre.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/simulador-hpp/../torre-hpp/../entidade-hpp/Entidade.hpp \
@@ -193,4 +194,10 @@ CMakeFiles/test.dir/src/mapa-cpp/MapaPadrao.cpp.o: \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/mapa-hpp/../mapa-hpp/../torre-hpp/Torre.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/mapa-hpp/../mapa-hpp/../inimigo-hpp/Inimigo.hpp \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/mapa-hpp/../mapa-hpp/../estrutura-hpp/Estrutura.hpp \
- /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/mapa-hpp/../mapa-hpp/../simulador-hpp/Simulador.hpp
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/mapa-hpp/../mapa-hpp/../simulador-hpp/Simulador.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/torre-hpp/TorreDeFogo.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/torre-hpp/Torre.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/torre-hpp/TorreDeEletricidade.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/inimigo-hpp/Vampiro.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/inimigo-hpp/Inimigo.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/mapa-cpp/../../include/inimigo-hpp/Lobisomen.hpp

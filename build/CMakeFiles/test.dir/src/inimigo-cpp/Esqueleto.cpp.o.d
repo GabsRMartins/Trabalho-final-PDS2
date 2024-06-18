@@ -2,8 +2,6 @@ CMakeFiles/test.dir/src/inimigo-cpp/Esqueleto.cpp.o: \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/inimigo-cpp/Esqueleto.cpp \
  /usr/include/stdc-predef.h \
  /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/inimigo-cpp/../../include/inimigo-hpp/Esqueleto.hpp \
- /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/inimigo-cpp/../../include/inimigo-hpp/Inimigo.hpp \
- /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/inimigo-cpp/../../include/inimigo-hpp/../entidade-hpp/Entidade.hpp \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -118,6 +116,8 @@ CMakeFiles/test.dir/src/inimigo-cpp/Esqueleto.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/inimigo-cpp/../../include/inimigo-hpp/Inimigo.hpp \
+ /mnt/d/Trabalho\ Final\ PDS\ 2/Trabalho-final-PDS2/src/inimigo-cpp/../../include/inimigo-hpp/../entidade-hpp/Entidade.hpp \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/exception \
  /usr/include/c++/13/bits/exception_ptr.h \

@@ -27,6 +27,7 @@ protected:
 public:
     //Tamanho do mapa
     Simulador(int altura, int largura);
+    Simulador();
     // Adiciona uma torre ao mapa
     void adicionarTorre(unique_ptr<Torre> torre);
   
@@ -34,12 +35,15 @@ public:
     // Adiciona um inimigo ao mapa
     void adicionarInimigo(unique_ptr<Inimigo> inimigo);
     void adicionarEstrutura(unique_ptr<Estrutura> Estrutura);
-    void atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnteriorY);
+    void atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnteriorY, int Vida);
+    void setLimites(int altura, int largura);
   
- /*   bool verificaEstrutura(int posX, int posY); */
+ /*bool verificaEstrutura(int posX, int posY); */
 
     // Simula o combate entre torres e inimigos
-    bool simular();
+    bool simular(int dificuldade);
+    void startSimulacao(Simulador& simulador);
+
 };
 
 #endif

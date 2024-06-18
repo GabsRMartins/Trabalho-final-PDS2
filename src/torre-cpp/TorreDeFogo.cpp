@@ -1,10 +1,12 @@
 #include "../../include/torre-hpp/TorreDeFogo.hpp"
+#include <string>
 
+using std::string;
 using std::cout;
 
 // Construtor da classe TorreDeFogo
 TorreDeFogo::TorreDeFogo(int x, int y)
-    : Torre("Torre de Fogo", x,y, 3, 5) {}
+    : Torre("Torre de Fogo", x,y, 3, 30) {}
 
 // Implementação do método de ataque específico para a Torre de Fogo
 void TorreDeFogo::atacar() const {
@@ -15,3 +17,4 @@ void TorreDeFogo::atacar() const {
 void TorreDeFogo::print(){
       cout << "♜🔥";
 };
+

@@ -1,0 +1,16 @@
+#ifndef TORREDEELETRICIDADE_HPP
+#define TORREDEELETRICIDADE_HPP
+
+#include "Torre.hpp" // Inclui o arquivo de cabeçalho da classe base "Torre"
+
+class TorreDeEletricidade : public Torre { // Classe "TorreDeEletricidade" herda da classe base "Torre"
+private:
+    int voltagem; // Tensão elétrica da torre
+    double eficiencia; // Eficiência da conversão de energi
+public:
+    TorreDeEletricidade(int x, int y); // Construtor
+    void atacar() const override;
+    void print() override;
+};
+
+#endif

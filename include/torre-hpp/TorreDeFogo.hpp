@@ -3,6 +3,9 @@
 
 #include "Torre.hpp"
 #include <iostream>
+#include <string>
+
+using std::string;
 
 //A classe TorreDeFogo herda da classe base Torre.
 class TorreDeFogo : public Torre {
@@ -12,6 +15,7 @@ public:
     //O método atacar() é implementado para a Torre de Fogo e exibe uma mensagem indicando que ela ataca com fogo.
     void atacar() const override;
     void print() override;
+
 };
 
 

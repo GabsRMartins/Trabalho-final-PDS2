@@ -34,7 +34,10 @@ public:
 
     // Método para obter a vida do inimigo
     int getVida() const;
-
+    int getVidaDificil() const;
+    int getVidaFacil() const;
+  
+  
     virtual void print() = 0; 
 };
 
