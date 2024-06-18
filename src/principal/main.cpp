@@ -26,7 +26,6 @@ int main() {
    
     Simulador simulacao;
     simulacao.startSimulacao(simulacao);
-    simulacao.simular();
     return 0;
 }
 

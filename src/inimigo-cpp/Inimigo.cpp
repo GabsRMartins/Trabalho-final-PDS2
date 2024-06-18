@@ -39,3 +39,11 @@ int Inimigo::getPosicaoY() {
 int Inimigo::getVida() const {
     return vida;
 }
+
+int Inimigo::getVidaDificil() const {
+    return vida+20;
+}
+
+int Inimigo::getVidaFacil() const {
+    return vida-20;
+}

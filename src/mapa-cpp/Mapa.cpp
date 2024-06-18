@@ -5,9 +5,9 @@
 #include <thread> // Biblioteca para trabalhar com threads
 #include <chrono> // Biblioteca para trabalhar com tempo
 #include <vector>
-// Aqui temos duas bibliotecas importantes:
-// - <thread>: Permite criar e gerenciar threads (processos paralelos).
-// - <chrono>: Fornece funções para medir o tempo e criar pausas.
+#include <string>
+using std::string;
+
 #include <cmath> // Para std::abs
 
 using std::vector;

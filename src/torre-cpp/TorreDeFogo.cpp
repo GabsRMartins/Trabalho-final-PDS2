@@ -1,5 +1,7 @@
 #include "../../include/torre-hpp/TorreDeFogo.hpp"
+#include <string>
 
+using std::string;
 using std::cout;
 
 // Construtor da classe TorreDeFogo
@@ -15,3 +17,7 @@ void TorreDeFogo::atacar() const {
 void TorreDeFogo::print(){
       cout << "♜🔥";
 };
+
+string TorreDeFogo::getTipo(){
+    return "Torre De Fogo";
+}

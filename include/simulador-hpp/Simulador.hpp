@@ -41,7 +41,7 @@ public:
  /*bool verificaEstrutura(int posX, int posY); */
 
     // Simula o combate entre torres e inimigos
-    bool simular();
+    bool simular(int dificuldade);
     void startSimulacao(Simulador& simulador);
 
 };

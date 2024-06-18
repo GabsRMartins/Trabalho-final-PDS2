@@ -1,12 +1,13 @@
 #ifndef TORRE_HPP
 #define TORRE_HPP
 
- #include"../entidade-hpp/Entidade.hpp"
+#include"../entidade-hpp/Entidade.hpp"
 #include <string>
+using std::string;
 
 class Torre : public Entidade {
 protected:
-    std::string nome; // Nome da torre
+    string nome; // Nome da torre
     int m_positionX; // Posição da torre no mapa
     int m_positionY; // Posição da torre no mapa
     int alcance; // Alcance de ataque da torre
@@ -33,7 +34,9 @@ public:
     // Método para atacar
     int getAtaque() const;
 
-   void print() override;
+    void print() override;
+
+    virtual string getTipo()=0;
 };
 
 #endif
