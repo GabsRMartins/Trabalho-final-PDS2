@@ -9,8 +9,8 @@ private:
     double eficiencia; // Eficiência da conversão de energi
 public:
     TorreDeEletricidade(int x, int y); // Construtor
-    void atacar() const override;
-    void print() override;
+    void atacar() const override;// Método para atacar, sobrescrito da classe base
+    void print() override; // Método para impressão, sobrescrito da classe base
 };
 
 #endif

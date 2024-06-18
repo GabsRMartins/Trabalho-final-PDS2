@@ -4,7 +4,7 @@
 using std::string;
 using std::cout;
 
-// Construtor da classe TorreDeFogo
+// Construtor da classe TorreDeFogo que inicializa a torre com um nome, posição X e Y, alcance e dano
 TorreDeFogo::TorreDeFogo(int x, int y)
     : Torre("Torre de Fogo", x,y, 3, 30) {}
 
@@ -15,6 +15,6 @@ void TorreDeFogo::atacar() const {
 };
 
 void TorreDeFogo::print(){
-      cout << "♜🔥";
+      cout << "♜🔥"; // Imprime o símbolo da torre com um emoji de fogo
 };
 

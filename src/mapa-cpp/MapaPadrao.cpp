@@ -17,11 +17,12 @@
  using std::set;
 
   
+// Construtor da classe MapaPadrao que inicializa a altura e largura do mapa
   MapaPadrao::MapaPadrao(int altura, int largura) : Mapa(altura,largura) {
 
 }
 
-
+// Método para montar o mapa no simulador
  void MapaPadrao::MontaMapa(Simulador& simulador)
  {
 
@@ -43,7 +44,7 @@
 
 
 
-
+// Método para adicionar hordas de inimigos ao mapa no simulador, baseado na dificuldade
 void MapaPadrao::adicionarHorda(Simulador& simulador, int dificuldade){
 
     switch (dificuldade){
@@ -80,7 +81,7 @@ void MapaPadrao::adicionarHorda(Simulador& simulador, int dificuldade){
 
 
 }
-
+// Método para adicionar torres ao mapa no simulador, baseado na dificuldade
 void MapaPadrao::adicionarTorreMapa(Simulador& simulador,int dificuldade){
     simulador.adicionarEstrutura(make_unique<Slot>(4,1));
     simulador.adicionarEstrutura(make_unique<Slot>(5,1));

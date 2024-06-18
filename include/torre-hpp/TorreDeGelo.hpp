@@ -10,10 +10,11 @@ using std::string;
 //A classe TorreDeGelo herda da classe base Torre.
 class TorreDeGelo : public Torre {
 public:
-    //O construtor TorreDeGelo é responsável por inicializar a Torre de Fogo com os valores específicos (nome, posição, alcance e ataque).
+    // Construtor TorreDeGelo inicializa a Torre de Gelo com os valores específicos (nome, posição, alcance e ataque).
     TorreDeGelo(int x, int y);
-    //O método atacar() é implementado para a Torre de Fogo e exibe uma mensagem indicando que ela ataca com fogo.
+    // Método atacar() é implementado para a Torre de Gelo e exibe uma mensagem indicando que ela ataca com Gelo.
     void atacar() const override;
+    // Método print() para imprimir informações da Torre de Gelo.
     void print() override;
 };
 

@@ -6,7 +6,7 @@ using std::string;
 
 
 
-// Construtor da classe Inimigo
+// Construtor da classe Inimigo que inicializa o nome, a posição X e Y e a vida do inimigo
 Inimigo::Inimigo(const string& nome, int x, int y, int vida)
     : nome(nome), m_positionX(x) , m_positionY(y), vida(vida) {}
 
@@ -18,7 +18,7 @@ void Inimigo::moverX() {
 void Inimigo::moverY() {
     m_positionY += 1; // Movimenta o inimigo uma posição para a frente
 }
-// Método para receber dano
+// Método para o inimigo receber dano
 void Inimigo::receberDano(int dano) {
     vida -= dano;
     if (vida < 0){
@@ -35,7 +35,7 @@ int Inimigo::getPosicaoX() {
 int Inimigo::getPosicaoY() {
     return m_positionY;
 }
-// Método para obter a vida do inimigo
+// Método para obter a vida do inimigo de acordo com a dificuldade
 int Inimigo::getVida() const {
     return vida;
 }

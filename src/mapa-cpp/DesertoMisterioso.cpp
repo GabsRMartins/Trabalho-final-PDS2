@@ -37,7 +37,7 @@ void DesertoMisterioso::MontaMapa(Simulador& simulador) {
 }
 
 
-
+// Método para adicionar hordas de inimigos ao mapa no simulador, baseado na dificuldade
 void DesertoMisterioso::adicionarHorda(Simulador& simulador, int dificuldade){
 
     switch (dificuldade){
@@ -75,6 +75,7 @@ void DesertoMisterioso::adicionarHorda(Simulador& simulador, int dificuldade){
 
 }
 
+// Método para adicionar torres ao mapa no simulador, baseado na dificuldade
 void DesertoMisterioso::adicionarTorreMapa(Simulador& simulador,int dificuldade){
     simulador.adicionarEstrutura(make_unique<Slot>(4,1));
     simulador.adicionarEstrutura(make_unique<Slot>(5,1));

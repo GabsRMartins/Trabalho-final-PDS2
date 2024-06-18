@@ -23,12 +23,13 @@ protected:
     int m_largura;
     
 public:
-    //Tamanho do mapa
+    // Construtor que inicializa o mapa com a altura e largura especificadas
     Mapa(int altura, int largura);
-    // Adiciona uma torre ao mapa
-  
+    // Método virtual puro para montar o mapa no simulador
     void virtual MontaMapa(Simulador& simulador) = 0;
+    // Método virtual puro para adicionar torres ao mapa no simulador, baseado na dificuldade
     void virtual adicionarTorreMapa(Simulador& simulador, int dificuldade) = 0;
+    // Método virtual puro para adicionar hordas de inimigos ao mapa no simulador, baseado na dificuldade
     void virtual adicionarHorda(Simulador& simulador, int dificuldade) = 0;
   
 

@@ -1,12 +1,12 @@
 #ifndef INIMIGO_HPP
 #define INIMIGO_HPP
 
-#include "../entidade-hpp/Entidade.hpp"
-#include <string>
+#include "../entidade-hpp/Entidade.hpp" // Inclui o cabeçalho da classe base Entidade
+#include <string> // Inclui a biblioteca de strings
 
-using std::string;
+using std::string; // Usa a classe string do namespace std
 
-
+// Declaração da classe Inimigo que herda da classe Entidade
 class Inimigo : public Entidade {
 private:
     string nome; // Nome do inimigo
@@ -32,12 +32,12 @@ public:
     int getPosicaoY() override;
 
 
-    // Método para obter a vida do inimigo
+    // Método para obter a vida do inimigo de acordo com o nível de dificuldade
     int getVida() const;
     int getVidaDificil() const;
     int getVidaFacil() const;
   
-  
+    // Método virtual puro que deve ser implementado pelas classes derivadas para imprimir informações do inimigo
     virtual void print() = 0; 
 };
 

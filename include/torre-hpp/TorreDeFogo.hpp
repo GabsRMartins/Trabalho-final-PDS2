@@ -14,6 +14,7 @@ public:
     TorreDeFogo(int x, int y);
     //O método atacar() é implementado para a Torre de Fogo e exibe uma mensagem indicando que ela ataca com fogo.
     void atacar() const override;
+    // Método print() para imprimir informações da Torre de Fogo.
     void print() override;
 
 };

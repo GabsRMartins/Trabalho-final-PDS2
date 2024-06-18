@@ -17,10 +17,11 @@ using std::cout;
 using std::endl;
 using std::cin;
 
+// Construtor padrão da classe Interface
 Interface::Interface() {
     
 }
-
+// Método para configurar a simulação em modo fácil
 void Interface::facil(Simulador& simulador){
     
 
@@ -72,6 +73,7 @@ void Interface::facil(Simulador& simulador){
     }
 }
 
+// Método para configurar a simulação em modo médio
 void Interface::medio(Simulador& simulador){
     
 
@@ -124,6 +126,7 @@ void Interface::medio(Simulador& simulador){
     }
 }
 
+// Método para configurar a simulação em modo difícil
 void Interface::dificil(Simulador& simulador){
     
 

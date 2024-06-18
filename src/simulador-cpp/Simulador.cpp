@@ -17,6 +17,7 @@
 // - <chrono>: Fornece funções para medir o tempo e criar pausas.
 #include <cmath> // Para std::abs
 
+// Usando namespaces para simplificar a sintaxe
 using std::vector;
 using std::unique_ptr;
 using std::move;
@@ -32,7 +33,7 @@ using std::invalid_argument;
 
 
 
-
+// Construtor da classe Simulador que inicializa a altura e largura do mapa
 
 Simulador::Simulador(int altura, int largura) : m_altura(altura), m_largura(largura) {
     matrizMapa.resize(m_altura); // Redimensiona o número de linhas da matriz
@@ -43,9 +44,10 @@ Simulador::Simulador(int altura, int largura) : m_altura(altura), m_largura(larg
     }
 }
 
+// Construtor padrão da classe Simulador
 Simulador::Simulador() {
 }
-
+// Método para adicionar uma torre ao simulador
 void Simulador::adicionarTorre(unique_ptr<Torre> torre) {
     try {
         // Verificar se a torre é válida
@@ -72,7 +74,7 @@ void Simulador::adicionarTorre(unique_ptr<Torre> torre) {
 }
 
 
-
+// Método para adicionar um inimigo ao simulador
 void Simulador::adicionarInimigo(unique_ptr<Inimigo> inimigo) {
     try {
         // Verificar se o inimigo é válido
@@ -98,13 +100,14 @@ void Simulador::adicionarInimigo(unique_ptr<Inimigo> inimigo) {
     }
 }
 
+// Método para adicionar uma estrutura ao simulador
 void Simulador::adicionarEstrutura(unique_ptr<Estrutura> estrutura) {
     try {
         // Verificar se a estrutura é válida
         if (!estrutura) {
             throw invalid_argument("Estrutura inválida!");
         }
-
+        // Verificar se a posição está dentro dos limites da matriz
         int posX = estrutura->getPosicaoX();
         int posY = estrutura->getPosicaoY();
 
@@ -123,7 +126,7 @@ void Simulador::adicionarEstrutura(unique_ptr<Estrutura> estrutura) {
     }
 }
 
-
+// Método para atualizar a matriz com a nova posição da entidade
 void Simulador::atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnteriorY, int Vida) {
        try {
         // Verificar se a entidade é válida
@@ -149,6 +152,7 @@ void Simulador::atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnte
             {
             cout << "Posição anterior (" << posAnteriorX << ", " << posAnteriorY << ") fora dos limites.\n";
             }
+          // Verificar se a entidade ainda está viva
           if (Vida == 0) {
                 matrizMapa[posX][posY].release();
                 
@@ -168,7 +172,7 @@ void Simulador::atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnte
         cerr << "Erro desconhecido ao atualizar a matriz.\n";
     }
 }
-
+// Método para imprimir o mapa
 void Simulador::printaMapa() {
     for (const auto& linha : matrizMapa) {
         for (const auto& entidade_ptr : linha) {
@@ -181,6 +185,8 @@ void Simulador::printaMapa() {
         cout << std::endl;
     }
 }
+
+// Método para simular o jogo
 bool Simulador:: simular(int dificuldade) {
     cout << "\n"<< "-----------Partida iniciada!-------------" << endl;
     int endMap = m_altura - 1;
@@ -263,7 +269,7 @@ bool Simulador:: simular(int dificuldade) {
 
     }
 }
-
+// Método para iniciar a simulação com configuração de dificuldade
 void Simulador::startSimulacao(Simulador& simulador){
     Interface dificuldade;
     cout<<"Bem vindo ao Defense PDS 2!"<< endl;
@@ -300,7 +306,7 @@ void Simulador::startSimulacao(Simulador& simulador){
 
 }
 
-
+// Método para definir os limites do mapa
 void Simulador::setLimites(int altura, int largura) 
 {
     m_altura = altura; 

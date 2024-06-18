@@ -25,11 +25,11 @@ int Torre::getPosicaoY()  {
 int Torre::getAlcance() const {
     return alcance;
 }
-// Método para atacar
+// Método para obter o valor de ataque da torre
 int Torre::getAtaque() const {
     return ataque;
 }
-
+// Método print para imprimir informações da torre
 void Torre::print() {
     std::cout<< "Torre";
 }

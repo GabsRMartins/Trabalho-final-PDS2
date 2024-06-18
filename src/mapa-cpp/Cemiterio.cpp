@@ -17,7 +17,7 @@ using std::cin;
 using std::endl;
 using std::set;
 
-
+  // Construtor da classe Cemiterio que inicializa a altura e largura do mapa
   Cemiterio::Cemiterio(int altura, int largura) : Mapa(altura,largura) {
 
    cout<<" Cemiterio Criado "<< std::endl;
@@ -25,7 +25,7 @@ using std::set;
 
 }
 
-
+ // Método para montar o mapa no simulador
  void Cemiterio::MontaMapa(Simulador& simulador){
 
 
@@ -45,7 +45,7 @@ using std::set;
 
   }
 
-
+// Método para adicionar torres ao mapa no simulador, baseado na dificuldade
 void Cemiterio::adicionarTorreMapa(Simulador& simulador,int dificuldade){
     simulador.adicionarEstrutura(make_unique<Slot>(4,1));
     simulador.adicionarEstrutura(make_unique<Slot>(5,1));
@@ -147,7 +147,7 @@ void Cemiterio::adicionarTorreMapa(Simulador& simulador,int dificuldade){
 
 
 
-
+// Método para adicionar hordas de inimigos ao mapa no simulador, baseado na dificuldade
 void Cemiterio::adicionarHorda(Simulador& simulador, int dificuldade){
 
     switch (dificuldade){

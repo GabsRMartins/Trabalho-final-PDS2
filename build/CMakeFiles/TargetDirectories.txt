@@ -1,0 +1,3 @@
+/home/conceicaolopes/Projeto/Trabalho-final-PDS2/build/CMakeFiles/jogo.dir
+/home/conceicaolopes/Projeto/Trabalho-final-PDS2/build/CMakeFiles/edit_cache.dir
+/home/conceicaolopes/Projeto/Trabalho-final-PDS2/build/CMakeFiles/rebuild_cache.dir

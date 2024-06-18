@@ -17,15 +17,15 @@ using std::unique_ptr;
 // - <iostream>: Usada para exibir mensagens no console (por exemplo, std::cout).
 class Simulador {
 protected:
-    vector<Torre*> torres;  
-    vector<Inimigo*> inimigos; 
-    vector<Estrutura*> estruturas; 
-    vector<vector<unique_ptr<Entidade>>> matrizMapa; 
+    vector<Torre*> torres;  // Vetor de ponteiros para objetos do tipo Torre
+    vector<Inimigo*> inimigos; // Vetor de ponteiros para objetos do tipo Inimigo
+    vector<Estrutura*> estruturas; // Vetor de ponteiros para objetos do tipo Estrutura
+    vector<vector<unique_ptr<Entidade>>> matrizMapa; // Matriz de ponteiros exclusivos para objetos do tipo Entidade
     int m_altura;
     int m_largura;
     
 public:
-    //Tamanho do mapa
+    // Construtor que inicializa o mapa com a altura e largura especificadas
     Simulador(int altura, int largura);
     Simulador();
     // Adiciona uma torre ao mapa
@@ -34,8 +34,11 @@ public:
     void printaMapa();
     // Adiciona um inimigo ao mapa
     void adicionarInimigo(unique_ptr<Inimigo> inimigo);
+     // Adiciona uma estrutura ao mapa
     void adicionarEstrutura(unique_ptr<Estrutura> Estrutura);
+     // Atualiza a posição de uma entidade na matriz do mapa
     void atualizaMatriz(Entidade* entidade, int posAnteriorX, int posAnteriorY, int Vida);
+    // Define os limites do mapa
     void setLimites(int altura, int largura);
   
  /*bool verificaEstrutura(int posX, int posY); */

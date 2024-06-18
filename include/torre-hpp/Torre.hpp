@@ -33,7 +33,7 @@ public:
     
     // Método para atacar
     int getAtaque() const;
-
+    // Método para impressão de informações da torre
     void print() override;
 
 };
